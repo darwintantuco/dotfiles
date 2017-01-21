@@ -4,6 +4,7 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-fugitive'
+Plug 'Yggdroot/indentLine'
 
 call plug#end()
 
@@ -16,6 +17,12 @@ noremap <Up> <Nop>
 noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
+
+inoremap jj <esc>
+map <enter> o<esc>
+
+let g:indentLine_char = '¦'
+let g:indentLine_color_term = 239
 
 set nobackup
 set nowritebackup
@@ -32,7 +39,14 @@ set softtabstop=2
 set expandtab
 
 set clipboard=unnamed
-set number " line numbers
-set ignorecase " ignore case when searching
+set number
+set ignorecase
 set ruler
+
+autocmd BufWritePre * %s/\s\+$//e " delete trailing whitespace on :w
+
+if !has("mac")
+  source $VIMRUNTIME/mswin.vim
+  behave mswin
+endif
 
