@@ -8,40 +8,36 @@ Plug 'Yggdroot/indentLine'
 
 call plug#end()
 
-nmap <tab> :NERDTreeToggle<cr>
+colorscheme monokai
+syntax enable
 
 let g:ctrlp_cmd = 'CtrlP'
-set pastetoggle=<F3>
+let g:indentLine_leadingSpaceEnabled = 1
+let g:indentLine_leadingSpaceChar = '·'
+let g:indentLine_char = '·'
 
+nmap <tab> :NERDTreeToggle<cr>
 noremap <Up> <Nop>
 noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
-
 inoremap jj <esc>
 map <enter> o<esc>
-
-let g:indentLine_char = '¦'
-let g:indentLine_color_term = 239
+set pastetoggle=<F3>
 
 set nobackup
 set nowritebackup
 set noswapfile
-
-colorscheme monokai
-syntax enable
-
 set colorcolumn=80
-
 set shiftwidth=2
 set tabstop=2
 set softtabstop=2
 set expandtab
-
 set clipboard=unnamed
 set number
 set ignorecase
 set ruler
+set scrolloff=999
 
 autocmd BufWritePre * %s/\s\+$//e " delete trailing whitespace on :w
 
