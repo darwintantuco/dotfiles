@@ -2,9 +2,11 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'tpope/vim-surround'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-fugitive'
 Plug 'Yggdroot/indentLine'
+Plug 'mileszs/ack.vim'
 
 call plug#end()
 
@@ -37,7 +39,6 @@ set clipboard=unnamed
 set number
 set ignorecase
 set ruler
-set scrolloff=999
 
 autocmd BufWritePre * %s/\s\+$//e " delete trailing whitespace on :w
 
@@ -46,3 +47,7 @@ if !has("mac")
   behave mswin
 endif
 
+let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
+if executable('ag')
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+endif

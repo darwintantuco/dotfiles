@@ -12,3 +12,4 @@ fi
 alias run_tests='bundle exec rspec spec'
 alias git_conflicts='git diff --name-only --diff-filter=U'
 alias git_reset_1='git reset --soft HEAD~1'
+alias git_ignore='git update-index --assume-unchanged $1'
