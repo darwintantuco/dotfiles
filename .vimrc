@@ -7,12 +7,14 @@ Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-fugitive'
 Plug 'Yggdroot/indentLine'
 Plug 'mileszs/ack.vim'
+Plug 'vim-syntastic/syntastic'
 
 call plug#end()
 
 colorscheme monokai
 syntax enable
 
+let NERDTreeShowHidden=1
 let g:ctrlp_cmd = 'CtrlP'
 let g:indentLine_leadingSpaceEnabled = 1
 let g:indentLine_leadingSpaceChar = '·'
@@ -24,9 +26,8 @@ noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
 inoremap jj <esc>
-map <enter> o<esc>
+map <enter> O<esc>
 set pastetoggle=<F3>
-
 set nobackup
 set nowritebackup
 set noswapfile
