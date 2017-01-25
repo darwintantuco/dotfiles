@@ -1,13 +1,13 @@
 call plug#begin('~/.vim/plugged')
 
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'tpope/vim-surround'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
 Plug 'Yggdroot/indentLine'
 Plug 'mileszs/ack.vim'
-Plug 'vim-syntastic/syntastic'
+Plug 'wincent/command-t', {'do': 'cd ruby/command-t && ruby extconf.rb && make'}
+Plug 'sjbach/lusty'
 
 call plug#end()
 
@@ -15,7 +15,6 @@ colorscheme monokai
 syntax enable
 
 let NERDTreeShowHidden=1
-let g:ctrlp_cmd = 'CtrlP'
 let g:indentLine_leadingSpaceEnabled = 1
 let g:indentLine_leadingSpaceChar = '·'
 let g:indentLine_char = '·'
@@ -40,6 +39,7 @@ set clipboard=unnamed
 set number
 set ignorecase
 set ruler
+set hidden
 
 autocmd BufWritePre * %s/\s\+$//e " delete trailing whitespace on :w
 
@@ -48,7 +48,3 @@ if !has("mac")
   behave mswin
 endif
 
-let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
-if executable('ag')
-  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
-endif
