@@ -2,28 +2,32 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 " Plug 'vim-airline/vim-airline'
-" Plug 'vim-airline/vim-airline-themes'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-sensible'
-" Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-fugitive'
 " Plug 'tpope/vim-surround'
 " Plug 'tpope/vim-commentary'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'Yggdroot/indentLine'
-" Plug 'mileszs/ack.vim'
-" Plug 'dkprice/vim-easygrep'
-" Plug 'sjbach/lusty'
+Plug 'mileszs/ack.vim'
 
 call plug#end()
 
 let NERDTreeShowHidden=1
-let g:fzf_action = {
+let g:fzf_action={
   \ 'ctrl-t': 'tab split',
   \ 'ctrl-x': 'split',
   \ 'ctrl-v': 'vsplit' }
+let g:airline_theme='simple'
+
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep -i' " use ggreer/the_silver_searcher
+endif
 
 nmap <tab> :NERDTreeToggle<cr>
 map \t  :FZF<esc>
+map \f :Ack
 noremap <Up> <Nop>
 noremap <Down> <Nop>
 noremap <Left> <Nop>
