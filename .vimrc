@@ -16,17 +16,11 @@ Plug 'Yggdroot/indentLine'
 
 call plug#end()
 
-colorscheme monokai
-syntax enable
-
 let NERDTreeShowHidden=1
 let g:fzf_action = {
   \ 'ctrl-t': 'tab split',
   \ 'ctrl-x': 'split',
   \ 'ctrl-v': 'vsplit' }
-let g:indentLine_leadingSpaceEnabled = 1
-let g:indentLine_leadingSpaceChar = '·'
-let g:indentLine_char = '·'
 
 nmap <tab> :NERDTreeToggle<cr>
 map \t  :FZF<esc>
@@ -36,11 +30,11 @@ noremap <Left> <Nop>
 noremap <Right> <Nop>
 inoremap jj <esc>
 map <enter> O<esc>
+
 set pastetoggle=<F3>
 set nobackup
 set nowritebackup
 set noswapfile
-set colorcolumn=80
 set shiftwidth=2
 set tabstop=2
 set softtabstop=2
@@ -48,8 +42,8 @@ set expandtab
 set clipboard=unnamed
 set number
 set ignorecase
-set ruler
-set hidden
+set colorcolumn=80
+highlight ColorColumn ctermbg=7
 
 autocmd BufWritePre * %s/\s\+$//e " delete trailing whitespace on :w
 
