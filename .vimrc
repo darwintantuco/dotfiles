@@ -12,6 +12,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'mileszs/ack.vim'
 Plug 'Yggdroot/indentLine'
 Plug 'wikitopian/hardmode'
+Plug 'easymotion/vim-easymotion'
 
 call plug#end()
 
@@ -39,11 +40,11 @@ nmap <silent> <c-k> :wincmd k<CR>
 nmap <silent> <c-j> :wincmd j<CR>
 nmap <silent> <c-h> :wincmd h<CR>
 nmap <silent> <c-l> :wincmd l<CR>
-" nnoremap <leader>h <Esc>:call ToggleHardMode()<CR>
+nnoremap <leader>h <Esc>:call ToggleHardMode()<CR>
 
 set pastetoggle=<F3>
 set hls
-" set clipboard=unnamed
+set clipboard=unnamed
 set splitright
 set nobackup
 set nowritebackup
@@ -59,11 +60,10 @@ highlight ColorColumn ctermbg=darkgray
 highlight Search ctermfg=black ctermbg=lightyellow
 
 autocmd BufWritePre * %s/\s\+$//e " delete trailing whitespace on :w
-" autocmd InsertEnter * :let @/="" "remove hls on insert mode
+autocmd InsertEnter * :let @/="" "remove hls on insert mode
 " autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
 
-" if !has("mac")
-"   source $VIMRUNTIME/mswin.vim
-"   behave mswin
-" endif
-
+command! -bang Q q<bang>
+command! -bang W w<bang>
+command! -bang Wq wq<bang>
+command! -bang WQ wq<bang>
