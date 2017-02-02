@@ -7,12 +7,14 @@ Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-rails'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'mileszs/ack.vim'
 Plug 'Yggdroot/indentLine'
 Plug 'wikitopian/hardmode'
 Plug 'easymotion/vim-easymotion'
+Plug 'rstacruz/sparkup'
 
 call plug#end()
 
@@ -22,25 +24,27 @@ let NERDTreeShowHidden=1
 let g:indentLine_color_term = 239 " gray
 let g:fzf_action={ 'ctrl-v': 'vsplit' }
 let g:airline_theme='simple'
+let NERDTreeQuitOnOpen=1
 
 if executable('ag')
   let g:ackprg = 'ag --vimgrep -i' " use ggreer/the_silver_searcher in ack.vim
 endif
 
+nnoremap <leader>h <esc>:call ToggleHardMode()<cr>
 nmap <tab> :NERDTreeToggle<cr>
 map \t  :FZF<esc>
 map \f :Ack
-noremap <Up> <Nop>
-noremap <Down> <Nop>
-noremap <Left> <Nop>
-noremap <Right> <Nop>
+map <enter> <insert><enter> <esc>
+
 inoremap jj <esc>
-map <enter> O<esc>
-nmap <silent> <c-k> :wincmd k<CR>
-nmap <silent> <c-j> :wincmd j<CR>
-nmap <silent> <c-h> :wincmd h<CR>
-nmap <silent> <c-l> :wincmd l<CR>
-nnoremap <leader>h <Esc>:call ToggleHardMode()<CR>
+noremap <Up> <nop>
+noremap <Down> <nop>
+noremap <Left> <nop>
+noremap <Right> <nop>
+nmap <silent> <c-k> :wincmd k<cr>
+nmap <silent> <c-j> :wincmd j<cr>
+nmap <silent> <c-h> :wincmd h<cr>
+nmap <silent> <c-l> :wincmd l<cr>
 
 set pastetoggle=<F3>
 set hls
