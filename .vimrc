@@ -16,6 +16,8 @@ Plug 'Yggdroot/indentLine'
 Plug 'wikitopian/hardmode'
 Plug 'easymotion/vim-easymotion'
 Plug 'rstacruz/sparkup'
+Plug 'mxw/vim-jsx'
+Plug 'Valloric/MatchTagAlways'
 
 call plug#end()
 
@@ -26,6 +28,16 @@ let g:indentLine_color_term = 239 " gray
 let g:fzf_action={ 'ctrl-v': 'vsplit' }
 let g:airline_theme='simple'
 let NERDTreeQuitOnOpen=1
+let loaded_netrwPlugin = 1
+let g:jsx_ext_required = 0
+
+let g:mta_filetypes = {
+      \ 'javascript.jsx': 1,
+      \ 'html' : 1,
+      \ 'xhtml' : 1,
+      \ 'xml' : 1,
+      \ 'jinja' : 1,
+      \ }
 
 if executable('ag')
   let g:ackprg = 'ag --vimgrep -i' " use ggreer/the_silver_searcher in ack.vim
@@ -66,6 +78,7 @@ highlight Search ctermfg=black ctermbg=lightyellow
 
 autocmd BufWritePre * %s/\s\+$//e " delete trailing whitespace on :w
 autocmd InsertEnter * :let @/="" "remove hls on insert mode
+autocmd VimEnter *  NERDTree
 " autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
 
 command! -bang Q q<bang>
