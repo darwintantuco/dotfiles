@@ -32,11 +32,12 @@ let loaded_netrwPlugin = 1
 let g:jsx_ext_required = 0
 
 let g:mta_filetypes = {
-      \ 'javascript.jsx': 1,
       \ 'html' : 1,
       \ 'xhtml' : 1,
       \ 'xml' : 1,
       \ 'jinja' : 1,
+      \ 'javascript.jsx': 1,
+      \ 'eruby': 1,
       \ }
 
 if executable('ag')
