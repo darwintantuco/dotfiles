@@ -23,30 +23,36 @@ call plug#end()
 
 colorscheme spacegray
 
-let NERDTreeShowHidden=1
+let NERDTreeShowHidden = 1
 let g:indentLine_color_term = 239 " gray
-let g:fzf_action={ 'ctrl-v': 'vsplit' }
-let g:airline_theme='simple'
-let NERDTreeQuitOnOpen=1
+let g:fzf_action = { 'ctrl-x': 'split', 'ctrl-v': 'vsplit' }
+let g:airline_theme = 'simple'
+let NERDTreeQuitOnOpen = 1
 let loaded_netrwPlugin = 1
 let g:jsx_ext_required = 0
-
 let g:mta_filetypes = {
       \ 'html' : 1,
       \ 'xhtml' : 1,
       \ 'xml' : 1,
       \ 'jinja' : 1,
       \ 'javascript.jsx': 1,
-      \ 'eruby': 1,
+      \ 'eruby': 1
       \ }
 
 if executable('ag')
   let g:ackprg = 'ag --vimgrep -i' " use ggreer/the_silver_searcher in ack.vim
 endif
 
+autocmd BufWritePre * %s/\s\+$//e " delete trailing whitespace on :w
+autocmd InsertEnter * :let @/="" "remove hls on insert mode
+autocmd VimEnter * NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree")
+      \ && b:NERDTree.isTabTree()) | q | endif
+" autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
+
 nnoremap <leader>h <esc>:call ToggleHardMode()<cr>
 nmap <tab> :NERDTreeToggle<cr>
-map \t  :FZF<esc>
+map \t :FZF<esc>
 map \f :Ack
 map <enter> <insert><enter> <esc>
 
@@ -74,13 +80,9 @@ set expandtab
 set number
 set ignorecase
 set colorcolumn=80
+
 highlight ColorColumn ctermbg=darkgray
 highlight Search ctermfg=black ctermbg=lightyellow
-
-autocmd BufWritePre * %s/\s\+$//e " delete trailing whitespace on :w
-autocmd InsertEnter * :let @/="" "remove hls on insert mode
-autocmd VimEnter *  NERDTree
-" autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
 
 command! -bang Q q<bang>
 command! -bang W w<bang>
