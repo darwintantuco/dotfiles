@@ -22,9 +22,19 @@ Plug 'Valloric/MatchTagAlways'
 call plug#end()
 
 colorscheme spacegray
+highlight ColorColumn ctermbg=darkgray
+highlight Search ctermfg=black ctermbg=lightyellow
+
+autocmd BufWritePre * %s/\s\+$//e  " delete trailing whitespace on :w
+autocmd InsertEnter * :let @/=""  " remove hls on insert mode
+autocmd VimEnter * NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree")
+      \ && b:NERDTree.isTabTree()) | q | endif
+autocmd FileType javascript.jsx runtime! ftplugin/html/sparkup.vim
+" autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
 
 let NERDTreeShowHidden = 1
-let g:indentLine_color_term = 239 " gray
+let g:indentLine_color_term = 239  " gray
 let g:fzf_action = { 'ctrl-x': 'split', 'ctrl-v': 'vsplit' }
 let g:airline_theme = 'simple'
 let NERDTreeQuitOnOpen = 1
@@ -38,21 +48,13 @@ let g:mta_filetypes = {
       \ 'javascript.jsx': 1,
       \ 'eruby': 1
       \ }
-let $FZF_DEFAULT_COMMAND = 'ag -g ""' " ignore files in .gitignore
+let $FZF_DEFAULT_COMMAND = 'ag -g ""'  " ignore files in .gitignore
 
 if executable('ag')
-  let g:ackprg = 'ag --vimgrep -i' " use ggreer/the_silver_searcher in ack.vim
+  let g:ackprg = 'ag --vimgrep -i'  " use ggreer/the_silver_searcher in ack.vim
 endif
 
-autocmd BufWritePre * %s/\s\+$//e " delete trailing whitespace on :w
-autocmd InsertEnter * :let @/="" "remove hls on insert mode
-autocmd VimEnter * NERDTree
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree")
-      \ && b:NERDTree.isTabTree()) | q | endif
-autocmd FileType javascript.jsx runtime! ftplugin/html/sparkup.vim
-" autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
-
-nnoremap <leader>h <esc>:call ToggleHardMode()<cr>
+" nnoremap <leader>h <esc>:call ToggleHardMode()<cr>
 nmap <tab> :NERDTreeToggle<cr>
 map \t :FZF<esc>
 map \f :Ack
@@ -68,6 +70,11 @@ nmap <silent> <c-j> :wincmd j<cr>
 nmap <silent> <c-h> :wincmd h<cr>
 nmap <silent> <c-l> :wincmd l<cr>
 
+command! -bang Q q<bang>
+command! -bang W w<bang>
+command! -bang Wq wq<bang>
+command! -bang WQ wq<bang>
+
 set pastetoggle=<F3>
 set hls
 set clipboard=unnamed
@@ -82,11 +89,3 @@ set expandtab
 set number
 set ignorecase
 set colorcolumn=80
-
-highlight ColorColumn ctermbg=darkgray
-highlight Search ctermfg=black ctermbg=lightyellow
-
-command! -bang Q q<bang>
-command! -bang W w<bang>
-command! -bang Wq wq<bang>
-command! -bang WQ wq<bang>
