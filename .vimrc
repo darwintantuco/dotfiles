@@ -9,6 +9,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-rails'
+Plug 'tpope/vim-endwise'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'mileszs/ack.vim'
@@ -18,6 +19,8 @@ Plug 'easymotion/vim-easymotion'
 Plug 'rstacruz/sparkup'
 Plug 'mxw/vim-jsx'
 Plug 'Valloric/MatchTagAlways'
+Plug 'pangloss/vim-javascript'
+" Plug 'neomake/neomake'
 
 call plug#end()
 
