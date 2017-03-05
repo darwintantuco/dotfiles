@@ -21,6 +21,7 @@ Plug 'mxw/vim-jsx'
 Plug 'Valloric/MatchTagAlways'
 Plug 'pangloss/vim-javascript'
 " Plug 'neomake/neomake'
+Plug 'Valloric/YouCompleteMe'
 
 call plug#end()
 
