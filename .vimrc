@@ -20,8 +20,7 @@ Plug 'rstacruz/sparkup'
 Plug 'mxw/vim-jsx'
 Plug 'Valloric/MatchTagAlways'
 Plug 'pangloss/vim-javascript'
-" Plug 'neomake/neomake'
-Plug 'Valloric/YouCompleteMe'
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 
 call plug#end()
 
