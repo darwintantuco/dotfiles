@@ -1,2 +1,3 @@
 .vim/plugged
 .vim/.netrwhist
+tmux-client-*.log

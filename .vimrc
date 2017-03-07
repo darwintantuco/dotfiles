@@ -15,12 +15,13 @@ Plug 'junegunn/fzf.vim'
 Plug 'mileszs/ack.vim'
 Plug 'Yggdroot/indentLine'
 Plug 'wikitopian/hardmode'
-Plug 'easymotion/vim-easymotion'
 Plug 'rstacruz/sparkup'
 Plug 'mxw/vim-jsx'
 Plug 'Valloric/MatchTagAlways'
 Plug 'pangloss/vim-javascript'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
+Plug 'christoomey/vim-tmux-navigator'
+" Plug 'easymotion/vim-easymotion'
 
 call plug#end()
 
@@ -57,7 +58,7 @@ if executable('ag')
   let g:ackprg = 'ag --vimgrep -i'  " use ggreer/the_silver_searcher in ack.vim
 endif
 
-" nnoremap <leader>h <esc>:call ToggleHardMode()<cr>
+nnoremap <leader>h <esc>:call ToggleHardMode()<cr>
 nmap <tab> :NERDTreeToggle<cr>
 map \t :FZF<esc>
 map \f :Ack
@@ -89,6 +90,7 @@ set shiftwidth=2
 set tabstop=2
 set softtabstop=2
 set expandtab
-set number
+set number  " show current line number
+set relativenumber  " show relative line numbers
 set ignorecase
 set colorcolumn=80
