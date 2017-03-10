@@ -10,17 +10,19 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-haml'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
+Plug 'Valloric/MatchTagAlways'
 Plug 'mileszs/ack.vim'
 Plug 'Yggdroot/indentLine'
 Plug 'wikitopian/hardmode'
 Plug 'rstacruz/sparkup'
 Plug 'mxw/vim-jsx'
-Plug 'Valloric/MatchTagAlways'
 Plug 'pangloss/vim-javascript'
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 Plug 'christoomey/vim-tmux-navigator'
+" Plug 'dodie/vim-disapprove-deep-indentation'
 " Plug 'easymotion/vim-easymotion'
 
 call plug#end()
