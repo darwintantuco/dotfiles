@@ -33,18 +33,18 @@ highlight Search ctermfg=black ctermbg=lightyellow
 
 autocmd BufWritePre * %s/\s\+$//e  " delete trailing whitespace on :w
 autocmd InsertEnter * :let @/=""  " remove hls on insert mode
-autocmd VimEnter * NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree")
       \ && b:NERDTree.isTabTree()) | q | endif
 autocmd FileType javascript.jsx runtime! ftplugin/html/sparkup.vim
 " autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
+" autocmd VimEnter * NERDTree
 
+let loaded_netrwPlugin = 1
+let NERDTreeQuitOnOpen = 1
 let NERDTreeShowHidden = 1
 let g:indentLine_color_term = 239  " gray
 let g:fzf_action = { 'ctrl-x': 'split', 'ctrl-v': 'vsplit' }
 let g:airline_theme = 'simple'
-let NERDTreeQuitOnOpen = 1
-let loaded_netrwPlugin = 1
 let g:jsx_ext_required = 0
 let g:mta_filetypes = {
       \ 'html' : 1,
@@ -54,7 +54,7 @@ let g:mta_filetypes = {
       \ 'javascript.jsx': 1,
       \ 'eruby': 1
       \ }
-let $FZF_DEFAULT_COMMAND = 'ag -g ""'  " ignore files in .gitignore
+" let $FZF_DEFAULT_COMMAND = 'ag -g ""'  " ignore files in .gitignore
 
 if executable('ag')
   let g:ackprg = 'ag --vimgrep -i'  " use ggreer/the_silver_searcher in ack.vim
