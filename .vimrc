@@ -63,7 +63,7 @@ endif
 nnoremap <leader>h <esc>:call ToggleHardMode()<cr>
 nmap <tab> :NERDTreeToggle<cr>
 map \t :FZF<esc>
-map \f :Ack
+map \f :Ack!<space>
 map <enter> <insert><enter> <esc>
 
 inoremap jj <esc>
