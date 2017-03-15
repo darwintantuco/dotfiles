@@ -54,10 +54,10 @@ let g:mta_filetypes = {
       \ 'javascript.jsx': 1,
       \ 'eruby': 1
       \ }
-" let $FZF_DEFAULT_COMMAND = 'ag -g ""'  " ignore files in .gitignore
 
 if executable('ag')
   let g:ackprg = 'ag --vimgrep -i'  " use ggreer/the_silver_searcher in ack.vim
+  let $FZF_DEFAULT_COMMAND = 'ag -g ""'  " ignore files in .gitignore
 endif
 
 nnoremap <leader>h <esc>:call ToggleHardMode()<cr>
