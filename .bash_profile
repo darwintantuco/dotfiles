@@ -9,7 +9,7 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
 	rvm use 2.3.3
 fi
 
-alias run_tests='bundle exec rspec spec'
-alias git_conflicts='git diff --name-only --diff-filter=U'
-alias git_reset_1='git reset --soft HEAD~1'
-alias git_ignore='git update-index --assume-unchanged $1'
+alias run-spec='bundle exec rspec spec'
+alias git-conflicts='git diff --name-only --diff-filter=U'
+alias git-reset-1='git reset --soft HEAD~1'
+alias git-ignore='git update-index --assume-unchanged $1'
