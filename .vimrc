@@ -96,3 +96,4 @@ set number  " show current line number
 set relativenumber  " show relative line numbers
 set ignorecase
 set colorcolumn=80
+set breakindent
