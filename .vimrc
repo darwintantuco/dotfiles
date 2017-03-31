@@ -97,3 +97,4 @@ set relativenumber  " show relative line numbers
 set ignorecase
 set colorcolumn=80
 set breakindent
+set synmaxcol=250
