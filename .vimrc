@@ -22,6 +22,7 @@ Plug 'rstacruz/sparkup'
 Plug 'mxw/vim-jsx'
 Plug 'pangloss/vim-javascript'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'terryma/vim-multiple-cursors'
 " Plug 'dodie/vim-disapprove-deep-indentation'
 " Plug 'easymotion/vim-easymotion'
 
