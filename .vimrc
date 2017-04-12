@@ -23,8 +23,7 @@ Plug 'mxw/vim-jsx'
 Plug 'pangloss/vim-javascript'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'terryma/vim-multiple-cursors'
-" Plug 'dodie/vim-disapprove-deep-indentation'
-" Plug 'easymotion/vim-easymotion'
+Plug 'briancollins/vim-jst'
 
 call plug#end()
 
@@ -37,7 +36,6 @@ autocmd InsertEnter * :let @/=""  " remove hls on insert mode
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree")
       \ && b:NERDTree.isTabTree()) | q | endif
 autocmd FileType javascript.jsx runtime! ftplugin/html/sparkup.vim
-autocmd BufNewFile,BufRead *.ejs set filetype=html
 autocmd FileType *.ejs runtime! ftplugin/html/sparkup.vim
 " autocmd VimEnter * NERDTree
 " autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
@@ -60,7 +58,8 @@ let g:mta_filetypes = {
 
 if executable('ag')
   let g:ackprg = 'ag --vimgrep -i'  " use ggreer/the_silver_searcher in ack.vim
-  let $FZF_DEFAULT_COMMAND = 'ag -g ""'  " ignore files in .gitignore
+  let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -g ""'
+                              " include hidden files in search, ignore .git
 endif
 
 nnoremap <leader>h <esc>:call ToggleHardMode()<cr>
