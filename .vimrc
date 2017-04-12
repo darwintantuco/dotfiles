@@ -37,6 +37,8 @@ autocmd InsertEnter * :let @/=""  " remove hls on insert mode
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree")
       \ && b:NERDTree.isTabTree()) | q | endif
 autocmd FileType javascript.jsx runtime! ftplugin/html/sparkup.vim
+autocmd BufNewFile,BufRead *.ejs set filetype=html
+autocmd FileType *.ejs runtime! ftplugin/html/sparkup.vim
 " autocmd VimEnter * NERDTree
 " autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
 
