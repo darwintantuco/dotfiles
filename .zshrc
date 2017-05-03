@@ -96,3 +96,8 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
   export PATH=${PATH}:${ANDROID_HOME}/tools
   export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 fi
+
+
+if [[ "$OSTYPE" == "linux-gnu" ]]; then
+  [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+fi
