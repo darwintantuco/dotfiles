@@ -25,7 +25,6 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'terryma/vim-expand-region'
 Plug 'briancollins/vim-jst'
-Plug 'roman/golden-ratio'
 
 call plug#end()
 
