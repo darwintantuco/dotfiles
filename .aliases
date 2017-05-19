@@ -1,6 +1,5 @@
 #!/bin/sh
-alias ..='cd ..'
-alias ...='cd ../../'
+alias a='alias'
 alias c='clear'
 
 alias run-spec='bundle exec rspec spec/'
@@ -11,4 +10,3 @@ alias git-reset-1='git reset --soft HEAD~1'
 alias git-ignore='git update-index --assume-unchanged $1'
 alias git-clean='git clean -fd'
 
-alias a='echo "------------Your aliases------------";alias'

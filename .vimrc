@@ -31,9 +31,11 @@ call plug#end()
 colorscheme spacegray
 highlight ColorColumn ctermbg=darkgray
 highlight Search ctermfg=black ctermbg=lightyellow
-
-autocmd BufWritePre * %s/\s\+$//e  " delete trailing whitespace on :w
-autocmd InsertEnter * :let @/=""  " remove hls on insert mode
+" delete trailing whitespace on :w
+autocmd BufWritePre * %s/\s\+$//e
+" remove hls on insert mode
+autocmd InsertEnter * :let @/=""
+" close vim if the only window left open is NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree")
       \ && b:NERDTree.isTabTree()) | q | endif
 autocmd FileType javascript.jsx runtime! ftplugin/html/sparkup.vim
@@ -44,7 +46,8 @@ autocmd VimEnter * NERDTree
 let loaded_netrwPlugin = 1
 let NERDTreeQuitOnOpen = 1
 let NERDTreeShowHidden = 1
-let g:indentLine_color_term = 239  " gray
+" gray
+let g:indentLine_color_term = 239
 let g:fzf_action = { 'ctrl-x': 'split', 'ctrl-v': 'vsplit' }
 let g:airline_theme = 'simple'
 let g:jsx_ext_required = 0
@@ -58,9 +61,10 @@ let g:mta_filetypes = {
       \ }
 
 if executable('ag')
-  let g:ackprg = 'ag --vimgrep -i'  " use ggreer/the_silver_searcher in ack.vim
+  " use ggreer/the_silver_searcher in ack.vim
+  let g:ackprg = 'ag --vimgrep -i'
+  " include hidden files in search, ignore .git
   let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -g ""'
-                              " include hidden files in search, ignore .git
 endif
 
 nnoremap <leader>h <esc>:call ToggleHardMode()<cr>
@@ -95,8 +99,10 @@ set shiftwidth=2
 set tabstop=2
 set softtabstop=2
 set expandtab
-set number  " show current line number
-set relativenumber  " show relative line numbers
+" show current line number
+set number
+" show relative line numbers
+set relativenumber
 set ignorecase
 set colorcolumn=80
 set breakindent
