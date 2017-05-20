@@ -41,7 +41,8 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree")
 autocmd FileType javascript.jsx runtime! ftplugin/html/sparkup.vim
 autocmd FileType *.ejs runtime! ftplugin/html/sparkup.vim
 autocmd VimEnter * NERDTree
-" autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
+" enable hardmode by default
+autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
 
 let loaded_netrwPlugin = 1
 let NERDTreeQuitOnOpen = 1
