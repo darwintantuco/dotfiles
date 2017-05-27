@@ -1,5 +1,6 @@
 call plug#begin('~/.vim/plugged')
 
+Plug 'takac/vim-hardtime'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -8,6 +9,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'Yggdroot/indentLine'
 Plug 'Valloric/MatchTagAlways'
 Plug 'tpope/vim-commentary'
+Plug 'rstacruz/sparkup'
 
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-sleuth'
@@ -18,7 +20,6 @@ Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-haml'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 Plug 'mileszs/ack.vim'
-Plug 'rstacruz/sparkup'
 Plug 'mxw/vim-jsx'
 Plug 'pangloss/vim-javascript'
 Plug 'christoomey/vim-tmux-navigator'
@@ -35,6 +36,13 @@ highlight ColorColumn ctermbg=red
 
 " search hit color
 highlight Search ctermfg=black ctermbg=lightyellow
+
+" automatically starts vim-hardmode
+let g:hardtime_default_on = 1
+
+" allow jjj but not jjjj
+let g:hardtime_maxcount = 3
+
 
 " delete trailing whitespace on :w
 autocmd BufWritePre * %s/\s\+$//e
