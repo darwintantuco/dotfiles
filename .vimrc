@@ -3,21 +3,21 @@ call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+Plug 'Yggdroot/indentLine'
+Plug 'Valloric/MatchTagAlways'
+Plug 'tpope/vim-commentary'
+
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
-Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-haml'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
-Plug 'Valloric/MatchTagAlways'
 Plug 'mileszs/ack.vim'
-Plug 'Yggdroot/indentLine'
-Plug 'wikitopian/hardmode'
 Plug 'rstacruz/sparkup'
 Plug 'mxw/vim-jsx'
 Plug 'pangloss/vim-javascript'
@@ -29,26 +29,36 @@ Plug 'briancollins/vim-jst'
 call plug#end()
 
 colorscheme spacegray
-highlight ColorColumn ctermbg=darkgray
+
+" vertical bar color
+highlight ColorColumn ctermbg=red
+
+" search hit color
 highlight Search ctermfg=black ctermbg=lightyellow
+
 " delete trailing whitespace on :w
 autocmd BufWritePre * %s/\s\+$//e
+
 " remove hls on insert mode
 autocmd InsertEnter * :let @/=""
-" close vim if the only window left open is NERDTree
+
+" close vim when the only window left open is NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree")
       \ && b:NERDTree.isTabTree()) | q | endif
+
+" automatically starts NERDTree
+autocmd VimEnter * NERDTree
+
+" disable netrw, use nerdtree by default
+let loaded_netrwPlugin = 1
+
+let g:NERDTreeQuitOnOpen = 1
+let NERDTreeShowHidden = 1
+
 autocmd FileType javascript.jsx runtime! ftplugin/html/sparkup.vim
 autocmd FileType *.ejs runtime! ftplugin/html/sparkup.vim
-autocmd VimEnter * NERDTree
-" enable hardmode by default
-autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
 
-let loaded_netrwPlugin = 1
-let NERDTreeQuitOnOpen = 1
-let NERDTreeShowHidden = 1
-" gray
-let g:indentLine_color_term = 239
+let g:indentLine_color_term = 100
 let g:fzf_action = { 'ctrl-x': 'split', 'ctrl-v': 'vsplit' }
 let g:airline_theme = 'simple'
 let g:jsx_ext_required = 0
@@ -64,17 +74,27 @@ let g:mta_filetypes = {
 if executable('ag')
   " use ggreer/the_silver_searcher in ack.vim
   let g:ackprg = 'ag --vimgrep -i'
+
   " include hidden files in search, ignore .git
   let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -g ""'
 endif
 
-nnoremap <leader>h <esc>:call ToggleHardMode()<cr>
-nmap <tab> :NERDTreeToggle<cr>
-map \t :FZF<esc>
-map \f :Ack!<space>
-" map <enter> <insert><enter> <esc>
+" map fzf to \t and prevent from opening file in nerdtree window
+nnoremap <silent> <expr> <Leader>t (expand('%') =~ 'NERD_tree' ?
+                    \ "\<c-w>\<c-w>" : '').":FZF\<cr>"
 
+" " file finder
+" map \t :FZF<esc>
+
+" show / hide NERDTree
+nmap <tab> :NERDTreeToggle<cr>
+
+" find
+map \f :Ack!<space>
+
+" map jj to <esc>
 inoremap jj <esc>
+
 noremap <Up> <nop>
 noremap <Down> <nop>
 noremap <Left> <nop>
@@ -99,12 +119,16 @@ set noswapfile
 set shiftwidth=2
 set tabstop=2
 set softtabstop=2
-set expandtab
-" show current line number
-set number
-" show relative line numbers
-set relativenumber
 set ignorecase
-set colorcolumn=80
 set breakindent
 set synmaxcol=250
+set expandtab
+
+" show current line number
+set number
+
+" show relative line numbers
+set relativenumber
+
+" show vertical bar
+set colorcolumn=80

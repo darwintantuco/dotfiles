@@ -101,3 +101,5 @@ fi
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
   [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 fi
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
