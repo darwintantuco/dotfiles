@@ -79,12 +79,9 @@ if executable('ag')
   let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -g ""'
 endif
 
-" map fzf to \t and prevent from opening file in nerdtree window
+" map fzf to \t and prevent opening file in nerdtree window
 nnoremap <silent> <expr> <Leader>t (expand('%') =~ 'NERD_tree' ?
-                    \ "\<c-w>\<c-w>" : '').":FZF\<cr>"
-
-" " file finder
-" map \t :FZF<esc>
+                    \ '' : ':FZF<esc>')
 
 " show / hide NERDTree
 nmap <tab> :NERDTreeToggle<cr>
