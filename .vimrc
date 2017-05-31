@@ -1,7 +1,8 @@
 call plug#begin('~/.vim/plugged')
 
-Plug 'takac/vim-hardtime'
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+" Plug 'takac/vim-hardtime'
+" Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'tpope/vim-vinegar'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -37,11 +38,11 @@ highlight ColorColumn ctermbg=red
 " search hit color
 highlight Search ctermfg=black ctermbg=lightyellow
 
-" automatically starts vim-hardmode
-let g:hardtime_default_on = 1
+" " automatically starts vim-hardmode
+" let g:hardtime_default_on = 1
 
-" allow jjj but not jjjj
-let g:hardtime_maxcount = 3
+" " allow jjj but not jjjj
+" let g:hardtime_maxcount = 3
 
 
 " delete trailing whitespace on :w
@@ -50,18 +51,18 @@ autocmd BufWritePre * %s/\s\+$//e
 " remove hls on insert mode
 autocmd InsertEnter * :let @/=""
 
-" close vim when the only window left open is NERDTree
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree")
-      \ && b:NERDTree.isTabTree()) | q | endif
+" " close vim when the only window left open is NERDTree
+" autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree")
+"       \ && b:NERDTree.isTabTree()) | q | endif
 
-" automatically starts NERDTree
-autocmd VimEnter * NERDTree
+" " automatically starts NERDTree
+" autocmd VimEnter * NERDTree
 
-" disable netrw, use nerdtree by default
-let loaded_netrwPlugin = 1
+" " disable netrw, use nerdtree by default
+" let loaded_netrwPlugin = 1
 
-let g:NERDTreeQuitOnOpen = 1
-let NERDTreeShowHidden = 1
+" let g:NERDTreeQuitOnOpen = 1
+" let NERDTreeShowHidden = 1
 
 autocmd FileType javascript.jsx runtime! ftplugin/html/sparkup.vim
 autocmd FileType *.ejs runtime! ftplugin/html/sparkup.vim
@@ -87,14 +88,20 @@ if executable('ag')
   let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -g ""'
 endif
 
-" map fzf to \t and disable in nerdtree window
-nnoremap <expr> <leader>t (expand('%') =~ 'NERD_tree' ? '' : ':FZF<esc>')
+" " map fzf to \t and disable in nerdtree window
+" nnoremap <expr> <leader>t (expand('%') =~ 'NERD_tree' ? '' : ':FZF<esc>')
+" n
 
-" show / hide NERDTree
-nmap <tab> :NERDTreeToggle<cr>
+" " show / hide NERDTree
+" nmap <tab> :NERDTreeToggle<cr>
 
 " find
 map \f :Ack!<space>
+
+" FZF
+map \t :FZF<esc>
+
+" map <tab> :Lexplore<esc>
 
 " map jj to <esc>
 inoremap jj <esc>
