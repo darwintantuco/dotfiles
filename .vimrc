@@ -1,8 +1,8 @@
 call plug#begin('~/.vim/plugged')
 
 " Plug 'takac/vim-hardtime'
-" Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-Plug 'tpope/vim-vinegar'
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+" Plug 'tpope/vim-vinegar'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -11,13 +11,12 @@ Plug 'Yggdroot/indentLine'
 Plug 'Valloric/MatchTagAlways'
 Plug 'tpope/vim-commentary'
 Plug 'rstacruz/sparkup'
-
 Plug 'tpope/vim-sensible'
-Plug 'tpope/vim-sleuth'
+Plug 'tpope/vim-endwise'
+
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-rails'
-Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-haml'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 Plug 'mileszs/ack.vim'
@@ -51,18 +50,18 @@ autocmd BufWritePre * %s/\s\+$//e
 " remove hls on insert mode
 autocmd InsertEnter * :let @/=""
 
-" " close vim when the only window left open is NERDTree
-" autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree")
-"       \ && b:NERDTree.isTabTree()) | q | endif
+" close vim when the only window left open is NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree")
+    \ && b:NERDTree.isTabTree()) | q | endif
 
-" " automatically starts NERDTree
-" autocmd VimEnter * NERDTree
+" automatically starts NERDTree
+autocmd VimEnter * NERDTree
 
-" " disable netrw, use nerdtree by default
-" let loaded_netrwPlugin = 1
+" disable netrw, use nerdtree by default
+let loaded_netrwPlugin = 1
 
-" let g:NERDTreeQuitOnOpen = 1
-" let NERDTreeShowHidden = 1
+let g:NERDTreeQuitOnOpen = 1
+let NERDTreeShowHidden = 1
 
 autocmd FileType javascript.jsx runtime! ftplugin/html/sparkup.vim
 autocmd FileType *.ejs runtime! ftplugin/html/sparkup.vim
@@ -72,13 +71,12 @@ let g:fzf_action = { 'ctrl-x': 'split', 'ctrl-v': 'vsplit' }
 let g:airline_theme = 'simple'
 let g:jsx_ext_required = 0
 let g:mta_filetypes = {
-      \ 'html' : 1,
-      \ 'xhtml' : 1,
-      \ 'xml' : 1,
-      \ 'jinja' : 1,
-      \ 'javascript.jsx': 1,
-      \ 'eruby': 1
-      \ }
+    \ 'html' : 1,
+    \ 'xhtml' : 1,
+    \ 'xml' : 1,
+    \ 'jinja' : 1,
+    \ 'javascript.jsx': 1,
+    \ 'eruby': 1 }
 
 if executable('ag')
   " use ggreer/the_silver_searcher in ack.vim
@@ -90,10 +88,9 @@ endif
 
 " " map fzf to \t and disable in nerdtree window
 " nnoremap <expr> <leader>t (expand('%') =~ 'NERD_tree' ? '' : ':FZF<esc>')
-" n
 
-" " show / hide NERDTree
-" nmap <tab> :NERDTreeToggle<cr>
+" show / hide NERDTree
+nmap <tab> :NERDTreeToggle<cr>
 
 " find
 map \f :Ack!<space>
@@ -127,13 +124,16 @@ set splitright
 set nobackup
 set nowritebackup
 set noswapfile
-set shiftwidth=2
-set tabstop=2
-set softtabstop=2
 set ignorecase
 set breakindent
 set synmaxcol=250
+
+"
+map <F2> :retab <CR> :w <CR>
 set expandtab
+set shiftwidth=2
+set tabstop=2
+set softtabstop=2
 
 " show current line number
 set number
