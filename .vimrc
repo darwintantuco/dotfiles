@@ -14,18 +14,18 @@ Plug 'rstacruz/sparkup'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-endwise'
 
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-rails'
-Plug 'tpope/vim-haml'
+" Plug 'tpope/vim-fugitive'
+" Plug 'tpope/vim-surround'
+" Plug 'tpope/vim-rails'
+" Plug 'tpope/vim-haml'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
-Plug 'mileszs/ack.vim'
-Plug 'mxw/vim-jsx'
-Plug 'pangloss/vim-javascript'
-Plug 'christoomey/vim-tmux-navigator'
-Plug 'terryma/vim-multiple-cursors'
-Plug 'terryma/vim-expand-region'
-Plug 'briancollins/vim-jst'
+" Plug 'mileszs/ack.vim'
+" Plug 'mxw/vim-jsx'
+" Plug 'pangloss/vim-javascript'
+" Plug 'christoomey/vim-tmux-navigator'
+" Plug 'terryma/vim-multiple-cursors'
+" Plug 'terryma/vim-expand-region'
+" Plug 'briancollins/vim-jst'
 
 call plug#end()
 
@@ -54,11 +54,11 @@ autocmd InsertEnter * :let @/=""
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree")
     \ && b:NERDTree.isTabTree()) | q | endif
 
-" automatically starts NERDTree
-autocmd VimEnter * NERDTree
+" " automatically starts NERDTree
+" autocmd VimEnter * NERDTree
 
-" disable netrw, use nerdtree by default
-let loaded_netrwPlugin = 1
+" " disable netrw, use nerdtree by default
+" let loaded_netrwPlugin = 1
 
 let g:NERDTreeQuitOnOpen = 1
 let NERDTreeShowHidden = 1
@@ -130,6 +130,7 @@ set synmaxcol=250
 
 "
 map <F2> :retab <CR> :w <CR>
+
 set expandtab
 set shiftwidth=2
 set tabstop=2
