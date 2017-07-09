@@ -22,12 +22,20 @@ Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 " Plug 'mileszs/ack.vim'
 " Plug 'mxw/vim-jsx'
 " Plug 'pangloss/vim-javascript'
-" Plug 'christoomey/vim-tmux-navigator'
 " Plug 'terryma/vim-multiple-cursors'
 " Plug 'terryma/vim-expand-region'
 " Plug 'briancollins/vim-jst'
 
+" run rspec from vim
+Plug 'thoughtbot/vim-rspec'
+" navigation between panes and vim
+Plug 'christoomey/vim-tmux-navigator'
+
 call plug#end()
+
+" vim-rspec mappings
+map <Leader>c :call RunCurrentSpecFile()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
 
 colorscheme spacegray
 
