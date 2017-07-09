@@ -12,13 +12,10 @@ Plug 'Valloric/MatchTagAlways'
 Plug 'tpope/vim-commentary'
 Plug 'rstacruz/sparkup'
 Plug 'tpope/vim-sensible'
-Plug 'tpope/vim-endwise'
 
 " Plug 'tpope/vim-fugitive'
 " Plug 'tpope/vim-surround'
-" Plug 'tpope/vim-rails'
 " Plug 'tpope/vim-haml'
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 " Plug 'mileszs/ack.vim'
 " Plug 'mxw/vim-jsx'
 " Plug 'pangloss/vim-javascript'
@@ -26,12 +23,24 @@ Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 " Plug 'terryma/vim-expand-region'
 " Plug 'briancollins/vim-jst'
 
+" code completion engine for vim
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 " run rspec from vim
 Plug 'thoughtbot/vim-rspec'
 " navigation between panes and vim
 Plug 'christoomey/vim-tmux-navigator'
+" runs rubocop and displays the results in vim
+Plug 'ngmy/vim-rubocop'
+" wisely add 'end' in ruby files
+Plug 'tpope/vim-endwise'
+" easy navigation for rails projects
+Plug 'tpope/vim-rails'
 
 call plug#end()
+
+" vim rubocop
+let g:vimrubocop_keymap = 0
+nmap <Leader>r :RuboCop<CR>
 
 " vim-rspec mappings
 map <Leader>c :call RunCurrentSpecFile()<CR>

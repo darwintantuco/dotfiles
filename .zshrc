@@ -86,7 +86,7 @@ source $ZSH/oh-my-zsh.sh
 
 [ -f .aliases ] && source .aliases
 
-export TERM="xterm-256color"
+# export TERM="xterm-256color"
 export EDITOR="vim"
 export USE_EDITOR=$EDITOR
 export VISUAL=$EDITOR
