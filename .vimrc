@@ -16,7 +16,6 @@ Plug 'tpope/vim-sensible'
 " Plug 'tpope/vim-fugitive'
 " Plug 'tpope/vim-surround'
 " Plug 'tpope/vim-haml'
-" Plug 'mileszs/ack.vim'
 " Plug 'mxw/vim-jsx'
 " Plug 'pangloss/vim-javascript'
 " Plug 'terryma/vim-multiple-cursors'
@@ -35,6 +34,8 @@ Plug 'ngmy/vim-rubocop'
 Plug 'tpope/vim-endwise'
 " easy navigation for rails projects
 Plug 'tpope/vim-rails'
+" search tool
+Plug 'mileszs/ack.vim'
 
 call plug#end()
 
@@ -161,3 +162,9 @@ set relativenumber
 
 " show vertical bar
 set colorcolumn=80
+
+" copy to buffer
+vmap <C-c> :w! ~/.vimbuffer<CR>
+nmap <C-c> :.w! ~/.vimbuffer<CR>
+" paste from buffer
+map <C-p> :r ~/.vimbuffer<CR>
