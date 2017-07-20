@@ -13,8 +13,6 @@ Plug 'tpope/vim-commentary'
 Plug 'rstacruz/sparkup'
 Plug 'tpope/vim-sensible'
 
-" Plug 'tpope/vim-fugitive'
-" Plug 'tpope/vim-surround'
 " Plug 'tpope/vim-haml'
 " Plug 'mxw/vim-jsx'
 " Plug 'pangloss/vim-javascript'
@@ -36,6 +34,10 @@ Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-rails'
 " search tool
 Plug 'mileszs/ack.vim'
+" provide mappings to easily add, change parenthesis, etc
+Plug 'tpope/vim-surround'
+" git wrapper
+Plug 'tpope/vim-fugitive'
 
 call plug#end()
 
@@ -153,15 +155,13 @@ set expandtab
 set shiftwidth=2
 set tabstop=2
 set softtabstop=2
-
 " show current line number
 set number
-
 " show relative line numbers
 set relativenumber
-
 " show vertical bar
 set colorcolumn=80
+set scrolloff=10
 
 " copy to buffer
 vmap <C-c> :w! ~/.vimbuffer<CR>
