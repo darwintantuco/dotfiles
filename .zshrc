@@ -84,9 +84,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+#source .aliases if it exists
 [ -f .aliases ] && source .aliases
 
-# export TERM="xterm-256color"
 export EDITOR="vim"
 export USE_EDITOR=$EDITOR
 export VISUAL=$EDITOR
@@ -96,7 +96,6 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
   export PATH=${PATH}:${ANDROID_HOME}/tools
   export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 fi
-
 
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
   [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"

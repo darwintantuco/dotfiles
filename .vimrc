@@ -7,9 +7,6 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-Plug 'Yggdroot/indentLine'
-Plug 'Valloric/MatchTagAlways'
-Plug 'tpope/vim-commentary'
 Plug 'rstacruz/sparkup'
 Plug 'tpope/vim-sensible'
 
@@ -19,6 +16,9 @@ Plug 'tpope/vim-sensible'
 " Plug 'terryma/vim-multiple-cursors'
 " Plug 'terryma/vim-expand-region'
 " Plug 'briancollins/vim-jst'
+
+" " easy navigation for rails projects
+" Plug 'tpope/vim-rails'
 
 " code completion engine for vim
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
@@ -30,14 +30,18 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'ngmy/vim-rubocop'
 " wisely add 'end' in ruby files
 Plug 'tpope/vim-endwise'
-" easy navigation for rails projects
-Plug 'tpope/vim-rails'
 " search tool
 Plug 'mileszs/ack.vim'
 " provide mappings to easily add, change parenthesis, etc
 Plug 'tpope/vim-surround'
 " git wrapper
 Plug 'tpope/vim-fugitive'
+" display the indention levels with thin vertical lines
+Plug 'Yggdroot/indentLine'
+" highlights enclosing tags
+Plug 'Valloric/MatchTagAlways'
+" comment/uncomment made easy
+Plug 'tpope/vim-commentary'
 
 call plug#end()
 

@@ -9,4 +9,3 @@ alias git-conflicts='git diff --name-only --diff-filter=U'
 alias git-reset-1='git reset --soft HEAD~1'
 alias git-ignore='git update-index --assume-unchanged $1'
 alias git-clean='git clean -fd'
-
