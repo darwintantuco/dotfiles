@@ -19,15 +19,15 @@ Plug 'tpope/vim-sensible'
 
 " " easy navigation for rails projects
 " Plug 'tpope/vim-rails'
+" " runs rubocop and displays the results in vim
+" Plug 'ngmy/vim-rubocop'
 
-" code completion engine for vim
+" code completion engine
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
-" run rspec from vim
+" run rspec inside vim
 Plug 'thoughtbot/vim-rspec'
 " navigation between panes and vim
 Plug 'christoomey/vim-tmux-navigator'
-" runs rubocop and displays the results in vim
-Plug 'ngmy/vim-rubocop'
 " wisely add 'end' in ruby files
 Plug 'tpope/vim-endwise'
 " search tool
@@ -45,9 +45,9 @@ Plug 'tpope/vim-commentary'
 
 call plug#end()
 
-" vim rubocop
-let g:vimrubocop_keymap = 0
-nmap <Leader>r :RuboCop<CR>
+" " vim rubocop
+" let g:vimrubocop_keymap = 0
+" nmap <Leader>r :RuboCop<CR>
 
 " vim-rspec mappings
 map <Leader>c :call RunCurrentSpecFile()<CR>
