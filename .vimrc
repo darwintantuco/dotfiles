@@ -13,8 +13,6 @@ Plug 'tpope/vim-sensible'
 " Plug 'tpope/vim-haml'
 " Plug 'mxw/vim-jsx'
 " Plug 'pangloss/vim-javascript'
-" Plug 'terryma/vim-multiple-cursors'
-" Plug 'terryma/vim-expand-region'
 " Plug 'briancollins/vim-jst'
 
 " " easy navigation for rails projects
@@ -24,8 +22,6 @@ Plug 'tpope/vim-sensible'
 
 " code completion engine
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
-" run rspec inside vim
-Plug 'thoughtbot/vim-rspec'
 " navigation between panes and vim
 Plug 'christoomey/vim-tmux-navigator'
 " wisely add 'end' in ruby files
@@ -42,6 +38,12 @@ Plug 'Yggdroot/indentLine'
 Plug 'Valloric/MatchTagAlways'
 " comment/uncomment made easy
 Plug 'tpope/vim-commentary'
+
+" run rspec inside vim
+Plug 'thoughtbot/vim-rspec'
+
+Plug 'terryma/vim-expand-region'
+Plug 'terryma/vim-multiple-cursors'
 
 call plug#end()
 
