@@ -1,10 +1,8 @@
 call plug#begin('~/.vim/plugged')
 
-" Plug 'takac/vim-hardtime'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-" Plug 'tpope/vim-vinegar'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+" Plug 'vim-airline/vim-airline'
+" Plug 'vim-airline/vim-airline-themes'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'rstacruz/sparkup'
@@ -14,6 +12,8 @@ Plug 'tpope/vim-sensible'
 " Plug 'mxw/vim-jsx'
 " Plug 'pangloss/vim-javascript'
 " Plug 'briancollins/vim-jst'
+" Plug 'takac/vim-hardtime'
+" Plug 'tpope/vim-vinegar'
 
 " " easy navigation for rails projects
 " Plug 'tpope/vim-rails'
@@ -26,7 +26,7 @@ Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 Plug 'christoomey/vim-tmux-navigator'
 " wisely add 'end' in ruby files
 Plug 'tpope/vim-endwise'
-" search tool
+" run your favorite search tool in vim
 Plug 'mileszs/ack.vim'
 " provide mappings to easily add, change parenthesis, etc
 Plug 'tpope/vim-surround'
@@ -94,7 +94,7 @@ autocmd FileType *.ejs runtime! ftplugin/html/sparkup.vim
 
 let g:indentLine_color_term = 100
 let g:fzf_action = { 'ctrl-x': 'split', 'ctrl-v': 'vsplit' }
-let g:airline_theme = 'simple'
+" let g:airline_theme = 'simple'
 let g:jsx_ext_required = 0
 let g:mta_filetypes = {
     \ 'html' : 1,
@@ -154,8 +154,8 @@ set ignorecase
 set breakindent
 set synmaxcol=250
 
-"
-map <F2> :retab <CR> :w <CR>
+" "
+" map <F2> :retab <CR> :w <CR>
 
 set expandtab
 set shiftwidth=2
@@ -169,8 +169,8 @@ set relativenumber
 set colorcolumn=80
 set scrolloff=10
 
-" copy to buffer
-vmap <C-c> :w! ~/.vimbuffer<CR>
-nmap <C-c> :.w! ~/.vimbuffer<CR>
-" paste from buffer
-map <C-p> :r ~/.vimbuffer<CR>
+" " copy to buffer
+" vmap <C-c> :w! ~/.vimbuffer<CR>
+" nmap <C-c> :.w! ~/.vimbuffer<CR>
+" " paste from buffer
+" map <C-p> :r ~/.vimbuffer<CR>
