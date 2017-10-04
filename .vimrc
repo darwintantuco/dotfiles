@@ -20,8 +20,8 @@ Plug 'tpope/vim-sensible'
 " " runs rubocop and displays the results in vim
 " Plug 'ngmy/vim-rubocop'
 
-" code completion engine
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
+" " code completion engine
+" Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 " navigation between panes and vim
 Plug 'christoomey/vim-tmux-navigator'
 " wisely add 'end' in ruby files
@@ -41,6 +41,8 @@ Plug 'tpope/vim-commentary'
 
 " run rspec inside vim
 Plug 'thoughtbot/vim-rspec'
+
+Plug 'suan/vim-instant-markdown'
 
 Plug 'terryma/vim-expand-region'
 Plug 'terryma/vim-multiple-cursors'

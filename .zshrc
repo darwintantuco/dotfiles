@@ -101,4 +101,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
   [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 fi
 
+export NVM_DIR="$HOME/.nvm"
+. "/usr/local/opt/nvm/nvm.sh"
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
