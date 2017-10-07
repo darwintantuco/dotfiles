@@ -8,10 +8,9 @@ Plug 'junegunn/fzf.vim'
 Plug 'rstacruz/sparkup'
 Plug 'tpope/vim-sensible'
 
-" Plug 'tpope/vim-haml'
-" Plug 'mxw/vim-jsx'
-" Plug 'pangloss/vim-javascript'
-" Plug 'briancollins/vim-jst'
+Plug 'tpope/vim-haml'
+Plug 'pangloss/vim-javascript'
+Plug 'briancollins/vim-jst'
 " Plug 'takac/vim-hardtime'
 " Plug 'tpope/vim-vinegar'
 
@@ -22,6 +21,7 @@ Plug 'tpope/vim-sensible'
 
 " " code completion engine
 " Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
+"
 " navigation between panes and vim
 Plug 'christoomey/vim-tmux-navigator'
 " wisely add 'end' in ruby files
@@ -42,7 +42,8 @@ Plug 'tpope/vim-commentary'
 " run rspec inside vim
 Plug 'thoughtbot/vim-rspec'
 
-Plug 'suan/vim-instant-markdown'
+
+Plug 'shime/vim-livedown'
 
 Plug 'terryma/vim-expand-region'
 Plug 'terryma/vim-multiple-cursors'
@@ -71,6 +72,8 @@ highlight Search ctermfg=black ctermbg=lightyellow
 " " allow jjj but not jjjj
 " let g:hardtime_maxcount = 3
 
+" automatic markdown preview
+let g:livedown_autorun = 1
 
 " delete trailing whitespace on :w
 autocmd BufWritePre * %s/\s\+$//e
