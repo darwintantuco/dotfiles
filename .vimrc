@@ -21,7 +21,7 @@ Plug 'briancollins/vim-jst'
 
 " " code completion engine
 " Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
-"
+Plug 'wakatime/vim-wakatime'
 " navigation between panes and vim
 Plug 'christoomey/vim-tmux-navigator'
 " wisely add 'end' in ruby files
