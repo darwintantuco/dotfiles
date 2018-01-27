@@ -168,8 +168,6 @@ set tabstop=2
 set softtabstop=2
 " show current line number
 set number
-" show relative line numbers
-set relativenumber
 " show vertical bar
 set colorcolumn=80
 set scrolloff=10
