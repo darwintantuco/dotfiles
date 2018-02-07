@@ -48,6 +48,7 @@ Plug 'shime/vim-livedown'
 Plug 'terryma/vim-expand-region'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'elixir-editors/vim-elixir'
+Plug 'mxw/vim-jsx'
 
 call plug#end()
 
