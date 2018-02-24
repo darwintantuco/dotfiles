@@ -1,9 +1,15 @@
 cd
-ln -nfs ~/dotfiles/.vim .vim
-ln -nfs ~/dotfiles/.vimrc .vimrc
 ln -nfs ~/dotfiles/.bash_profile ~/.bash_profile
 ln -nfs ~/dotfiles/.bashrc ~/.bashrc
+
 ln -nfs ~/dotfiles/.tmux.conf ~/.tmux.conf
+
 ln -nfs ~/dotfiles/.gitconfig ~/.gitconfig
-ln -nfs ~/dotfiles/.zshrc ~/.zshrc
 ln -nfs ~/dotfiles/.aliases ~/.aliases
+
+ln -nfs ~/dotfiles/.vim .vim
+ln -nfs ~/dotfiles/.vimrc .vimrc
+
+ln -nfs ~/dotfiles/.asdfrc ~/.asdfrc
+ln -nfs ~/dotfiles/.tool-versions ~/.tool-versions
+ln -nfs ~/dotfiles/.default-gems ~/.default-gems
