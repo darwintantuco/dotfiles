@@ -42,9 +42,6 @@ Plug 'tpope/vim-commentary'
 " run rspec inside vim
 Plug 'thoughtbot/vim-rspec'
 
-
-Plug 'shime/vim-livedown'
-
 Plug 'terryma/vim-expand-region'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'elixir-editors/vim-elixir'
@@ -73,9 +70,6 @@ highlight Search ctermfg=black ctermbg=lightyellow
 
 " " allow jjj but not jjjj
 " let g:hardtime_maxcount = 3
-
-" automatic markdown preview
-let g:livedown_autorun = 1
 
 " delete trailing whitespace on :w
 autocmd BufWritePre * %s/\s\+$//e
