@@ -309,6 +309,9 @@ you should place your code here."
   (global-wakatime-mode)
   ;; Edit "actual file"
   (setq vc-follow-symlinks t)
+  ;; Map jj to Esc in Evil Mode
+  (setq-default evil-escape-key-sequence "jj")
+  (setq-default evil-escape-delay 0.2)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
