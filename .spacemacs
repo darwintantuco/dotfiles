@@ -340,6 +340,9 @@ Advice to `magit-push-current-to-upstream' triggers this query."
   (ad-activate 'magit-push-current-to-upstream)
   (ad-activate 'magit-git-push)
 
+  ;; Make magit status fullscreen
+  (setq-default git-magit-status-fullscreen t)
+
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
