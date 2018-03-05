@@ -32,8 +32,7 @@ values."
    dotspacemacs-configuration-layers
    '(
      (shell :variables
-            shell-default-height 30
-            shell-default-position 'bottom)
+            shell-default-height 100)
      helm
      git
      github
@@ -312,9 +311,6 @@ you should place your code here."
 
   ;; Always initialize wakatime-mode
   (global-wakatime-mode)
-
-  ;; Always initialize golden-ratio-mode
-  (golden-ratio-mode)
 
   ;; Edit "actual file"
   (setq vc-follow-symlinks t)
