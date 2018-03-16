@@ -342,6 +342,21 @@ Advice to `magit-push-current-to-upstream' triggers this query."
   ;; Make magit status fullscreen
   (setq-default git-magit-status-fullscreen t)
 
+  ;; Use 2 spaces for indentation
+  (setq-default
+   web-mode-markup-indent-offset 2
+   web-mode-css-indent-offset 2
+   web-mode-code-indent-offset 2
+   web-mode-attr-indent-offset 2
+   tab-width 2
+   js2-basic-offset 2
+   js-indent-level 2
+   css-indent-offset 2
+   js2-bounce-indent-p t
+   js2-bounce-indent t
+   js2-strict-missing-semi-warning nil
+   json-reformat:indent 2)
+
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
