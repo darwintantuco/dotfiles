@@ -15,3 +15,5 @@ ln -nfs ~/dotfiles/.vimrc .vimrc
 ln -nfs ~/dotfiles/.asdfrc ~/.asdfrc
 ln -nfs ~/dotfiles/.tool-versions ~/.tool-versions
 ln -nfs ~/dotfiles/.default-gems ~/.default-gems
+
+ln -nfs ~/Dropbox/.wakatime.cfg ~/.wakatime.cfg
