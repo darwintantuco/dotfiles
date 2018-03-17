@@ -6,9 +6,9 @@
     - Add wakatime key
 1. Configure SSH
     - [Generating a new SSH key](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/)
-    - [Adding a new SSH key to your GitHub account] (https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/)
+    - [Adding a new SSH key to your GitHub account](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/)
 1. `git clone git@github.com:dcrtantuco/dotfiles.git`
-1. bash symlink-setup.sh
+1. `bash symlink-setup.sh`
 1. Install postgres
     - `brew install postgres`
     - `brew services start postgresql`
