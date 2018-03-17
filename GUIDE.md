@@ -17,6 +17,7 @@
     - [nodejs](https://github.com/asdf-vm/asdf-nodejs)
     - [erlang](https://github.com/asdf-vm/asdf-erlang)
     - [elixir](https://github.com/asdf-vm/asdf-elixir)
+1. `asdf install`
 1. Install [Emacs and spacemacs](https://github.com/syl20bnr/spacemacs)
     - `git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d`
     - `brew tap d12frosted/emacs-plus`
