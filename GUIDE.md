@@ -28,6 +28,9 @@
     - Restart
     - Check `~/.wakatime.cfg`, if it doesn't exist check `Dropbox` and [wakatime](https://github.com/syl20bnr/spacemacs/tree/master/layers/%2Bweb-services/wakatime)
 
+## Vim
+- `brew install the_silver_searcher`
+
 ## Spacemacs
 - `sudo easy_install pip`
 - `sudo pip install wakatime`
@@ -39,10 +42,17 @@
     - `brew install redis`
     - `brew services start redis`
 
+## Others
+- Fix iterm2 settings
+- Remap `Capslock` to `ESC`
+
 ## Apps
 - chrome
+- dropbox
 - iterm2
+- vlc
 - spotify
 - synergy
 - LICEcap
-- dropbox
+- MacDown
+    - `brew cask install macdown`
