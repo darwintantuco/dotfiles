@@ -59,9 +59,6 @@ map <Leader>a :call RunAllSpecs()<CR>
 
 colorscheme spacegray
 
-" vertical bar color
-highlight ColorColumn ctermbg=red
-
 " search hit color
 highlight Search ctermfg=black ctermbg=lightyellow
 
@@ -164,8 +161,6 @@ set tabstop=2
 set softtabstop=2
 " show current line number
 set number
-" show vertical bar
-set colorcolumn=80
 set scrolloff=10
 
 " " copy to buffer

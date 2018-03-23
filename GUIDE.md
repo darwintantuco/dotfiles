@@ -52,7 +52,6 @@
 - iterm2
 - vlc
 - spotify
+- uTorrent
 - synergy
 - LICEcap
-- MacDown
-    - `brew cask install macdown`
