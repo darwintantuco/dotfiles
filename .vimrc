@@ -32,8 +32,8 @@ Plug 'mileszs/ack.vim'
 Plug 'tpope/vim-surround'
 " git wrapper
 Plug 'tpope/vim-fugitive'
-" display the indention levels with thin vertical lines
-Plug 'Yggdroot/indentLine'
+" " display the indention levels with thin vertical lines
+" Plug 'Yggdroot/indentLine'
 " highlights enclosing tags
 Plug 'Valloric/MatchTagAlways'
 " comment/uncomment made easy
@@ -46,6 +46,7 @@ Plug 'terryma/vim-expand-region'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'elixir-editors/vim-elixir'
 Plug 'mxw/vim-jsx'
+Plug 'editorconfig/editorconfig-vim'
 
 call plug#end()
 
@@ -168,3 +169,5 @@ set scrolloff=10
 " nmap <C-c> :.w! ~/.vimbuffer<CR>
 " " paste from buffer
 " map <C-p> :r ~/.vimbuffer<CR>
+"
+set formatoptions-=cro
