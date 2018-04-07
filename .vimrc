@@ -1,12 +1,11 @@
 call plug#begin('~/.vim/plugged')
 
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-" Plug 'vim-airline/vim-airline'
-" Plug 'vim-airline/vim-airline-themes'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'rstacruz/sparkup'
 Plug 'tpope/vim-sensible'
+Plug 'w0rp/ale'
 
 Plug 'tpope/vim-haml'
 Plug 'pangloss/vim-javascript'
