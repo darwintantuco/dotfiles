@@ -42,8 +42,25 @@
     - `brew install redis`
     - `brew services start redis`
 
+## iTerm2 Settings
+- ignore command R
+    1. preferences
+    1. keys tabs
+    1. click + button
+    1. enter command + R
+    1. action: ignore
+- fix vim trackpad issue
+    1. preferences
+    1. advance
+    1. mouse
+    1. scroll wheel send arrow keys...
+    1. No -> Yes
+- open new tabs in current DIR
+    1. profile
+    1. general tab
+    1. working dir: reuse previous...
+
 ## Others
-- Fix iterm2 settings
 - Remap `Capslock` to `ESC`
 
 ## Apps
