@@ -46,6 +46,7 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'elixir-editors/vim-elixir'
 Plug 'mxw/vim-jsx'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'digitaltoad/vim-pug'
 
 call plug#end()
 
