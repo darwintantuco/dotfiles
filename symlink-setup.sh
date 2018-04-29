@@ -16,4 +16,7 @@ ln -nfs ~/dotfiles/.asdfrc ~/.asdfrc
 ln -nfs ~/dotfiles/.tool-versions ~/.tool-versions
 ln -nfs ~/dotfiles/.default-gems ~/.default-gems
 
+ln -nfs ~/dotfiles/git-completion.bash ~/git-completion.bash
+
 ln -nfs ~/Dropbox/.wakatime.cfg ~/.wakatime.cfg
+
