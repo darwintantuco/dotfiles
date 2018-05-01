@@ -15,8 +15,6 @@ Plug 'briancollins/vim-jst'
 
 " " easy navigation for rails projects
 " Plug 'tpope/vim-rails'
-" " runs rubocop and displays the results in vim
-" Plug 'ngmy/vim-rubocop'
 
 " " code completion engine
 " Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
@@ -38,6 +36,8 @@ Plug 'Valloric/MatchTagAlways'
 " comment/uncomment made easy
 Plug 'tpope/vim-commentary'
 
+" runs rubocop and displays the results in vim
+Plug 'ngmy/vim-rubocop'
 " run rspec inside vim
 Plug 'thoughtbot/vim-rspec'
 
@@ -50,13 +50,13 @@ Plug 'digitaltoad/vim-pug'
 
 call plug#end()
 
-" " vim rubocop
-" let g:vimrubocop_keymap = 0
-" nmap <Leader>r :RuboCop<CR>
+" vim rubocop
+let g:vimrubocop_keymap = 0
+nmap <Leader>r :RuboCop<CR>
 
 " vim-rspec mappings
 map <Leader>c :call RunCurrentSpecFile()<CR>
-map <Leader>a :call RunAllSpecs()<CR>
+" map <Leader>a :call RunAllSpecs()<CR>
 
 colorscheme spacegray
 

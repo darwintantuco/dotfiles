@@ -6,3 +6,5 @@ alias git-diffc='git diff --cached'
 alias git-conflicts='git diff --name-only --diff-filter=U'
 alias git-reset-1='git reset --soft HEAD~1'
 alias git-ignore='git update-index --assume-unchanged $1'
+
+alias phx='iex -S mix phx.server'
