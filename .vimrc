@@ -47,6 +47,9 @@ Plug 'elixir-editors/vim-elixir'
 Plug 'mxw/vim-jsx'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'digitaltoad/vim-pug'
+Plug 'mhinz/vim-mix-format'
+
+let g:mix_format_on_save = 1
 
 call plug#end()
 
@@ -171,3 +174,6 @@ set scrolloff=10
 " map <C-p> :r ~/.vimbuffer<CR>
 "
 set formatoptions-=cro
+
+" Disable shift K
+map <S-k> <Nop>
