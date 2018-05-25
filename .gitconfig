@@ -5,3 +5,4 @@
 	email = darwinxciii@yahoo.com
 [core]
 	editor = vim
+	excludesfile = ~/.gitignore_global
