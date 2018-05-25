@@ -19,4 +19,4 @@ ln -nfs ~/dotfiles/.default-gems ~/.default-gems
 ln -nfs ~/dotfiles/git-completion.bash ~/git-completion.bash
 
 ln -nfs ~/Dropbox/.wakatime.cfg ~/.wakatime.cfg
-ln -nfs ~/.git_ignore_global ~/.gitignore_global && git config --global core.excludesfile ~/.gitignore_global
+ln -nfs ~/dotfiles/.git_ignore_global ~/.gitignore_global && git config --global core.excludesfile ~/.gitignore_global
