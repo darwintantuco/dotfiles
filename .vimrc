@@ -6,18 +6,6 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'rstacruz/sparkup'
 Plug 'tpope/vim-sensible'
 Plug 'w0rp/ale'
-
-Plug 'tpope/vim-haml'
-Plug 'pangloss/vim-javascript'
-Plug 'briancollins/vim-jst'
-" Plug 'takac/vim-hardtime'
-" Plug 'tpope/vim-vinegar'
-
-" " easy navigation for rails projects
-" Plug 'tpope/vim-rails'
-
-" " code completion engine
-" Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 Plug 'wakatime/vim-wakatime'
 " navigation between panes and vim
 Plug 'christoomey/vim-tmux-navigator'
@@ -29,40 +17,41 @@ Plug 'mileszs/ack.vim'
 Plug 'tpope/vim-surround'
 " git wrapper
 Plug 'tpope/vim-fugitive'
-" " display the indention levels with thin vertical lines
-" Plug 'Yggdroot/indentLine'
 " highlights enclosing tags
 Plug 'Valloric/MatchTagAlways'
 " comment/uncomment made easy
 Plug 'tpope/vim-commentary'
-
-" runs rubocop and displays the results in vim
-Plug 'ngmy/vim-rubocop'
 " run rspec inside vim
 Plug 'thoughtbot/vim-rspec'
-
-Plug 'terryma/vim-expand-region'
-Plug 'terryma/vim-multiple-cursors'
-Plug 'elixir-editors/vim-elixir'
-Plug 'mxw/vim-jsx'
-Plug 'editorconfig/editorconfig-vim'
-Plug 'digitaltoad/vim-pug'
+" formats elixir code on save
 Plug 'mhinz/vim-mix-format'
+
+" " code completion engine
+" Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
+" " easy navigation for rails projects
+" Plug 'tpope/vim-rails'
+" Plug 'takac/vim-hardtime'
+" Plug 'tpope/vim-vinegar'
+" Plug 'terryma/vim-expand-region'
+" Plug 'terryma/vim-multiple-cursors'
+" Plug 'editorconfig/editorconfig-vim'
+
+" syntax highlighting
+Plug 'mxw/vim-jsx'
+Plug 'tpope/vim-haml'
+Plug 'digitaltoad/vim-pug'
+Plug 'pangloss/vim-javascript'
+Plug 'elixir-editors/vim-elixir'
+
+call plug#end()
+
+colorscheme spacegray
 
 let g:mix_format_on_save = 1
 let g:mix_format_silent_errors = 1
 
-call plug#end()
-
-" vim rubocop
-let g:vimrubocop_keymap = 0
-nmap <Leader>r :RuboCop<CR>
-
 " vim-rspec mappings
 map <Leader>c :call RunCurrentSpecFile()<CR>
-" map <Leader>a :call RunAllSpecs()<CR>
-
-colorscheme spacegray
 
 " search hit color
 highlight Search ctermfg=black ctermbg=lightyellow
@@ -131,6 +120,8 @@ map \t :FZF<esc>
 
 " map jj to <esc>
 inoremap jj <esc>
+" disable shift K
+map <S-k> <Nop>
 
 noremap <Up> <nop>
 noremap <Down> <nop>
@@ -156,10 +147,6 @@ set noswapfile
 set ignorecase
 set breakindent
 set synmaxcol=250
-
-" "
-" map <F2> :retab <CR> :w <CR>
-
 set expandtab
 set shiftwidth=2
 set tabstop=2
@@ -167,14 +154,3 @@ set softtabstop=2
 " show current line number
 set number
 set scrolloff=10
-
-" " copy to buffer
-" vmap <C-c> :w! ~/.vimbuffer<CR>
-" nmap <C-c> :.w! ~/.vimbuffer<CR>
-" " paste from buffer
-" map <C-p> :r ~/.vimbuffer<CR>
-"
-set formatoptions-=cro
-
-" Disable shift K
-map <S-k> <Nop>
