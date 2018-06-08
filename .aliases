@@ -4,12 +4,13 @@ alias c='clear'
 alias ..='cd ..'
 
 # git
-alias git-diffc='git diff --cached'
-alias git-conflicts='git diff --name-only --diff-filter=U'
+alias gs='git status'
+alias gd='git diff'
+alias gdc='git diff --cached'
 alias git-reset-1='git reset --soft HEAD~1'
+alias git-conflicts='git diff --name-only --diff-filter=U'
 alias git-ignore='git update-index --assume-unchanged $1'
 
-# replace `git log` with tig
 git() {
   if [[ $@ == "log" ]]; then
     command tig
@@ -18,8 +19,7 @@ git() {
   fi
 }
 
-
-# search history, hs wat
+# search history
 alias hs='history | grep $1'
 
 # elixir

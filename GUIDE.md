@@ -31,6 +31,9 @@
 ## Vim
 - `brew install the_silver_searcher`
 
+## Tmux (v2.7)
+- `brew install tmux`
+
 ## Spacemacs
 - `sudo easy_install pip`
 - `sudo pip install wakatime`

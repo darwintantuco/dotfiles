@@ -154,6 +154,3 @@ set softtabstop=2
 " show current line number
 set number
 set scrolloff=10
-
-" set mouse=ia
-" set clipboard=unnamed
