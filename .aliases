@@ -1,10 +1,30 @@
 #!/bin/sh
 alias a='alias'
 alias c='clear'
+alias ..='cd ..'
 
+# git
 alias git-diffc='git diff --cached'
 alias git-conflicts='git diff --name-only --diff-filter=U'
 alias git-reset-1='git reset --soft HEAD~1'
 alias git-ignore='git update-index --assume-unchanged $1'
 
+# replace `git log` with tig
+git() {
+  if [[ $@ == "log" ]]; then
+    command tig
+  else
+    command git "$@"
+  fi
+}
+
+
+# search history, hs wat
+alias hs='history | grep $1'
+
+# elixir
 alias phx='iex -S mix phx.server'
+
+# ruby
+alias sidekiq='bundle exec sidekiq'
+alias rspec='bundle exec rspec'
