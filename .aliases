@@ -3,14 +3,20 @@ alias a='alias'
 alias c='clear'
 alias ..='cd ..'
 
-# git
+# Git
 alias gs='git status'
+alias ga='git add'
+alias gaa='git add .'
 alias gd='git diff'
 alias gdc='git diff --cached'
+alias gb='git branch'
+alias gc='git commit'
+alias gcm='git commit --message'
 alias git-reset-1='git reset --soft HEAD~1'
 alias git-conflicts='git diff --name-only --diff-filter=U'
 alias git-ignore='git update-index --assume-unchanged $1'
 
+# Use tig for 'git log'
 git() {
   if [[ $@ == "log" ]]; then
     command tig
@@ -19,12 +25,12 @@ git() {
   fi
 }
 
-# search history
+# Search history
 alias hs='history | grep $1'
 
-# elixir
+# Elixir
 alias phx='iex -S mix phx.server'
 
-# ruby
+# Ruby
 alias sidekiq='bundle exec sidekiq'
 alias rspec='bundle exec rspec'

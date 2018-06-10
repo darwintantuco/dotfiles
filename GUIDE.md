@@ -52,6 +52,9 @@
 - Update font
     - preference -> profiles -> text tab
     - use source code pro 12pt.
+- Close window after "exit" command
+    - preferences -> profiles -> shell tab
+    - When the shell exits: close the window
 
 ## iTerm2 Settings
 - ignore command R
