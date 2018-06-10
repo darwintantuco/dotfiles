@@ -45,6 +45,14 @@
     - `brew install redis`
     - `brew services start redis`
 
+## Terminal
+- Update theme
+    - double click SpaceGray.terminal
+    - set as default
+- Update font
+    - preference -> profiles -> text tab
+    - use source code pro 12pt.
+
 ## iTerm2 Settings
 - ignore command R
     1. preferences
