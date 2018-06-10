@@ -1,3 +1,4 @@
 .vim/plugged
 .vim/.netrwhist
 tmux-client-*.log
+.DS_STORE
