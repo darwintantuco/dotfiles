@@ -34,3 +34,9 @@ alias phx='iex -S mix phx.server'
 # Ruby
 alias sidekiq='bundle exec sidekiq'
 alias rspec='bundle exec rspec'
+
+rake() {
+  if [[ $@ == "routes" ]]; then
+    eval "bundle exec rake routes"
+  fi
+}
