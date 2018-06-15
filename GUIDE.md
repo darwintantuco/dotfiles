@@ -90,3 +90,6 @@
 - uTorrent
 - synergy
 - LICEcap
+- magnet
+- DeskCover
+- cheatsheet
