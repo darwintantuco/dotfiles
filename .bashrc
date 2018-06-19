@@ -16,6 +16,9 @@ export EDITOR="vim"
 export USE_EDITOR=$EDITOR
 export VISUAL=$EDITOR
 
+# Save erlang/IEx history
+export ERL_AFLAGS="-kernel shell_history enabled"
+
 # ASDF
 . $HOME/.asdf/asdf.sh
 . $HOME/.asdf/completions/asdf.bash
