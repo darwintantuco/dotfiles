@@ -38,5 +38,7 @@ alias rspec='bundle exec rspec'
 rake() {
   if [[ $@ == "routes" ]]; then
     eval "bundle exec rake routes"
+  else
+    command rake "$@"
   fi
 }
