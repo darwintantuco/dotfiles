@@ -44,6 +44,8 @@
 - redis
     - `brew install redis`
     - `brew services start redis`
+- phantomjs
+    - `brew install phantomjs`
 
 ## Terminal
 - Update theme

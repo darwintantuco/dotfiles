@@ -52,7 +52,7 @@ let g:mix_format_on_save = 1
 let g:mix_format_silent_errors = 1
 
 " vim-rspec
-let g:rspec_command = '!bundle exec rspec {spec}'
+let g:rspec_command = '!clear && bundle exec rspec {spec}'
 map <Leader>c :call RunCurrentSpecFile()<CR>
 
 " search hit color
