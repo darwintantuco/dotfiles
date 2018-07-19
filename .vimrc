@@ -30,7 +30,7 @@ Plug 'mhinz/vim-mix-format'
 " Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 " " easy navigation for rails projects
 " Plug 'tpope/vim-rails'
-" Plug 'takac/vim-hardtime'
+Plug 'takac/vim-hardtime'
 " Plug 'tpope/vim-vinegar'
 " Plug 'terryma/vim-expand-region'
 " Plug 'terryma/vim-multiple-cursors'
@@ -56,11 +56,11 @@ map <Leader>c :call RunCurrentSpecFile()<CR>
 " search hit color
 highlight Search ctermfg=black ctermbg=lightyellow
 
-" " automatically starts vim-hardmode
-" let g:hardtime_default_on = 1
+" automatically starts vim-hardmode
+let g:hardtime_default_on = 1
 
-" " allow jjj but not jjjj
-" let g:hardtime_maxcount = 3
+" allow jj
+let g:hardtime_maxcount = 2
 
 " delete trailing whitespace on :w
 autocmd BufWritePre * %s/\s\+$//e
