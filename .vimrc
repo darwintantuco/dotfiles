@@ -1,5 +1,12 @@
 call plug#begin('~/.vim/plugged')
 
+" syntax highlighting
+Plug 'mxw/vim-jsx'
+Plug 'tpope/vim-haml'
+Plug 'digitaltoad/vim-pug'
+Plug 'pangloss/vim-javascript'
+Plug 'elixir-editors/vim-elixir'
+
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
@@ -36,21 +43,16 @@ Plug 'takac/vim-hardtime'
 " Plug 'terryma/vim-multiple-cursors'
 " Plug 'editorconfig/editorconfig-vim'
 
-" syntax highlighting
-Plug 'mxw/vim-jsx'
-Plug 'tpope/vim-haml'
-Plug 'digitaltoad/vim-pug'
-Plug 'pangloss/vim-javascript'
-Plug 'elixir-editors/vim-elixir'
-
 call plug#end()
 
 colorscheme spacegray
 
+" vim-mix-format
 let g:mix_format_on_save = 1
 let g:mix_format_silent_errors = 1
 
-" vim-rspec mappings
+" vim-rspec
+let g:rspec_command = '!bundle exec rspec {spec}'
 map <Leader>c :call RunCurrentSpecFile()<CR>
 
 " search hit color
