@@ -124,6 +124,8 @@ map \t :FZF<esc>
 inoremap jj <esc>
 " disable shift K
 map <S-k> <Nop>
+" map ri to auto-indent current file
+map ri gg=G''
 
 noremap <Up> <nop>
 noremap <Down> <nop>

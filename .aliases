@@ -5,6 +5,7 @@ alias ..='cd ..'
 
 # Git
 alias gs='git status'
+alias gl='git log'
 alias ga='git add'
 alias gaa='git add .'
 alias gd='git diff'
@@ -12,7 +13,7 @@ alias gdc='git diff --cached'
 alias gb='git branch'
 alias gc='git commit'
 alias gcm='git commit --message'
-alias git-reset-1='git reset --soft HEAD~1'
+alias git-reset-last='git reset --soft HEAD~1'
 alias git-conflicts='git diff --name-only --diff-filter=U'
 alias git-ignore='git update-index --assume-unchanged $1'
 
@@ -28,10 +29,10 @@ git() {
 # Search history
 alias hs='history | grep $1'
 
-# Elixir
+# Elixir / Phoenix
 alias phx='iex -S mix phx.server'
 
-# Ruby
+# Ruby / Rails
 alias sidekiq='bundle exec sidekiq'
 alias rspec='bundle exec rspec'
 

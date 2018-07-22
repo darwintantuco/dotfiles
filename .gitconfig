@@ -10,3 +10,13 @@
   autosetuprebase = always
 [alias]
   pull = pull --rebase
+[diff]
+  tool = vimdiff
+[merge]
+  tool = vimdiff
+[git-protecc]
+  global = off
+  pre-push = on
+  pre-commit = on
+  branch = master
+  branch = develop
