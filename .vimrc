@@ -157,3 +157,5 @@ set tabstop=2
 set softtabstop=2
 " show current line number
 set number
+" highlight current line
+set cursorline
