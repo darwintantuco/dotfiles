@@ -62,7 +62,7 @@ highlight Search ctermfg=black ctermbg=lightyellow
 let g:hardtime_default_on = 1
 
 " allow jj
-let g:hardtime_maxcount = 2
+let g:hardtime_maxcount = 3
 
 " delete trailing whitespace on :w
 autocmd BufWritePre * %s/\s\+$//e
@@ -157,4 +157,3 @@ set tabstop=2
 set softtabstop=2
 " show current line number
 set number
-set scrolloff=10
