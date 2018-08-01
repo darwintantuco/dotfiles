@@ -159,3 +159,5 @@ set softtabstop=2
 set number
 " highlight current line
 set cursorline
+" allow to cw until next underscore
+set iskeyword-=_
