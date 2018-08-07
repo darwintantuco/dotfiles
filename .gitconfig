@@ -5,7 +5,7 @@
 	email = darwinxciii@yahoo.com
 [core]
 	editor = vim
-	excludesfile = ~/.gitignore_global
+	excludesfile = /Users/dcrtantuco/.gitignore_global
 [branch]
   autosetuprebase = always
 [alias]

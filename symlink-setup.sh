@@ -12,9 +12,11 @@ ln -nfs ~/dotfiles/.aliases ~/.aliases
 ln -nfs ~/dotfiles/.vim .vim
 ln -nfs ~/dotfiles/.vimrc .vimrc
 
+# asdf
 ln -nfs ~/dotfiles/.asdfrc ~/.asdfrc
 ln -nfs ~/dotfiles/.tool-versions ~/.tool-versions
 ln -nfs ~/dotfiles/.default-gems ~/.default-gems
+ln -nfs ~/dotfiles/.default-npm-packages ~/.default-npm-packages
 
 ln -nfs ~/dotfiles/git-completion.bash ~/git-completion.bash
 
