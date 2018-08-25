@@ -80,8 +80,14 @@
         1. Working Directory for New Split Panes: Reuse...
     1. Working Directory: Home...
 
-## Others
-- Remap `Capslock` to `ESC`
+## Keyboard
+- use capslock for `FN`
+    - dip switch 3
+
+## Magnet
+- update preferences
+    - left: `^⌥ ,`
+    - right: `^⌥ .`
 
 ## Apps
 - chrome
