@@ -32,11 +32,11 @@ Plug 'tpope/vim-commentary'
 Plug 'thoughtbot/vim-rspec'
 " formats elixir code on save
 Plug 'mhinz/vim-mix-format'
+" easy navigation for rails projects
+Plug 'tpope/vim-rails'
 
 " " code completion engine
 " Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
-" " easy navigation for rails projects
-" Plug 'tpope/vim-rails'
 Plug 'takac/vim-hardtime'
 " Plug 'tpope/vim-vinegar'
 " Plug 'terryma/vim-expand-region'
