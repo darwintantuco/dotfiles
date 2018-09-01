@@ -41,7 +41,8 @@ Plug 'takac/vim-hardtime'
 " Plug 'tpope/vim-vinegar'
 " Plug 'terryma/vim-expand-region'
 " Plug 'terryma/vim-multiple-cursors'
-" Plug 'editorconfig/editorconfig-vim'
+" maintain consistent coding styles
+Plug 'editorconfig/editorconfig-vim'
 
 call plug#end()
 
