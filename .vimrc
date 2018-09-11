@@ -38,10 +38,7 @@ Plug 'thoughtbot/vim-rspec'
 Plug 'mhinz/vim-mix-format'
 " easy navigation for rails projects
 Plug 'tpope/vim-rails'
-
-" " code completion engine
-" Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
-Plug 'takac/vim-hardtime'
+" Plug 'takac/vim-hardtime'
 " Plug 'tpope/vim-vinegar'
 " Plug 'terryma/vim-expand-region'
 " Plug 'terryma/vim-multiple-cursors'
@@ -49,7 +46,8 @@ Plug 'takac/vim-hardtime'
 Plug 'editorconfig/editorconfig-vim'
 " minimalist statusline
 Plug 'itchyny/lightline.vim'
-
+" code formatter
+Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 " async completion framework
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -63,7 +61,12 @@ call plug#end()
 
 colorscheme spacegray
 
+" deoplete
 let g:deoplete#enable_at_startup = 1
+
+" run prettier format on save
+let g:prettier#autoformat = 0
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue Prettier
 
 " vim-mix-format
 let g:mix_format_on_save = 1
@@ -77,10 +80,10 @@ map <Leader>c :call RunCurrentSpecFile()<CR>
 highlight Search ctermfg=black ctermbg=lightyellow
 
 " automatically starts vim-hardmode
-let g:hardtime_default_on = 1
+" let g:hardtime_default_on = 1
 " allow jj
-let g:hardtime_maxcount = 3
-let g:hardtime_showmsg = 1
+" let g:hardtime_maxcount = 3
+" let g:hardtime_showmsg = 1
 
 " delete trailing whitespace on :w
 autocmd BufWritePre * %s/\s\+$//e
