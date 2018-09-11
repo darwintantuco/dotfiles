@@ -56,6 +56,8 @@ else
   Plug 'roxma/nvim-yarp'
   Plug 'roxma/vim-hug-neovim-rpc'
 endif
+" fancy startup screen
+Plug 'mhinz/vim-startify'
 
 call plug#end()
 
