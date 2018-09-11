@@ -46,3 +46,11 @@ rake() {
 
 # nvim
 alias v='nvim'
+
+# always use neovim for now
+vim() {
+  v
+}
+vi() {
+  v
+}
