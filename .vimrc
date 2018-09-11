@@ -1,4 +1,8 @@
-call plug#begin('~/.vim/plugged')
+if has('nvim')
+  call plug#begin('~/.local/share/nvim/site/autoload/plugged')
+else
+  call plug#begin('~/.vim/plugged')
+end
 
 " syntax highlighting
 Plug 'mxw/vim-jsx'

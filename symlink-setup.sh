@@ -9,8 +9,13 @@ ln -nfs ~/dotfiles/.tmux.conf ~/.tmux.conf
 ln -nfs ~/dotfiles/.gitconfig ~/.gitconfig
 ln -nfs ~/dotfiles/.aliases ~/.aliases
 
+# vim / vim-plug
 ln -nfs ~/dotfiles/.vim .vim
 ln -nfs ~/dotfiles/.vimrc .vimrc
+
+# neovim / vim-plug
+ln -nfs ~/dotfiles/.local .local
+ln -nfs ~/dotfiles/init.vim ~/.config/nvim/init.vim
 
 # asdf
 ln -nfs ~/dotfiles/.asdf/.asdfrc ~/.asdfrc
@@ -22,3 +27,4 @@ ln -nfs ~/dotfiles/git-completion.bash ~/git-completion.bash
 
 ln -nfs ~/Dropbox/.wakatime.cfg ~/.wakatime.cfg
 ln -nfs ~/dotfiles/.git_ignore_global ~/.gitignore_global && git config --global core.excludesfile ~/.gitignore_global
+

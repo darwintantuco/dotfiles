@@ -43,3 +43,6 @@ rake() {
     command rake "$@"
   fi
 }
+
+# nvim
+alias v='nvim'
