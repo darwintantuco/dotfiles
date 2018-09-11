@@ -4,19 +4,29 @@ else
   call plug#begin('~/.vim/plugged')
 end
 
+" Plug 'takac/vim-hardtime'
+" Plug 'tpope/vim-vinegar'
+" Plug 'terryma/vim-expand-region'
+" Plug 'terryma/vim-multiple-cursors'
 " syntax highlighting
 Plug 'mxw/vim-jsx'
 Plug 'tpope/vim-haml'
 Plug 'digitaltoad/vim-pug'
 Plug 'pangloss/vim-javascript'
 Plug 'elixir-editors/vim-elixir'
-
+" fuzzy file finder
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+" fzf vim wrapper
 Plug 'junegunn/fzf.vim'
+" tree explorer
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+" write html code faster
 Plug 'rstacruz/sparkup'
+" default config
 Plug 'tpope/vim-sensible'
+" asynchronous linting/fixing
 Plug 'w0rp/ale'
+" time tracking and metrics
 Plug 'wakatime/vim-wakatime'
 " navigation between panes and vim
 Plug 'christoomey/vim-tmux-navigator'
@@ -38,10 +48,6 @@ Plug 'thoughtbot/vim-rspec'
 Plug 'mhinz/vim-mix-format'
 " easy navigation for rails projects
 Plug 'tpope/vim-rails'
-" Plug 'takac/vim-hardtime'
-" Plug 'tpope/vim-vinegar'
-" Plug 'terryma/vim-expand-region'
-" Plug 'terryma/vim-multiple-cursors'
 " maintain consistent coding styles
 Plug 'editorconfig/editorconfig-vim'
 " minimalist statusline
@@ -58,6 +64,8 @@ else
 endif
 " fancy startup screen
 Plug 'mhinz/vim-startify'
+" shows keybindings in popup, same as spacemacs
+Plug 'liuchengxu/vim-which-key'
 
 call plug#end()
 
@@ -65,10 +73,6 @@ colorscheme spacegray
 
 " deoplete
 let g:deoplete#enable_at_startup = 1
-
-" run prettier format on save
-let g:prettier#autoformat = 0
-autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue Prettier
 
 " vim-mix-format
 let g:mix_format_on_save = 1
@@ -148,6 +152,9 @@ let g:lightline = {
 " show / hide NERDTree
 nmap <tab> :NERDTreeToggle<cr>
 
+" vim-which-key
+nnoremap <silent> <leader> :WhichKey '\'<CR>
+
 " find
 map \f :Ack!<space>
 
@@ -197,3 +204,4 @@ set number
 set cursorline
 " allow to cw until next underscore
 set iskeyword-=_
+set timeoutlen=500
