@@ -1,11 +1,11 @@
 # Guide
 1. Install [homebrew](https://brew.sh/)
-1. Install neovim
-    - `brew install python`
+1. Install neovim w/ python2 and python3 support
+    - `brew install neovim`
+    - `brew install python2`
     - `brew install python3`
     - `pip2 install neovim --upgrade`
     - `pip3 install neovim --upgrade`
-    - `brew install neovim/neovim/neovim`
 1. Update vim
     - `brew remove vim`
     - `brew cleanup`
