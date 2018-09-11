@@ -47,6 +47,8 @@ Plug 'takac/vim-hardtime'
 " Plug 'terryma/vim-multiple-cursors'
 " maintain consistent coding styles
 Plug 'editorconfig/editorconfig-vim'
+" minimalist statusline
+Plug 'itchyny/lightline.vim'
 
 " async completion framework
 if has('nvim')
