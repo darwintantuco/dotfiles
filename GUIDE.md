@@ -1,7 +1,9 @@
 # Guide
 1. Install [homebrew](https://brew.sh/)
 1. Update vim
-    - `brew install vim`
+    - `brew remove vim`
+    - `brew cleanup`
+    - `brew install vim --with-python3`
     - `:PlugInstall`
     - Add wakatime key
 1. Configure SSH

@@ -44,9 +44,20 @@ Plug 'takac/vim-hardtime'
 " maintain consistent coding styles
 Plug 'editorconfig/editorconfig-vim'
 
+" async completion framework
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/deoplete.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
+
 call plug#end()
 
 colorscheme spacegray
+
+let g:deoplete#enable_at_startup = 1
 
 " vim-mix-format
 let g:mix_format_on_save = 1
@@ -73,7 +84,7 @@ autocmd InsertEnter * :let @/=""
 
 " close vim when the only window left open is NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree")
-    \ && b:NERDTree.isTabTree()) | q | endif
+      \ && b:NERDTree.isTabTree()) | q | endif
 
 " " automatically starts NERDTree
 " autocmd VimEnter * NERDTree
@@ -92,12 +103,12 @@ let g:fzf_action = { 'ctrl-x': 'split', 'ctrl-v': 'vsplit' }
 " let g:airline_theme = 'simple'
 let g:jsx_ext_required = 0
 let g:mta_filetypes = {
-    \ 'html' : 1,
-    \ 'xhtml' : 1,
-    \ 'xml' : 1,
-    \ 'jinja' : 1,
-    \ 'javascript.jsx': 1,
-    \ 'eruby': 1 }
+      \ 'html' : 1,
+      \ 'xhtml' : 1,
+      \ 'xml' : 1,
+      \ 'jinja' : 1,
+      \ 'javascript.jsx': 1,
+      \ 'eruby': 1 }
 
 if executable('ag')
   " use ggreer/the_silver_searcher in ack.vim
