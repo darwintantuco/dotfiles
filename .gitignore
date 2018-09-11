@@ -2,4 +2,6 @@
 .vim/.netrwhist
 tmux-client-*.log
 .DS_STORE
-.local/share/nvim/site/autoload/plugged
+
+# neovim
+.local/share/nvim/*
