@@ -4,4 +4,4 @@ tmux-client-*.log
 .DS_STORE
 
 # neovim
-.local/share/nvim/*
+/.local/share/nvim/*
