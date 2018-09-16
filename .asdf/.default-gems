@@ -3,3 +3,4 @@ pry
 rails
 sidekiq
 foreman
+solargraph
