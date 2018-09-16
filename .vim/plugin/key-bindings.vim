@@ -1,14 +1,17 @@
 " toggle NERDTree
 nmap <tab> :NERDTreeToggle<cr>
 
-" vim-which-key
-nnoremap <silent> <leader> :WhichKey '\'<CR>
-
 " find
-map \f :Ack!<space>
+map <leader>f :Ack!<space>
 
 " fzf
-map \t :FZF<esc>
+map <leader>t :FZF<esc>
+
+" vim-which-key
+nnoremap <silent> <leader> :WhichKey '\'<cr>
 
 " vim-rspec
-map <Leader>c :call RunCurrentSpecFile()<CR>
+map <leader>c :call RunCurrentSpecFile()<cr>
+
+" ale
+map <leader>gd :vsplit<cr> :ALEGoToDefinition<cr>
