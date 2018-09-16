@@ -1,14 +1,8 @@
 " map jj to <esc>
 inoremap jj <esc>
-" disable shift K
-map <S-k> <Nop>
 " map ri to auto-indent current file
 map ri gg=G''
 
-noremap <Up> <nop>
-noremap <Down> <nop>
-noremap <Left> <nop>
-noremap <Right> <nop>
 nmap <silent> <c-k> :wincmd k<cr>
 nmap <silent> <c-j> :wincmd j<cr>
 nmap <silent> <c-h> :wincmd h<cr>
@@ -50,3 +44,14 @@ command! -bang WQ wq<bang>
 
 " delete trailing whitespace on :w
 autocmd BufWritePre * %s/\s\+$//e
+
+" bad habits
+" disable shift K
+map <S-k> <Nop>
+" disable arrow keys
+noremap <Up> <nop>
+noremap <Down> <nop>
+noremap <Left> <nop>
+noremap <Right> <nop>
+" disable dd in normal mode
+nmap dd <nop>

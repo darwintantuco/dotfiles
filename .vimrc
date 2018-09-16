@@ -75,4 +75,6 @@ Plug 'liuchengxu/vim-which-key'
 " display the indention levels
 Plug 'Yggdroot/indentLine'
 
+" retired
+
 call plug#end()
