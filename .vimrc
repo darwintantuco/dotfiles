@@ -73,6 +73,6 @@ Plug 'mhinz/vim-startify'
 " shows keybindings in popup, same as spacemacs
 Plug 'liuchengxu/vim-which-key'
 " display the indention levels
-" Plug 'Yggdroot/indentLine'
+Plug 'Yggdroot/indentLine'
 
 call plug#end()
