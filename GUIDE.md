@@ -59,9 +59,6 @@
     - `brew install phantomjs`
 
 ## Terminal
-- Update theme
-    - double click SpaceGray.terminal
-    - set as default
 - Update font
     - preference -> profiles -> text tab
     - use source code pro 12pt.
@@ -115,3 +112,4 @@
 - rescue time
 - numi (https://numi.io)
 - postman (https://www.getpostman.com/apps)
+- SpotMenu (https://kmikiy.github.io/SpotMenu)
