@@ -44,13 +44,8 @@ rake() {
   fi
 }
 
-# nvim
-alias v='nvim'
-
-# always use neovim for now
-vim() {
-  v
-}
+# Vim
+alias v='vim'
 vi() {
-  v
+  vim
 }
