@@ -8,12 +8,14 @@ end
 " Plug 'tpope/vim-vinegar'
 " Plug 'terryma/vim-expand-region'
 " Plug 'terryma/vim-multiple-cursors'
+
 " syntax highlighting
 Plug 'mxw/vim-jsx'
 Plug 'tpope/vim-haml'
 Plug 'digitaltoad/vim-pug'
 Plug 'pangloss/vim-javascript'
 Plug 'elixir-editors/vim-elixir'
+
 " fuzzy file finder
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 " fzf vim wrapper
@@ -24,7 +26,7 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'rstacruz/sparkup'
 " default config
 Plug 'tpope/vim-sensible'
-" asynchronous linting/fixing
+" async linter
 Plug 'w0rp/ale'
 " time tracking and metrics
 Plug 'wakatime/vim-wakatime'
@@ -70,6 +72,15 @@ Plug 'liuchengxu/vim-which-key'
 call plug#end()
 
 colorscheme spacegray
+
+function! s:filter_header(lines) abort
+  let longest_line   = max(map(copy(a:lines), 'strwidth(v:val)'))
+  let centered_lines = map(copy(a:lines),
+        \ 'repeat(" ", (&columns / 2) - (longest_line / 2)) . v:val')
+  return centered_lines
+endfunction
+let g:startify_custom_header = s:filter_header(startify#fortune#cowsay())
+let g:startify_bookmarks = [ {'d': '~/dotfiles'}, {'v': '~/dotfiles/.vimrc'}]
 
 " deoplete
 let g:deoplete#enable_at_startup = 1
@@ -203,5 +214,6 @@ set number
 " highlight current line
 set cursorline
 " allow to cw until next underscore
-set iskeyword-=_
+" set iskeyword-=_
 set timeoutlen=500
+set relativenumber
