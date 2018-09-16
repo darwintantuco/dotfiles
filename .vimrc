@@ -6,13 +6,10 @@ end
 
 " experimental
 " Plug 'takac/vim-hardtime'
-" Plug 'tpope/vim-vinegar'
-" Plug 'terryma/vim-expand-region'
-" Plug 'terryma/vim-multiple-cursors'
+Plug 'tpope/vim-vinegar'
+Plug 'terryma/vim-multiple-cursors'
 " easy navigation for rails projects
 Plug 'tpope/vim-rails'
-" automatically adjusts indent levels
-Plug 'tpope/vim-sleuth'
 
 " colorscheme
 Plug 'mhartington/oceanic-next'
@@ -26,6 +23,8 @@ Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-sensible'
 " wisely add 'end' in ruby files
 Plug 'tpope/vim-endwise'
+" automatically adjusts indent levels
+Plug 'tpope/vim-sleuth'
 " provide mappings to easily add, change parenthesis, etc
 Plug 'tpope/vim-surround'
 " comment/uncomment made easy
@@ -81,6 +80,8 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'mileszs/ack.vim'
 " maintain consistent coding styles
 Plug 'editorconfig/editorconfig-vim'
+" visual selection made easy
+Plug 'terryma/vim-expand-region'
 
 " retired
 
