@@ -1,12 +1,7 @@
 # Guide
+## Current Tools
 1. Install [homebrew](https://brew.sh/)
-1. Install neovim w/ python2 and python3 support
-    - `brew install neovim`
-    - `brew install python2`
-    - `brew install python3`
-    - `pip2 install neovim --upgrade`
-    - `pip3 install neovim --upgrade`
-1. Update vim
+1. Update vim (v8.0)
     - `brew remove vim`
     - `brew cleanup`
     - `brew install vim --with-python3`
@@ -25,7 +20,12 @@
     - [nodejs](https://github.com/asdf-vm/asdf-nodejs)
     - [erlang](https://github.com/asdf-vm/asdf-erlang)
     - [elixir](https://github.com/asdf-vm/asdf-elixir)
-1. `asdf install`
+1. Execute `asdf install`
+1. Install tmux (v2.7)
+    - `brew install tmux`
+
+
+## Experimental
 1. Install [Emacs and spacemacs](https://github.com/syl20bnr/spacemacs)
     - `git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d`
     - `brew tap d12frosted/emacs-plus`
@@ -35,12 +35,15 @@
     - `emacs --insecure`
     - Restart
     - Check `~/.wakatime.cfg`, if it doesn't exist check `Dropbox` and [wakatime](https://github.com/syl20bnr/spacemacs/tree/master/layers/%2Bweb-services/wakatime)
+1. Install neovim w/ python2 and python3 support
+    - `brew install neovim`
+    - `brew install python2`
+    - `brew install python3`
+    - `pip2 install neovim --upgrade`
+    - `pip3 install neovim --upgrade`
 
 ## Vim
 - `brew install the_silver_searcher`
-
-## Tmux (v2.7)
-- `brew install tmux`
 
 ## Spacemacs
 - `sudo easy_install pip`
@@ -90,7 +93,7 @@
 
 ## Keyboard
 - use capslock for `FN`
-    - dip switch 3
+    - dip switch 3: `ON`
 
 ## Magnet
 - update preferences
