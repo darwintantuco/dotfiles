@@ -23,7 +23,9 @@
 1. Execute `asdf install`
 1. Install tmux (v2.7)
     - `brew install tmux`
-
+1. Heroku CLI
+    - `brew install heroku/brew/heroku`
+    - `heroku plugins:install heroku-accounts` see [heroku-accounts](https://github.com/heroku/heroku-accounts)
 
 ## Experimental
 1. Install [Emacs and spacemacs](https://github.com/syl20bnr/spacemacs)
