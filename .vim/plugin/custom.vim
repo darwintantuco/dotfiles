@@ -56,3 +56,6 @@ noremap <Left> <nop>
 noremap <Right> <nop>
 " disable dd in normal mode
 nmap dd <nop>
+
+" show current file path
+set statusline+=%F
