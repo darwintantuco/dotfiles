@@ -31,8 +31,6 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 " git wrapper
 Plug 'tpope/vim-fugitive'
-" async linter
-Plug 'w0rp/ale'
 " async completion framework
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -40,6 +38,8 @@ else
   Plug 'Shougo/deoplete.nvim'
   Plug 'roxma/nvim-yarp'
   Plug 'roxma/vim-hug-neovim-rpc'
+  " async linter
+  Plug 'w0rp/ale'
 endif
 
 " syntax highlighting
@@ -70,8 +70,6 @@ Plug 'wakatime/vim-wakatime'
 Plug 'mhinz/vim-startify'
 " shows keybindings in popup, same as spacemacs
 Plug 'liuchengxu/vim-which-key'
-" display the indention levels
-Plug 'Yggdroot/indentLine'
 " tree explorer
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 " navigation between panes and vim
@@ -84,5 +82,10 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'terryma/vim-expand-region'
 
 " retired
+"
+" display the indention levels
+" Plug 'Yggdroot/indentLine', causes slowness in js files :(
+"
+"
 
 call plug#end()
