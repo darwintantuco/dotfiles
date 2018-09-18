@@ -31,6 +31,8 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 " git wrapper
 Plug 'tpope/vim-fugitive'
+" async linter
+Plug 'w0rp/ale'
 " async completion framework
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -38,8 +40,6 @@ else
   Plug 'Shougo/deoplete.nvim'
   Plug 'roxma/nvim-yarp'
   Plug 'roxma/vim-hug-neovim-rpc'
-  " async linter
-  Plug 'w0rp/ale'
 endif
 
 " syntax highlighting
