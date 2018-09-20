@@ -1,3 +1,5 @@
+colorscheme gruvbox
+
 " map jj to <esc>
 inoremap jj <esc>
 " map ri to auto-indent current file

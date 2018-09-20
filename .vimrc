@@ -12,7 +12,7 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-rails'
 
 " colorscheme
-Plug 'mhartington/oceanic-next'
+Plug 'morhetz/gruvbox'
 
 " essentials
 " fuzzy file finder
