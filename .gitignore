@@ -3,5 +3,8 @@
 tmux-client-*.log
 .DS_STORE
 
+# heroku stuff
+/.local/share/heroku/
+
 # neovim
 /.local/share/nvim/*
