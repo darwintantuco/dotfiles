@@ -74,8 +74,6 @@ Plug 'liuchengxu/vim-which-key'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 " navigation between panes and vim
 Plug 'christoomey/vim-tmux-navigator'
-" run your favorite search tool in vim
-Plug 'mileszs/ack.vim'
 " maintain consistent coding styles
 Plug 'editorconfig/editorconfig-vim'
 " visual selection made easy
@@ -84,8 +82,12 @@ Plug 'terryma/vim-expand-region'
 " retired
 "
 " display the indention levels
-" Plug 'Yggdroot/indentLine', causes slowness in js files :(
+" Plug 'Yggdroot/indentLine',
+" slow in js files
 "
+" " run your favorite search tool in vim
+" Plug 'mileszs/ack.vim',
+" use Ag instead
 "
 
 call plug#end()

@@ -2,7 +2,7 @@
 nmap <tab> :NERDTreeToggle<cr>
 
 " find
-map <leader>f :Ack!<space>
+map <leader>f :Ag<space>
 
 " fzf
 map <leader>t :FZF<esc>
