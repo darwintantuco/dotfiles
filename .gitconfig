@@ -1,11 +1,11 @@
 [color]
-	ui = true
+  ui = true
 [user]
-	name = darwin christopher tantuco
-	email = darwinxciii@yahoo.com
+  name = darwin christopher tantuco
+  email = darwinxciii@yahoo.com
 [core]
-	editor = vim
-	excludesfile = ~/dotfiles/.gitconfig
+  editor = vim
+  excludesfile = .gitignore_global
 [branch]
   autosetuprebase = always
 [alias]

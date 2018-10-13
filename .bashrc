@@ -23,5 +23,5 @@ export ERL_AFLAGS="-kernel shell_history enabled"
 . $HOME/.asdf/asdf.sh
 . $HOME/.asdf/completions/asdf.bash
 
-git config --global core.excludesfile $HOME/dotfiles/.gitignore_global
+git config --global core.excludesfile .gitignore_global
 a
