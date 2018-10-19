@@ -5,11 +5,12 @@ else
 end
 
 " experimental
+Plug 'sheerun/vim-polyglot'
 " Plug 'takac/vim-hardtime'
-Plug 'tpope/vim-vinegar'
-Plug 'terryma/vim-multiple-cursors'
+" Plug 'tpope/vim-vinegar'
+" Plug 'terryma/vim-multiple-cursors'
 " easy navigation for rails projects
-Plug 'tpope/vim-rails'
+" Plug 'tpope/vim-rails'
 
 " colorscheme
 Plug 'morhetz/gruvbox'
@@ -43,11 +44,11 @@ else
 endif
 
 " syntax highlighting
-Plug 'mxw/vim-jsx'
-Plug 'tpope/vim-haml'
-Plug 'digitaltoad/vim-pug'
-Plug 'pangloss/vim-javascript'
-Plug 'elixir-editors/vim-elixir'
+" Plug 'mxw/vim-jsx'
+" Plug 'tpope/vim-haml'
+" Plug 'digitaltoad/vim-pug'
+" Plug 'pangloss/vim-javascript'
+" Plug 'elixir-editors/vim-elixir'
 
 " language specific
 " write html code faster
