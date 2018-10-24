@@ -21,6 +21,8 @@ alias git-ignore='git update-index --assume-unchanged $1'
 git() {
   if [[ $@ == "log" ]]; then
     command tig
+  elif [[ $@ == "stash apply" ]]; then
+    echo "Use git stash pop!"
   else
     command git "$@"
   fi
