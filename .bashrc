@@ -1,7 +1,9 @@
-[ -f .aliases ] && source .aliases
-
-[ -f git-completion.bash ] && source git-completion.bash
+[ -f ~/.git-completion.bash ] && source ~/.git-completion.bash
+[ -f ~/.aliases ] && source ~/.aliases
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+# cd to last working dir
+PROMPT_COMMAND='pwd > ~/.current_dir'
+[ -f ~/.current_dir ] && cd "$(< ~/.current_dir)"
 
 # if command -v tmux>/dev/null; then
 #   [[ ! $TERM =~ screen ]] && [ -z $TMUX ] && exec tmux
