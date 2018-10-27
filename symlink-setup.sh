@@ -6,7 +6,6 @@ ln -nfs ~/dotfiles/.spacemacs ~/.spacemacs
 
 ln -nfs ~/dotfiles/.tmux.conf ~/.tmux.conf
 
-ln -nfs ~/dotfiles/.gitconfig ~/.gitconfig
 ln -nfs ~/dotfiles/.aliases ~/.aliases
 
 # vim / vim-plug

@@ -8,3 +8,5 @@ tmux-client-*.log
 
 # neovim
 /.local/share/nvim/*
+
+.gitconfig
