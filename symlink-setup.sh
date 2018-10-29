@@ -6,8 +6,6 @@ ln -nfs ~/dotfiles/.spacemacs ~/.spacemacs
 
 ln -nfs ~/dotfiles/.tmux.conf ~/.tmux.conf
 
-ln -nfs ~/dotfiles/.aliases ~/.aliases
-
 # vim / vim-plug
 ln -nfs ~/dotfiles/.vim .vim
 ln -nfs ~/dotfiles/.vimrc .vimrc
@@ -21,7 +19,5 @@ ln -nfs ~/dotfiles/.asdf/.asdfrc ~/.asdfrc
 ln -nfs ~/dotfiles/.asdf/.tool-versions ~/.tool-versions
 ln -nfs ~/dotfiles/.asdf/.default-gems ~/.default-gems
 ln -nfs ~/dotfiles/.asdf/.default-npm-packages ~/.default-npm-packages
-
-ln -nfs ~/dotfiles/git-completion.bash ~/git-completion.bash
 
 ln -nfs ~/Dropbox/.wakatime.cfg ~/.wakatime.cfg
