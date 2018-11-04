@@ -7,4 +7,8 @@ function! s:filter_header(lines) abort
 endfunction
 let g:startify_custom_header = s:filter_header(startify#fortune#cowsay())
 " custom bookmarks
-let g:startify_bookmarks = [ {'d': '~/dotfiles'}, {'v': '~/dotfiles/.vimrc'}]
+let g:startify_bookmarks = [
+      \ {'d': '~/dotfiles'},
+      \ {'v': '~/dotfiles/.vimrc'},
+      \ {'e': '~/Exercism'},
+      \ ]
