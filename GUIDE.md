@@ -38,6 +38,10 @@
 - phantomjs
     - `brew install phantomjs`
 
+### Exercism
+- `brew update && brew install exercism`
+- `exercism configure --token=$TOKEN`
+
 ### iTerm2 Settings
 #### ignore command R
 1. preferences
