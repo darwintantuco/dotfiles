@@ -27,6 +27,66 @@
     - `brew install heroku/brew/heroku`
     - `heroku plugins:install heroku-accounts` see [heroku-accounts](https://github.com/heroku/heroku-accounts)
 
+### Vim
+- `brew install the_silver_searcher`
+
+### Rails
+- sidekiq
+- redis
+    - `brew install redis`
+    - `brew services start redis`
+- phantomjs
+    - `brew install phantomjs`
+
+### Exercism
+- `brew update && brew install exercism`
+- `exercism configure --token=$TOKEN`
+
+### iTerm2 Settings
+#### ignore command R
+1. preferences
+1. keys tabs
+1. click + button
+1. enter command + R
+1. action: ignore
+#### fix vim trackpad issue
+1. preferences
+1. advance
+1. mouse
+1. scroll wheel send arrow keys...
+1. No -> Yes
+#### fix key binding issue in tmux
+1. preferences
+1. profiles
+1. Default
+1. Keys Tab
+1. Left ⌥  Key
+    1. Normal -> Esc+
+
+### Keyboard
+#### use capslock for `FN`
+dip switch 3: `ON`
+
+### Magnet
+- update preferences
+    - left: `^⌥ ,`
+    - right: `^⌥ .`
+
+### Apps
+- chrome
+- dropbox
+- iterm2
+- vlc
+- spotify
+- uTorrent
+- synergy
+- LICEcap
+- magnet
+- DeskCover
+- rescue time
+- numi (https://numi.io)
+- postman (https://www.getpostman.com/apps)
+
 ## Experimental
 1. Install [Emacs and spacemacs](https://github.com/syl20bnr/spacemacs)
     - `git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d`
@@ -43,75 +103,19 @@
     - `brew install python3`
     - `pip2 install neovim --upgrade`
     - `pip3 install neovim --upgrade`
+- SpotMenu (https://kmikiy.github.io/SpotMenu)
 
-## Vim
-- `brew install the_silver_searcher`
-
-## Spacemacs
+### Spacemacs
 - `sudo easy_install pip`
 - `sudo pip install wakatime`
 - `npm install -g tern`
 
-## Rails
-- sidekiq
-- redis
-    - `brew install redis`
-    - `brew services start redis`
-- phantomjs
-    - `brew install phantomjs`
+## Retired
 
-## Terminal
+### Terminal
 - Update font
     - preference -> profiles -> text tab
     - use source code pro 12pt.
 - Close window after "exit" command
     - preferences -> profiles -> shell tab
     - When the shell exits: close the window
-
-## iTerm2 Settings
-- ignore command R
-    1. preferences
-    1. keys tabs
-    1. click + button
-    1. enter command + R
-    1. action: ignore
-- fix vim trackpad issue
-    1. preferences
-    1. advance
-    1. mouse
-    1. scroll wheel send arrow keys...
-    1. No -> Yes
-- open new tabs in current DIR / fix bash_profile not sourcing
-    1. profile
-    1. general tab
-    1. Working Directory: Advance Config...
-        1. Working Directory for New Windows: Home directory
-        1. Working Directory for New Tabs: Reuse...
-        1. Working Directory for New Split Panes: Reuse...
-    1. Working Directory: Home...
-
-## Keyboard
-- use capslock for `FN`
-    - dip switch 3: `ON`
-
-## Magnet
-- update preferences
-    - left: `^⌥ ,`
-    - right: `^⌥ .`
-
-## Apps
-- chrome
-- dropbox
-- iterm2
-- vlc
-- spotify
-- uTorrent
-- synergy
-- LICEcap
-- magnet
-- DeskCover
-- cheatsheet
-- rescue time
-- numi (https://numi.io)
-- postman (https://www.getpostman.com/apps)
-- SpotMenu (https://kmikiy.github.io/SpotMenu)

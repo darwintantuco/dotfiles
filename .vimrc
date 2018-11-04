@@ -5,7 +5,6 @@ else
 end
 
 " experimental
-Plug 'sheerun/vim-polyglot'
 " Plug 'takac/vim-hardtime'
 " Plug 'tpope/vim-vinegar'
 " Plug 'terryma/vim-multiple-cursors'
@@ -42,23 +41,14 @@ else
   Plug 'roxma/nvim-yarp'
   Plug 'roxma/vim-hug-neovim-rpc'
 endif
-
-" syntax highlighting
-" Plug 'mxw/vim-jsx'
-" Plug 'tpope/vim-haml'
-" Plug 'digitaltoad/vim-pug'
-" Plug 'pangloss/vim-javascript'
-" Plug 'elixir-editors/vim-elixir'
+" language pack
+Plug 'sheerun/vim-polyglot'
 
 " language specific
 " write html code faster
 Plug 'rstacruz/sparkup'
-" formats elixir code on save
-Plug 'mhinz/vim-mix-format'
 " run rspec inside vim
 Plug 'thoughtbot/vim-rspec'
-" code formatter
-Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 
 " fancy stuff
 " minimalist statusline
@@ -84,11 +74,26 @@ Plug 'terryma/vim-expand-region'
 "
 " display the indention levels
 " Plug 'Yggdroot/indentLine',
-" slow in js files
+" * slow in js files :(
 "
 " " run your favorite search tool in vim
 " Plug 'mileszs/ack.vim',
-" use Ag instead
+" * use Ag instead
+
+" syntax highlighting
+" Plug 'mxw/vim-jsx'
+" Plug 'tpope/vim-haml'
+" Plug 'digitaltoad/vim-pug'
+" Plug 'pangloss/vim-javascript'
+" Plug 'elixir-editors/vim-elixir'
+" * use vim-polyglot instead
 "
+" formats elixir code on save
+" Plug 'mhinz/vim-mix-format'
+" * format on ale instead
+"
+" code formatter
+" Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+" * format on ale instead
 
 call plug#end()
