@@ -31,7 +31,9 @@ git() {
     # Execute git checkout -- . db/schema.rb
     # Proceed with git checkout
     # ---
-    # REFACTOR - AVOID NESTED CONDITIONALS
+    # TODO
+    # 1. REFACTOR - AVOID NESTED CONDITIONALS
+    # 2. check if db/migrate exist
     # ---
     # Check if git branch is exist
     git rev-parse --verify $2 &> /dev/null
