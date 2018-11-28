@@ -21,8 +21,6 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 " default config
 Plug 'tpope/vim-sensible'
-" wisely add 'end' in ruby files
-Plug 'tpope/vim-endwise'
 " automatically adjusts indent levels
 Plug 'tpope/vim-sleuth'
 " provide mappings to easily add, change parenthesis, etc
@@ -49,6 +47,8 @@ Plug 'sheerun/vim-polyglot'
 Plug 'rstacruz/sparkup'
 " run rspec inside vim
 Plug 'thoughtbot/vim-rspec'
+" wisely add 'end' in ruby files
+Plug 'tpope/vim-endwise'
 
 " fancy stuff
 " minimalist statusline
@@ -69,6 +69,10 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'editorconfig/editorconfig-vim'
 " visual selection made easy
 Plug 'terryma/vim-expand-region'
+" preview markdown files
+Plug 'JamshedVesuna/vim-markdown-preview'
+
+call plug#end()
 
 " retired
 "
@@ -95,5 +99,3 @@ Plug 'terryma/vim-expand-region'
 " code formatter
 " Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 " * format on ale instead
-
-call plug#end()

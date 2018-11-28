@@ -44,6 +44,7 @@ current tools + guide to myself
 
 #### Vim
 - `brew install the_silver_searcher`
+- `brew install grip`
 
 #### Rails
 1. sidekiq
