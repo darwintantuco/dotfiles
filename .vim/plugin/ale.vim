@@ -10,5 +10,6 @@ let g:ale_fixers = {
 \ 'elixir': [ 'mix_format' ],
 \ 'css': [ 'prettier' ],
 \ 'scss': [ 'prettier' ],
-\ 'ruby': ['rubocop']
+\ 'ruby': ['rubocop'],
+\ 'markdown': ['prettier']
 \ }
