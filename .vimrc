@@ -47,8 +47,10 @@ Plug 'sheerun/vim-polyglot'
 Plug 'rstacruz/sparkup'
 " run rspec inside vim
 Plug 'thoughtbot/vim-rspec'
+
+" Disable temporarily due to async completion
 " wisely add 'end' in ruby files
-Plug 'tpope/vim-endwise'
+" Plug 'tpope/vim-endwise'
 
 " fancy stuff
 " minimalist statusline
