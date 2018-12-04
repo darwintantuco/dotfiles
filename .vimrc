@@ -29,7 +29,7 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 " git wrapper
 Plug 'tpope/vim-fugitive'
-" async linter
+" async linter and fixer
 Plug 'w0rp/ale'
 " async completion framework
 if has('nvim')
@@ -50,7 +50,7 @@ Plug 'thoughtbot/vim-rspec'
 
 " Disable temporarily due to async completion
 " wisely add 'end' in ruby files
-" Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-endwise'
 
 " fancy stuff
 " minimalist statusline
