@@ -10,6 +10,7 @@ end
 " Plug 'terryma/vim-multiple-cursors'
 " easy navigation for rails projects
 " Plug 'tpope/vim-rails'
+Plug 'Galooshi/vim-import-js'
 
 " colorscheme
 Plug 'morhetz/gruvbox'
