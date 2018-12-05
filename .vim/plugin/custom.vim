@@ -1,4 +1,6 @@
-colorscheme gruvbox
+set background=dark
+colorscheme snow
+set termguicolors
 
 set pastetoggle=<F3>
 set hls

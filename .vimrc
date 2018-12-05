@@ -13,7 +13,7 @@ end
 Plug 'Galooshi/vim-import-js'
 
 " colorscheme
-Plug 'morhetz/gruvbox'
+Plug 'nightsense/snow'
 
 " essentials
 " fuzzy file finder

@@ -1,6 +1,6 @@
 " custom colorscheme && show current git branch
 let g:lightline = {
-      \ 'colorscheme': 'wombat',
+      \ 'colorscheme': 'snow_dark',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
