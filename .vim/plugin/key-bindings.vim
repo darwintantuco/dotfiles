@@ -1,4 +1,5 @@
 " plugin specific
+"
 " toggle NERDTree
 nmap <tab> :NERDTreeToggle<cr>
 
@@ -18,6 +19,7 @@ map <leader>c :call RunCurrentSpecFile()<cr>
 map <leader>gd :vsplit<cr> :ALEGoToDefinition<cr>
 
 " custom
+"
 " map jj to <esc>
 inoremap jj <esc>
 
@@ -36,15 +38,8 @@ command! -bang Wq wq<bang>
 " reload vimrc
 map <leader>r :so $MYVIMRC<cr>
 
-
-
-" wat
-" nmap <silent> <c-k> :wincmd k<cr>
-" nmap <silent> <c-j> :wincmd j<cr>
-" nmap <silent> <c-h> :wincmd h<cr>
-" nmap <silent> <c-l> :wincmd l<cr>
-
 " bad habits
+"
 " disable shift K
 map <S-k> <Nop>
 
