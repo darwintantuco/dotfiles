@@ -41,3 +41,8 @@ set statusline+=%F
 
 " use old regex engine, improves ruby syntax highlighting performance
 set re=1
+
+" custom cursor shape
+let &t_SI = "\<Esc>[6 q"
+let &t_SR = "\<Esc>[4 q"
+let &t_EI = "\<Esc>[2 q"
