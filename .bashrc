@@ -5,10 +5,6 @@ a
 PROMPT_COMMAND='pwd > ~/.current_dir'
 [ -f ~/.current_dir ] && cd "$(< ~/.current_dir)"
 
-# if command -v tmux>/dev/null; then
-#   [[ ! $TERM =~ screen ]] && [ -z $TMUX ] && exec tmux
-# fi
-
 # Git
 parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
@@ -26,6 +22,9 @@ git config --global merge.tool vimdiff
 
 # Fancy prompt
 export PS1="\[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
+
+# Apply dark snow colorscheme from vim-plug
+[ -n "$PS1" ] && sh ~/.vim/plugged/snow/shell/snow_dark.sh
 
 # Vim
 export EDITOR="vim"
