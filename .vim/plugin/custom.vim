@@ -23,8 +23,8 @@ set relativenumber
 set splitright
 " show current file path
 set statusline+=%F
-" spell checking only on local buffer
-setlocal spell spelllang=en_us
+" spell checking on text mode
+set spell spelllang=en_us
 
 " colorscheme
 set background=dark
