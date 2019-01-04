@@ -1,20 +1,20 @@
 # dotfiles
 
-current tools + guide to myself
+current tools to get things done
 
 ## Tools
 
 1. bash
-   1. git-completion.bash
-   1. parse_git_branch()
+   - git-completion.bash
+   - parse_git_branch()
 1. git
 1. asdf
 1. homebrew
-   1. vim v8.0
-   1. tmux v2.7
-   1. postgres
+   - vim v8.0
+   - tmux v2.7
+   - postgres
 
-## Guide
+## Setup
 
 1. Install [homebrew](https://brew.sh/)
 1. Update vim (v8.0)
@@ -66,18 +66,6 @@ current tools + guide to myself
 
 ## Experimental
 
-### Spacemacs
-
-1. Install [Emacs and spacemacs](https://github.com/syl20bnr/spacemacs)
-   - `git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d`
-   - `brew tap d12frosted/emacs-plus`
-   - `brew install emacs-plus`
-   - `brew linkapps emacs-plus`
-   - Install [Source Code Pro](https://github.com/adobe-fonts/source-code-pro) font
-   - `emacs --insecure`
-   - Restart
-   - Check `~/.wakatime.cfg`, if it doesn't exist check `Dropbox` and [wakatime](https://github.com/syl20bnr/spacemacs/tree/master/layers/%2Bweb-services/wakatime)
-
 ### Neovim
 
 1. Install neovim w/ python2 and python3 support
@@ -86,23 +74,6 @@ current tools + guide to myself
    - `brew install python3`
    - `pip2 install neovim --upgrade`
    - `pip3 install neovim --upgrade`
-
-### Post Install
-
-- `sudo easy_install pip`
-- `sudo pip install wakatime`
-- `npm install -g tern`
-
-## Retired
-
-### Terminal
-
-- Update font
-  - preference -> profiles -> text tab
-  - use source code pro 12pt.
-- Close window after "exit" command
-  - preferences -> profiles -> shell tab
-  - When the shell exits: close the window
 
 ## Settings
 
@@ -158,6 +129,35 @@ current tools + guide to myself
 - synergy
 - LICEcap
 - magnet
-- rescue time
+- rescueTime
 - numi (https://numi.io)
 - postman (https://www.getpostman.com/apps)
+
+## Retired
+
+### Spacemacs
+
+1. Install [Emacs and spacemacs](https://github.com/syl20bnr/spacemacs)
+   - `git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d`
+   - `brew tap d12frosted/emacs-plus`
+   - `brew install emacs-plus`
+   - `brew linkapps emacs-plus`
+   - Install [Source Code Pro](https://github.com/adobe-fonts/source-code-pro) font
+   - `emacs --insecure`
+   - Restart
+   - Check `~/.wakatime.cfg`, if it doesn't exist check `Dropbox` and [wakatime](https://github.com/syl20bnr/spacemacs/tree/master/layers/%2Bweb-services/wakatime)
+
+#### Post Install
+
+- `sudo easy_install pip`
+- `sudo pip install wakatime`
+- `npm install -g tern`
+
+### Terminal
+
+- Update font
+  - preference -> profiles -> text tab
+  - use source code pro 12pt.
+- Close window after "exit" command
+  - preferences -> profiles -> shell tab
+  - When the shell exits: close the window
