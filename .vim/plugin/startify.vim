@@ -12,6 +12,7 @@ let g:startify_bookmarks = [
       \ {'d': '~/dotfiles'},
       \ {'v': '~/dotfiles/.vimrc'},
       \ {'E': '~/Exercism'},
+      \ {'n': '~/Workspace/notes' },
       \ ]
 
 let g:startify_lists = [
