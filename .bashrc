@@ -12,6 +12,11 @@ a
 PROMPT_COMMAND='pwd > ~/.current_dir'
 [ -f ~/.current_dir ] && cd "$(< ~/.current_dir)"
 
+# Bash completion
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+    . $(brew --prefix)/etc/bash_completion
+fi
+
 # Git
 parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'

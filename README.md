@@ -13,6 +13,7 @@ current tools to get things done
    - vim v8.0
    - tmux v2.7
    - postgres
+   - bash-completion
    - docker
 
 ## Setup
@@ -43,6 +44,9 @@ current tools to get things done
 1. Heroku CLI
    - `brew install heroku/brew/heroku`
    - `heroku plugins:install heroku-accounts`, see [heroku-accounts](https://github.com/heroku/heroku-accounts)
+1. Install bash-completion
+   - `brew install bash-completion`
+   - `sudo curl -L https://raw.githubusercontent.com/docker/compose/1.23.2/contrib/completion/bash/docker-compose -o /usr/local/etc/bash_completion.d/docker-compose`
 1. Install docker
    - `brew cask install docker`
 
