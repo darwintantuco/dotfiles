@@ -13,9 +13,7 @@ PROMPT_COMMAND='pwd > ~/.current_dir'
 [ -f ~/.current_dir ] && cd "$(< ~/.current_dir)"
 
 # Bash completion
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-    . $(brew --prefix)/etc/bash_completion
-fi
+[ -f $(brew --prefix)/etc/bash_completion ] && source $(brew --prefix)/etc/bash_completion
 
 # Git
 parse_git_branch() {
