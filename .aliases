@@ -18,6 +18,9 @@ alias git-reset-last='git reset --soft HEAD~1'
 alias git-conflicts='git diff --name-only --diff-filter=U'
 alias git-ignore='git update-index --assume-unchanged $1'
 
+# Docker
+alias dc='docker container'
+
 # Use tig for 'git log'
 git() {
   if [[ $@ == "log" ]]; then
