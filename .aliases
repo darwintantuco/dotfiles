@@ -25,10 +25,8 @@ alias dc='docker container'
 git() {
   if [[ $@ == "log" ]]; then
     command tig
-  elif [[ $1 == "checkout" ]]; then
-    [ -f ~/dotfiles/rollback.bash ] && source ~/dotfiles/rollback.bash
-    command git "$@"
   elif [[ $@ == "stash apply" ]]; then
+    # bad habit
     echo "Use git stash pop!"
   else
     command git "$@"
