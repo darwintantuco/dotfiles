@@ -1,3 +1,5 @@
+#!/usr/bin/env sh
+#
 # Auto revert any migration when performing git checkout
 # Assumes all migration are reversible
 
