@@ -21,3 +21,5 @@ ln -nfs ~/dotfiles/.asdf/.default-gems ~/.default-gems
 ln -nfs ~/dotfiles/.asdf/.default-npm-packages ~/.default-npm-packages
 
 ln -nfs ~/Dropbox/.wakatime.cfg ~/.wakatime.cfg
+
+ln -nfs ~/dotfiles/rollback.sh ~/rollback.sh

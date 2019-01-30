@@ -43,4 +43,5 @@ export ERL_AFLAGS="-kernel shell_history enabled"
 . $HOME/.asdf/asdf.sh
 . $HOME/.asdf/completions/asdf.bash
 
-. ./rollback.sh
+. $HOME/rollback.sh
+
