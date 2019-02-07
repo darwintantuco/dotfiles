@@ -20,7 +20,9 @@ alias git-conflicts='git diff --name-only --diff-filter=U'
 alias git-ignore='git update-index --assume-unchanged $1'
 
 # Docker
-alias dc='docker container'
+alias dr="docker-compose run --rm web"
+alias dcu="docker-compose up"
+alias dcd="docker-compose down"
 
 # Use tig for 'git log'
 git() {
