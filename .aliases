@@ -21,6 +21,7 @@ alias git-ignore='git update-index --assume-unchanged $1'
 
 # Docker
 alias dr="docker-compose run --rm web"
+alias drs="docker-compose run --rm --service-ports web"
 alias dcu="docker-compose up"
 alias dcd="docker-compose down"
 
