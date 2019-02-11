@@ -25,18 +25,6 @@ alias drs="docker-compose run --rm --service-ports web"
 alias dcu="docker-compose up"
 alias dcd="docker-compose down"
 
-# Use tig for 'git log'
-git() {
-  if [[ $@ == "log" ]]; then
-    command tig
-  elif [[ $@ == "stash apply" ]]; then
-    # bad habit
-    echo "Use git stash pop!"
-  else
-    command git "$@"
-  fi
-}
-
 # Search history
 alias hs='history | grep $1'
 

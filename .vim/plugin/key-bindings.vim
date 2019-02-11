@@ -38,14 +38,6 @@ command! -bang Wq wq<bang>
 " reload vimrc
 map <leader>r :so $MYVIMRC<cr>
 
-" bad habits
-"
-" disable shift K
-map <S-k> <Nop>
-
-" disable dd in normal mode
-nmap dd <nop>
-
 " disable arrow keys
 noremap <Up> <nop>
 noremap <Down> <nop>
