@@ -15,6 +15,7 @@ current tools to get things done
    - postgres
    - bash-completion
    - docker
+   - z
 
 ## Setup
 
@@ -49,6 +50,8 @@ current tools to get things done
    - `sudo curl -L https://raw.githubusercontent.com/docker/compose/1.23.2/contrib/completion/bash/docker-compose -o /usr/local/etc/bash_completion.d/docker-compose`
 1. Install docker
    - `brew cask install docker`
+1. Install [z](https://github.com/rupa/z)
+   - `brew install z`
 
 ### Post Install
 
