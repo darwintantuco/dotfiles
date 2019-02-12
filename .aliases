@@ -24,6 +24,7 @@ alias dr="docker-compose run --rm web"
 alias drs="docker-compose run --rm --service-ports web"
 alias dcu="docker-compose up"
 alias dcd="docker-compose down"
+alias dphx="drs iex -S mix phx.server"
 
 # Search history
 alias hs='history | grep $1'
