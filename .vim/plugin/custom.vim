@@ -19,7 +19,7 @@ set number
 " highlight current line
 set cursorline
 set timeoutlen=500
-set relativenumber
+" set relativenumber
 set splitright
 " show current file path
 set statusline+=%F
