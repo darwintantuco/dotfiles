@@ -20,10 +20,10 @@ current tools to get things done
 ## Setup
 
 1. Install [homebrew](https://brew.sh/)
-1. Update vim (v8.0)
+1. Update vim (v8.1)
    - `brew remove vim`
    - `brew cleanup`
-   - `brew install vim --with-python3`
+   - `brew install vim`
    - `:PlugInstall`
    - Add wakatime key
 1. Configure SSH
@@ -57,8 +57,9 @@ current tools to get things done
 
 #### Vim
 
-- `brew install the_silver_searcher`
-- `brew install grip`
+- `brew install the_silver_searcher` (:Ag)
+- `brew install grip` (vim-markdown-preview)
+- `pip3 install --user pynvim` (deoplete)
 
 #### Rails
 
