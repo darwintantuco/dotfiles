@@ -76,6 +76,9 @@ Plug 'thoughtbot/vim-rspec'
 " wisely add 'end' in ruby files
 Plug 'tpope/vim-endwise'
 
+" preview css color in code
+Plug 'ap/vim-css-color'
+
 " fancy stuff
 "
 " tree explorer
