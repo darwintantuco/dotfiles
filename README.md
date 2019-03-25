@@ -6,7 +6,6 @@ current tools to get things done
 
 1. bash
    - git-completion.bash
-   - parse_git_branch()
 1. git
 1. asdf
 1. homebrew
@@ -16,6 +15,7 @@ current tools to get things done
    - bash-completion
    - docker
    - z
+   - yarn
 
 ## Setup
 
