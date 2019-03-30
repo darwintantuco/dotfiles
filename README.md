@@ -15,7 +15,6 @@ current tools to get things done
    - docker
    - z
    - yarn
-   - asdf
 
 ## Setup
 
