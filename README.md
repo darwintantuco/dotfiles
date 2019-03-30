@@ -14,7 +14,6 @@ current tools to get things done
    - bash-completion
    - docker
    - z
-   - yarn
 
 ## Setup
 
