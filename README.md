@@ -14,6 +14,7 @@ current tools to get things done
    - bash-completion
    - docker
    - z
+   - tree
 
 ## Setup
 
