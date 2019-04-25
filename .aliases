@@ -33,6 +33,7 @@ alias hs='history | grep $1'
 
 # Elixir / Phoenix
 alias phx='iex -S mix phx.server'
+alias mcf='mix compile --force'
 
 # Ruby / Rails
 alias sidekiq='bundle exec sidekiq'
