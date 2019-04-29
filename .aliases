@@ -34,6 +34,7 @@ alias hs='history | grep $1'
 # Elixir / Phoenix
 alias phx='iex -S mix phx.server'
 alias mcf='mix compile --force'
+alias yy='(cd assets/ && yarn)'
 
 # Ruby / Rails
 alias sidekiq='bundle exec sidekiq'
