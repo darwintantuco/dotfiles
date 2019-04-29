@@ -37,6 +37,8 @@ current tools to get things done
    - [ruby](https://github.com/asdf-vm/asdf-ruby)
    - [nodejs](https://github.com/asdf-vm/asdf-nodejs)
    - [erlang](https://github.com/asdf-vm/asdf-erlang)
+        - `brew install autoconf`
+        - `brew install wxmac`
    - [elixir](https://github.com/asdf-vm/asdf-elixir)
 1. Execute `asdf install`
 1. Install tmux (v2.7)
