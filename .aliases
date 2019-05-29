@@ -35,6 +35,7 @@ alias hs='history | grep $1'
 alias phx='iex -S mix phx.server'
 alias mcf='mix compile --force'
 alias yy='(cd assets/ && yarn)'
+alias mm='mix test.watch --stale'
 
 # Ruby / Rails
 alias sidekiq='bundle exec sidekiq'
