@@ -3,4 +3,6 @@
 --skip-coffee
 --skip-turbolinks
 --skip-test
+--asdf
+--typescript
 --template=~/Workspace/alpha/template.rb
