@@ -33,6 +33,8 @@ set mouse=ia
 set background=dark
 colorscheme snow
 
+set colorcolumn=100
+
 " custom cursor shape
 let &t_SI = "\<Esc>[6 q"
 let &t_SR = "\<Esc>[4 q"
