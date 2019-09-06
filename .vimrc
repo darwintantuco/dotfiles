@@ -62,6 +62,9 @@ else
   Plug 'roxma/vim-hug-neovim-rpc'
 endif
 
+" jump to any location specified by two characters
+Plug 'justinmk/vim-sneak'
+
 " language pack
 Plug 'sheerun/vim-polyglot'
 
