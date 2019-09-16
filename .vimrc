@@ -51,7 +51,7 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 
 " async linter and fixer
-Plug 'w0rp/ale'
+Plug 'dense-analysis/ale'
 
 " async completion framework
 if has('nvim')
