@@ -10,8 +10,9 @@ let g:ale_lint_on_save = 1
 let g:ale_fix_on_save = 1
 
 let g:ale_fixers = {
-\ 'javascript': [ 'prettier', 'eslint' ],
-\ 'javascript.jsx': [ 'prettier', 'eslint' ],
+\ 'typescript': ['prettier', 'tslint'],
+\ 'javascript': [ 'prettier', 'eslint'],
+\ 'javascript.jsx': [ 'prettier', 'eslint'],
 \ 'elixir': [ 'mix_format' ],
 \ 'css': [ 'prettier' ],
 \ 'scss': [ 'prettier' ],
