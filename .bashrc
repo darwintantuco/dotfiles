@@ -29,6 +29,7 @@ git config --global core.editor vim
 git config --global core.excludesfile $HOME/dotfiles/.gitignore_global
 git config --global diff.tool vimdiff
 git config --global merge.tool vimdiff
+git config --global push.default current
 
 # Vim
 export EDITOR="vim"
