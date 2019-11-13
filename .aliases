@@ -42,6 +42,7 @@ alias mm='mix test.watch --stale'
 # Ruby / Rails
 alias sidekiq='bundle exec sidekiq'
 alias rspec='bundle exec rspec'
+alias rake='bundle exec rake'
 
 rake() {
   if [[ $@ == "routes" ]]; then
