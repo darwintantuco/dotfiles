@@ -44,13 +44,13 @@ alias sidekiq='bundle exec sidekiq'
 alias rspec='bundle exec rspec'
 alias rake='bundle exec rake'
 
-rake() {
-  if [[ $@ == "routes" ]]; then
-    eval "bundle exec rake routes"
-  else
-    command rake "$@"
-  fi
-}
+# rake() {
+#   if [[ $@ == "routes" ]]; then
+#     eval "bundle exec rake routes"
+#   else
+#     command rake "$@"
+#   fi
+# }
 
 # Vim
 alias v='vim'
