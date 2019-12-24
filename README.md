@@ -21,20 +21,6 @@ current tools to get things done
 1. Install Command Line Tools for Xcode
    - type `git` and choose download when prompted
 1. Install [homebrew](https://brew.sh/)
-1. Update vim (v8.1)
-   - `brew remove vim`
-   - `brew cleanup`
-   - `brew install vim`
-   - `:PlugInstall`
-   - Add wakatime key
-1. Configure SSH
-   - [Generating a new SSH key](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/)
-   - [Adding a new SSH key to your GitHub account](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/)
-1. `git clone git@github.com:dcrtantuco/dotfiles.git`
-1. `bash symlink-setup.sh`
-1. Install postgres
-   - `brew install postgres`
-   - `brew services start postgresql`
 1. Install [asdf](https://github.com/asdf-vm/asdf)
    - [ruby](https://github.com/asdf-vm/asdf-ruby)
    - [nodejs](https://github.com/asdf-vm/asdf-nodejs)
@@ -42,7 +28,21 @@ current tools to get things done
      - `brew install autoconf`
      - `brew install wxmac`
    - [elixir](https://github.com/asdf-vm/asdf-elixir)
+1. Configure SSH
+   - [Generating a new SSH key](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/)
+   - [Adding a new SSH key to your GitHub account](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/)
+1. `git clone git@github.com:dcrtantuco/dotfiles.git`
+1. `bash symlink-setup.sh`
 1. Execute `asdf install`
+1. Update vim (v8.1)
+   - `brew remove vim`
+   - `brew cleanup`
+   - `brew install vim`
+   - `:PlugInstall`
+   - Add wakatime key
+1. Install postgres
+   - `brew install postgres`
+   - `brew services start postgresql`
 1. Install tmux (v2.7)
    - `brew install tmux`
 1. Heroku CLI
