@@ -10,3 +10,4 @@ tmux-client-*.log
 /.local/share/nvim/*
 
 .gitconfig
+Brewfile.lock.json
