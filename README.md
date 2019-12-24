@@ -18,6 +18,8 @@ current tools to get things done
 
 ## Setup
 
+1. Install Command Line Tools for Xcode
+   - type `git` and choose download when prompted
 1. Install [homebrew](https://brew.sh/)
 1. Update vim (v8.1)
    - `brew remove vim`
