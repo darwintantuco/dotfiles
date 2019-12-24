@@ -35,6 +35,7 @@ git config --global push.default current
 export EDITOR="vim"
 export USE_EDITOR=$EDITOR
 export VISUAL=$EDITOR
+export LC_ALL=en_US.UTF-8
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 # Save erlang/IEx history
