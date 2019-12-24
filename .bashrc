@@ -45,6 +45,9 @@ export ERL_AFLAGS="-kernel shell_history enabled"
 [ -f $HOME/.asdf/asdf.sh ] && source $HOME/.asdf/asdf.sh
 [ -f $HOME/.asdf/completions/asdf.bash ] && source $HOME/.asdf/completions/asdf.bash
 
+# bash completion
+[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
+
 # z
 if command -v brew >/dev/null 2>&1; then
   # Load rupa's z if installed

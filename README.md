@@ -19,7 +19,11 @@ current tools to get things done
 ## Setup
 
 1. Install Command Line Tools for Xcode
-   - type `git` and choose download when prompted
+
+   ```
+   $ xcode-select --install
+   ```
+
 1. Install [homebrew](https://brew.sh/)
 1. Install [asdf](https://github.com/asdf-vm/asdf)
    - [ruby](https://github.com/asdf-vm/asdf-ruby)
@@ -39,7 +43,7 @@ current tools to get things done
    - `brew cleanup`
    - `brew install vim`
    - `:PlugInstall`
-   - Add wakatime key
+   - Add wakatime key (`:WakaTimeApiKey`)
 1. Install postgres
    - `brew install postgres`
    - `brew services start postgresql`
