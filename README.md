@@ -2,85 +2,74 @@
 
 current tools to get things done
 
-## Tools
-
-1. bash
-   - git-completion.bash
-1. git
-1. homebrew
-   - vim v8.0
-   - tmux v2.7
-   - postgres
-   - bash-completion
-   - docker
-   - z
-   - tree
-
 ## Setup
 
 1. Install Command Line Tools for Xcode
-
    ```
    $ xcode-select --install
    ```
+1. Configure SSH
+   - [Generating a new SSH key](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/)
+   - [Adding a new SSH key to your GitHub account](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/)
+1. ```
+   $ cd
+   $ git clone git@github.com:dcrtantuco/dotfiles.git
+   ```
 
 1. Install [homebrew](https://brew.sh/)
+1. ```
+   $ brew bundle
+   ```
+
 1. Install [asdf](https://github.com/asdf-vm/asdf)
    - [ruby](https://github.com/asdf-vm/asdf-ruby)
    - [nodejs](https://github.com/asdf-vm/asdf-nodejs)
    - [erlang](https://github.com/asdf-vm/asdf-erlang)
-     - `brew install autoconf`
-     - `brew install wxmac`
    - [elixir](https://github.com/asdf-vm/asdf-elixir)
-1. Configure SSH
-   - [Generating a new SSH key](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/)
-   - [Adding a new SSH key to your GitHub account](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/)
-1. `git clone git@github.com:dcrtantuco/dotfiles.git`
-1. `bash symlink-setup.sh`
-1. Execute `asdf install`
-1. Update vim (v8.1)
-   - `brew remove vim`
-   - `brew cleanup`
-   - `brew install vim`
-   - `:PlugInstall`
-   - Add wakatime key (`:WakaTimeApiKey`)
-1. Install postgres
-   - `brew install postgres`
-   - `brew services start postgresql`
-1. Install tmux (v2.7)
-   - `brew install tmux`
-1. Heroku CLI
-   - `brew install heroku/brew/heroku`
-   - `heroku plugins:install heroku-accounts`, see [heroku-accounts](https://github.com/heroku/heroku-accounts)
-1. Install bash-completion
-   - `brew install bash-completion`
-   - `sudo curl -L https://raw.githubusercontent.com/docker/compose/1.23.2/contrib/completion/bash/docker-compose -o /usr/local/etc/bash_completion.d/docker-compose`
-1. Install docker
-   - `brew cask install docker`
-1. Install [z](https://github.com/rupa/z)
-   - `brew install z`
+1. ```
+   $ bash symlink-setup.sh
+   ```
+1. ```
+   $ asdf install
+   ```
 
-### Post Install
+### Post Setup
 
-#### Vim
+#### vim
 
-- `brew install the_silver_searcher` (:Ag)
-- `brew install grip` (vim-markdown-preview)
-- `pip3 install --user pynvim` (deoplete)
+```
+:PlugInstall
+```
 
-#### Rails
+#### wakatime
 
-1. sidekiq
-1. redis
-   - `brew install redis`
-   - `brew services start redis`
-1. phantomjs (?)
-   - `brew install phantomjs`
+```
+:WakaTimeApiKey
+```
 
-#### Exercism
+##### deoplete
 
-- `brew update && brew install exercism`
-- `exercism configure --token=$TOKEN`
+```
+$ pip3 install --user pynvim
+```
+
+#### heroku-accounts
+
+```
+$ heroku plugins:install heroku-accounts
+```
+
+#### bash-completion
+
+```
+$ sudo curl -L https://raw.githubusercontent.com/docker/compose/1.23.2/contrib/completion/bash/docker-compose -o /usr/local/etc/bash_completion.d/docker-compose
+```
+
+#### exercism
+
+```
+$ exercism configure --token=$TOKEN`
+```
 
 ## Experimental
 
@@ -138,18 +127,9 @@ current tools to get things done
 
 ## Apps
 
-- chrome
-- dropbox
-- iterm2
-- vlc
-- spotify
 - uTorrent
-- synergy
-- LICEcap
 - magnet
-- rescueTime
 - numi (https://numi.io)
-- postman (https://www.getpostman.com/apps)
 
 ## Retired
 
