@@ -35,13 +35,13 @@ current tools to get things done
 
 ### Post Setup
 
-#### vim
+#### Vim
 
 ```
 :PlugInstall
 ```
 
-#### wakatime
+#### Wakatime
 
 ```
 :WakaTimeApiKey
@@ -65,28 +65,23 @@ $ heroku plugins:install heroku-accounts
 $ sudo curl -L https://raw.githubusercontent.com/docker/compose/1.23.2/contrib/completion/bash/docker-compose -o /usr/local/etc/bash_completion.d/docker-compose
 ```
 
-#### exercism
+#### Exercism
 
 ```
 $ exercism configure --token=$TOKEN`
 ```
 
-## Experimental
+#### Magnet
 
-### Neovim
+##### Update shortcut
 
-1. Install neovim w/ python2 and python3 support
-   - `brew install neovim`
-   - `brew install python2`
-   - `brew install python3`
-   - `pip2 install neovim --upgrade`
-   - `pip3 install neovim --upgrade`
+- update preferences
+  - left: `^⌥ ,`
+  - right: `^⌥ .`
 
-## Settings
+#### iTerm2 Settings
 
-### iTerm2
-
-#### Ignore command R
+##### Ignore command R
 
 1. preferences
 1. keys tabs
@@ -94,7 +89,7 @@ $ exercism configure --token=$TOKEN`
 1. enter command + R
 1. action: ignore
 
-#### Fix vim trackpad issue
+##### Fix vim trackpad issue
 
 1. preferences
 1. advance
@@ -102,7 +97,7 @@ $ exercism configure --token=$TOKEN`
 1. scroll wheel send arrow keys...
 1. No -> Yes
 
-#### Fix key binding issue in tmux
+##### Fix key binding issue in tmux
 
 1. preferences
 1. profiles
@@ -111,51 +106,8 @@ $ exercism configure --token=$TOKEN`
 1. Left ⌥ Key
    1. Normal -> Esc+
 
-### Keyboard
+#### Keyboard
 
-#### use capslock for `FN`
+##### use capslock for `FN`
 
 - dip switch 3: `ON`
-
-### Magnet
-
-#### Update shortcut
-
-- update preferences
-  - left: `^⌥ ,`
-  - right: `^⌥ .`
-
-## Apps
-
-- uTorrent
-- magnet
-- numi (https://numi.io)
-
-## Retired
-
-### Spacemacs
-
-1. Install [Emacs and spacemacs](https://github.com/syl20bnr/spacemacs)
-   - `git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d`
-   - `brew tap d12frosted/emacs-plus`
-   - `brew install emacs-plus`
-   - `brew linkapps emacs-plus`
-   - Install [Source Code Pro](https://github.com/adobe-fonts/source-code-pro) font
-   - `emacs --insecure`
-   - Restart
-   - Check `~/.wakatime.cfg`, if it doesn't exist check `Dropbox` and [wakatime](https://github.com/syl20bnr/spacemacs/tree/master/layers/%2Bweb-services/wakatime)
-
-#### Post Install
-
-- `sudo easy_install pip`
-- `sudo pip install wakatime`
-- `npm install -g tern`
-
-### Terminal
-
-- Update font
-  - preference -> profiles -> text tab
-  - use source code pro 12pt.
-- Close window after "exit" command
-  - preferences -> profiles -> shell tab
-  - When the shell exits: close the window
