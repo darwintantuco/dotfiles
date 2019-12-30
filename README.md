@@ -47,7 +47,7 @@ current tools to get things done
 :WakaTimeApiKey
 ```
 
-##### deoplete
+#### deoplete
 
 ```
 $ pip3 install --user pynvim
