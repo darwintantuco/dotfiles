@@ -21,7 +21,7 @@ current tools to get things done
    $ brew bundle
    ```
 
-1. Install [asdf](https://github.com/asdf-vm/asdf)
+1. Install [asdf](https://github.com/asdf-vm/asdf) plugins
    - [ruby](https://github.com/asdf-vm/asdf-ruby)
    - [nodejs](https://github.com/asdf-vm/asdf-nodejs)
    - [erlang](https://github.com/asdf-vm/asdf-erlang)
