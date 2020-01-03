@@ -6,6 +6,7 @@ tap "homebrew/services"
 
 brew "autoconf"
 brew "coreutils"
+brew "git"
 brew "bash-completion"
 brew "exercism"
 brew "gnupg"
