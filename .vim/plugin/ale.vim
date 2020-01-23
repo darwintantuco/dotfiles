@@ -19,3 +19,6 @@ let g:ale_fixers = {
 \ 'ruby': ['rubocop'],
 \ 'markdown': ['prettier']
 \ }
+
+" Invoke rubocop with bundle
+let g:ale_ruby_rubocop_executable = 'bundle'
