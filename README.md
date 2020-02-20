@@ -13,7 +13,7 @@ current tools to get things done
    - [Adding a new SSH key to your GitHub account](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/)
 1. ```
    $ cd
-   $ git clone git@github.com:dcrtantuco/dotfiles.git
+   $ git clone git@github.com:darwintantuco/dotfiles.git
    ```
 
 1. Install [homebrew](https://brew.sh/)
