@@ -22,6 +22,7 @@ brew "heroku/brew/heroku"
 brew "bash-completion"
 brew "tig"
 brew "asdf"
+brew "git-standup"
 
 cask "iterm2"
 cask "docker"
