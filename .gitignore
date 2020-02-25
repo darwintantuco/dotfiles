@@ -9,5 +9,8 @@ tmux-client-*.log
 # neovim
 /.local/share/nvim/*
 
+# pry
+.local/share/pry/*
+
 .gitconfig
 Brewfile.lock.json
