@@ -31,6 +31,8 @@ end
 " simplify importing JS modules
 " Plug 'Galooshi/vim-import-js'
 
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 " colorscheme
 Plug 'nightsense/snow'
 
@@ -61,13 +63,13 @@ Plug 'tpope/vim-fugitive'
 Plug 'dense-analysis/ale'
 
 " async completion framework
-if has('nvim')
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-else
-  Plug 'Shougo/deoplete.nvim'
-  Plug 'roxma/nvim-yarp'
-  Plug 'roxma/vim-hug-neovim-rpc'
-endif
+" if has('nvim')
+"   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+" else
+"   Plug 'Shougo/deoplete.nvim'
+"   Plug 'roxma/nvim-yarp'
+"   Plug 'roxma/vim-hug-neovim-rpc'
+" endif
 
 " jump to any location specified by two characters
 Plug 'justinmk/vim-sneak'
