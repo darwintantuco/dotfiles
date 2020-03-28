@@ -1,6 +1,4 @@
 set encoding=utf-8
-" use old regex engine, improves ruby syntax highlighting performance
-set re=1
 set pastetoggle=<F3>
 set hls
 set clipboard=unnamed
@@ -15,8 +13,6 @@ set expandtab
 set shiftwidth=2
 set tabstop=2
 set softtabstop=2
-" show current line number
-set number
 " highlight current line
 set cursorline
 set timeoutlen=500
@@ -50,3 +46,10 @@ command! -bang WQ wq<bang>
 " delete trailing whitespace on :w
 autocmd BufWritePre * %s/\s\+$//e
 
+" retired
+"
+" use old regex engine, improves ruby syntax highlighting performance
+" set re=1
+"
+" show current line number
+" set number
