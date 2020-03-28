@@ -1,10 +1,15 @@
 {
   "coc.preferences.formatOnSaveFiletypes": [
-    "css",
-    "markdown",
+    "ruby",
     "javascript",
     "javascriptreact",
     "typescript",
-    "typescriptreact"
-  ]
+    "typescriptreact",
+    "css",
+    "markdown"
+  ],
+  "solargraph.diagnostics": true,
+  "solargraph.autoformat": true,
+  "solargraph.formatting": true,
+  "solargraph.hover": true
 }
