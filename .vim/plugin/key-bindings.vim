@@ -1,7 +1,7 @@
 " plugin specific
 "
 " toggle NERDTree
-nmap <tab> :NERDTreeToggle<cr>
+nmap <leader><tab> :NERDTreeToggle<cr>
 
 " find
 map <leader>f :Ag<space>
