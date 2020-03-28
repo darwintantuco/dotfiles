@@ -60,7 +60,7 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 
 " async linter and fixer
-Plug 'dense-analysis/ale'
+" Plug 'dense-analysis/ale'
 
 " async completion framework
 " if has('nvim')
