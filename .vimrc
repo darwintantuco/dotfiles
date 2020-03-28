@@ -86,7 +86,7 @@ Plug 'rstacruz/sparkup'
 Plug 'thoughtbot/vim-rspec'
 
 " wisely add 'end' in ruby files
-Plug 'tpope/vim-endwise'
+" Plug 'tpope/vim-endwise'
 
 " preview css color in code
 Plug 'ap/vim-css-color'
