@@ -53,7 +53,6 @@ alias rake='bundle exec rake'
 # }
 
 # Vim
-alias v='vim'
-vi() {
-  vim
-}
+alias v='nvim'
+alias vi='nvim'
+alias vim='nvim'
