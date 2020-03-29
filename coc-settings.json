@@ -1,4 +1,6 @@
 {
+  "codeLens.enable": true,
+
   "coc.preferences.formatOnSaveFiletypes": [
     "ruby",
     "javascript",
@@ -8,6 +10,7 @@
     "css",
     "markdown"
   ],
+
   "solargraph.diagnostics": true,
   "solargraph.autoformat": true,
   "solargraph.formatting": true,
