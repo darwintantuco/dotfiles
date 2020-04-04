@@ -1,8 +1,13 @@
 .vim/plugged
 .vim/.netrwhist
+
 tmux-client-*.log
 .DS_STORE
 .local/share/
 .gitconfig
 Brewfile.lock.json
+
+.asdf/installs/
 .asdf/plugins/
+.asdf/shims/
+
