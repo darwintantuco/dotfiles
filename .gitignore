@@ -3,7 +3,7 @@
 tmux-client-*.log
 .DS_STORE
 
-.local/share/*
+.local/share/
 
 .gitconfig
 Brewfile.lock.json
