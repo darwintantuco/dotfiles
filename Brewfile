@@ -4,8 +4,11 @@ tap "homebrew/cask"
 tap "homebrew/core"
 tap "homebrew/services"
 
-brew "autoconf"
+# asdf nodejs
 brew "coreutils"
+brew "gpg"
+
+brew "autoconf"
 brew "git"
 brew "bash-completion"
 brew "exercism"
