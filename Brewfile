@@ -15,7 +15,7 @@ brew "postgresql", restart_service: true
 brew "redis", restart_service: true
 brew "the_silver_searcher"
 brew "tmux"
-brew "vim"
+brew "neovim"
 brew "wxmac"
 brew "z"
 brew "heroku/brew/heroku"
