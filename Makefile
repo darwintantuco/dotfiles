@@ -4,11 +4,11 @@ reset: clean link install
 
 install:
 	nvim +PlugClean! +PlugInstall +qa
-	heroku plugins:install heroku-accounts
-	asdf plugin add ruby
-	asdf plugin add nodejs
+	-asdf plugin add ruby
+	-asdf plugin add nodejs
 	bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
 	asdf install
+	heroku plugins:install heroku-accounts
 
 update:
 	nvim +PlugClean! +PlugInstall PlugUpdate +qa
@@ -38,4 +38,6 @@ clean:
 	rm -rf ~/.default-gems
 	rm -rf ~/.railsrc
 	rm -rf ~/.wakatime.cfg
-	heroku plugins:uninstall heroku-accounts
+	-asdf plugin remove ruby
+	-asdf plugin remove nodejs
+	-heroku plugins:uninstall heroku-accounts
