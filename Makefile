@@ -19,6 +19,7 @@ link:
 	ln -nfs ~/dotfiles/.asdf/.default-gems ~/.default-gems
 	ln -nfs ~/dotfiles/.railsrc ~/.railsrc
 	ln -nfs ~/Dropbox/.wakatime.cfg ~/.wakatime.cfg
+	heroku plugins:install heroku-accounts
 
 clean:
 	rm -rf ~/.bash_profile
@@ -31,3 +32,4 @@ clean:
 	rm -rf ~/.default-gems
 	rm -rf ~/.railsrc
 	rm -rf ~/.wakatime.cfg
+	heroku plugins:uninstall heroku-accounts

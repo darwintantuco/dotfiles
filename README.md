@@ -34,28 +34,10 @@ current tools to get things done
 
 ### Post Setup
 
-#### Vim
-
-```
-:PlugInstall
-```
-
 #### Wakatime
 
 ```
 :WakaTimeApiKey
-```
-
-#### deoplete
-
-```
-$ pip3 install --user pynvim
-```
-
-#### heroku-accounts
-
-```
-$ heroku plugins:install heroku-accounts
 ```
 
 #### bash-completion
