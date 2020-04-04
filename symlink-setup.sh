@@ -6,7 +6,6 @@ ln -nfs ~/dotfiles/.bashrc ~/.bashrc
 # editors
 ln -nfs ~/dotfiles/.vim .vim
 ln -nfs ~/dotfiles/.vimrc .vimrc
-ln -nfs ~/dotfiles/.spacemacs ~/.spacemacs
 # neovim / vim-plug
 ln -nfs ~/dotfiles/.local .local
 mkdir -p ~/.config/nvim/ && ln -nfs ~/dotfiles/init.vim ~/.config/nvim/init.vim
