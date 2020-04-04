@@ -3,14 +3,7 @@
 tmux-client-*.log
 .DS_STORE
 
-# heroku stuff
-/.local/share/heroku/
-
-# neovim
-/.local/share/nvim/*
-
-# pry
-.local/share/pry/*
+.local/share/*
 
 .gitconfig
 Brewfile.lock.json
