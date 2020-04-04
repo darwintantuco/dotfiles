@@ -10,4 +10,6 @@ Brewfile.lock.json
 .asdf/installs/
 .asdf/plugins/
 .asdf/shims/
+.asdf/repository/
+.asdf/tmp/
 
