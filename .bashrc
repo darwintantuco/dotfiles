@@ -25,14 +25,14 @@ parse_git_branch() {
 git config --global color.ui auto
 git config --global user.name "darwin christopher tantuco"
 git config --global user.email "dcrtantuco@gmail.com"
-git config --global core.editor vim
+git config --global core.editor nvim
 git config --global core.excludesfile $HOME/dotfiles/.gitignore_global
 git config --global diff.tool vimdiff
 git config --global merge.tool vimdiff
 git config --global push.default current
 
 # Vim
-export EDITOR="vim"
+export EDITOR="nvim"
 export USE_EDITOR=$EDITOR
 export VISUAL=$EDITOR
 export LC_ALL=en_US.UTF-8
