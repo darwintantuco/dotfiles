@@ -12,7 +12,6 @@ install:
 
 update:
 	nvim +PlugClean! +PlugInstall PlugUpdate +qa
-	asdf update
 	asdf plugin update --all
 	bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
 
