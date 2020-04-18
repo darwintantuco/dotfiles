@@ -1,7 +1,6 @@
 let g:coc_config_home = "$HOME/dotfiles"
 
 let g:coc_global_extensions = [
-  \ 'coc-solargraph',
   \ 'coc-tsserver',
   \ 'coc-prettier',
   \ 'coc-stylelint',
