@@ -8,7 +8,9 @@ tap "homebrew/services"
 brew "coreutils"
 brew "gpg"
 
+# asdf erlang
 brew "autoconf"
+
 brew "git"
 brew "bash-completion"
 brew "exercism"

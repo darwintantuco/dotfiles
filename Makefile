@@ -6,6 +6,8 @@ install:
 	nvim +PlugClean! +PlugInstall +qa
 	-asdf plugin add ruby
 	-asdf plugin add nodejs
+	-asdf plugin add erlang
+	-asdf plugin add elixir
 	bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
 	asdf install
 	heroku plugins:install heroku-accounts
@@ -40,4 +42,6 @@ clean:
 	rm -rf ~/.wakatime.cfg
 	-asdf plugin remove ruby
 	-asdf plugin remove nodejs
+	-asdf plugin remove erlang
+	-asdf plugin remove elixir
 	-heroku plugins:uninstall heroku-accounts
