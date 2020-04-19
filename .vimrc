@@ -13,8 +13,6 @@ end
 
 " experimental
 "
-" helps you stop repeating the basic movement keys
-" Plug 'takac/vim-hardtime'
 "
 " netrw on steroids
 " Plug 'tpope/vim-vinegar'
@@ -119,6 +117,9 @@ Plug 'terryma/vim-expand-region'
 
 " preview markdown files
 Plug 'JamshedVesuna/vim-markdown-preview'
+
+" helps you stop repeating the basic movement keys
+Plug 'takac/vim-hardtime'
 
 call plug#end()
 
