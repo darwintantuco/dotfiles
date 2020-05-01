@@ -1,14 +1,46 @@
-# Settings
+# OSX Settings
+
+## General
+
+Use dark menu bar and Dock: checked
+
+## Dock
+
+Magnification: Max
+
+Animate opening applications: unchecked
+
+Automatically hide and show the Dock: checked
+
+Minimize widows using: Scale effect
 
 ## Keyboard
 
-### use capslock for `FN`
+### Update modifier keys
 
-- dip switch 3: `ON`
+Caps Lock Key: No Action
+
+Control Key: Control
+
+Option Key: Command
+
+Command Key: Option
+
+Function Key: Function
+
+## Mouse
+
+Scroll direction: Natural: unchecked
+
+## Accessibility
+
+### Display
+
+Reduce motion: checked
 
 ## Magnet
 
-### Update shortcut
+### Update shortcuts
 
 - update preferences
   - left: `^⌥ ,`
@@ -41,3 +73,8 @@
 1. Left ⌥ Key
    1. Normal -> Esc+
 
+## Poker 3
+
+### Use capslock for `FN`
+
+dip switch 3: on
