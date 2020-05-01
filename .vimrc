@@ -5,11 +5,7 @@ if empty(glob('~/.vim/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
-if has('nvim')
-  call plug#begin('~/.local/share/nvim/site/autoload/plugged')
-else
-  call plug#begin('~/.vim/plugged')
-end
+call plug#begin('~/.vim/plugged')
 
 " experimental
 "
