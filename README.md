@@ -26,11 +26,7 @@ current tools to get things done
 1. Execute
 
    ```
-   $ brew bundle
-   ```
-
-1. Execute
-
-   ```
-    $ make setup
+   $ cd
+   $ cd dotfiles
+   $ brew bundle && make setup
    ```
