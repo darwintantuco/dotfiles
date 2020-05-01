@@ -13,3 +13,4 @@ Brewfile.lock.json
 .asdf/repository/
 .asdf/tmp/
 
+.vim/autoload/plug.vim
