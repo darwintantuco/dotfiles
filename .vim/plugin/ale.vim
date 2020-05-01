@@ -2,12 +2,12 @@
 " let g:ale_completion_enabled = 1
 
 " Lint on normal mode
-" let g:ale_lint_on_text_changed='normal'
-" let g:ale_lint_on_insert_leave=1
-" let g:ale_lint_on_save = 1
+let g:ale_lint_on_text_changed='normal'
+let g:ale_lint_on_insert_leave=1
+let g:ale_lint_on_save = 1
 
 " Fixers
-" let g:ale_fix_on_save = 1
+let g:ale_fix_on_save = 1
 
 " let g:ale_fixers = {
 " \ 'typescript': ['prettier', 'tslint'],
@@ -20,5 +20,9 @@
 " \ 'markdown': ['prettier']
 " \ }
 
+let g:ale_fixers = {
+\ 'ruby': ['rubocop'],
+\ }
+
 " Invoke rubocop with bundle
-" let g:ale_ruby_rubocop_executable = 'bundle'
+let g:ale_ruby_rubocop_executable = 'bundle'

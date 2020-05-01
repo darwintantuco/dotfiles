@@ -10,10 +10,5 @@
     "css",
     "scss",
     "markdown"
-  ],
-
-  "solargraph.diagnostics": true,
-  "solargraph.autoformat": true,
-  "solargraph.formatting": true,
-  "solargraph.hover": true
+  ]
 }
