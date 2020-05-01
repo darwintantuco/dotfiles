@@ -6,7 +6,7 @@ current tools to get things done
 
 1. Install Command Line Tools for Xcode
 
-   ```
+   ```shell
    $ xcode-select --install
    ```
 
@@ -17,7 +17,7 @@ current tools to get things done
 
 1. Execute
 
-   ```
+   ```shell
    $ cd
    $ git clone git@github.com:darwintantuco/dotfiles.git
    ```
@@ -25,8 +25,8 @@ current tools to get things done
 1. Install [homebrew](https://brew.sh/)
 1. Execute
 
-   ```
+   ```shell
    $ cd
    $ cd dotfiles
-   $ brew bundle && make setup
+   $ caffeinate -i (brew bundle; make setup)
    ```
