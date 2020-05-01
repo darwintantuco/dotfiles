@@ -6,7 +6,6 @@ export PS1="\`if [ \$? != 0 ]; then printf ' \[\033[31m\]\xe2\x9c\x97 '; fi\`\[\
 a
 
 # Apply dark snow colorscheme from vim-plug
-[ -f ~/.vim/plugged/snow/shell/snow_dark.sh ] && [ -n "$PS1" ] && sh ~/.vim/plugged/snow/shell/snow_dark.sh
 [ -f ~/.local/share/nvim/site/autoload/plugged/snow/shell/snow_dark.sh ] && [ -n "$PS1" ] && sh ~/.local/share/nvim/site/autoload/plugged/snow/shell/snow_dark.sh
 
 # cd to last working dir
