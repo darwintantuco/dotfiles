@@ -58,4 +58,7 @@ fi
 export DISABLE_SPRING=true
 
 # Fix OpenSSL issues on macOS asdf erlang
-export KERL_CONFIGURE_OPTIONS="--without-javac --with-ssl=$(brew --prefix openssl)"
+# export KERL_CONFIGURE_OPTIONS="--without-javac --with-ssl=$(brew --prefix openssl)"
+
+# Skip java when doing asdf install erlang
+export KERL_CONFIGURE_OPTIONS="--disable-debug --without-javac"

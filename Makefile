@@ -6,6 +6,7 @@ install:
 	nvim +PlugClean! +PlugInstall +qa
 	-asdf plugin add ruby
 	-asdf plugin add nodejs
+	-export KERL_CONFIGURE_OPTIONS="--disable-debug --without-javac"
 	-asdf plugin add erlang
 	-asdf plugin add elixir
 	bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
