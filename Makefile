@@ -3,6 +3,7 @@ setup: link install
 reset: clean link install
 
 install:
+	-pip3 install neovim --upgrade
 	nvim +PlugClean! +PlugInstall +qa
 	-asdf plugin add ruby
 	-asdf plugin add nodejs

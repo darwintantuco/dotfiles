@@ -11,6 +11,9 @@ brew "gpg"
 # asdf erlang
 brew "autoconf"
 
+# neovim
+brew "python3"
+
 brew "git"
 brew "bash-completion"
 brew "exercism"
