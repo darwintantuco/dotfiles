@@ -28,5 +28,7 @@ current tools to get things done
    ```shell
    $ cd
    $ cd dotfiles
-   $ caffeinate -i (brew bundle; make setup)
+   $ caffeinate -i brew bundle; make setup
    ```
+
+   Note: This will take a while and will prompt for password
