@@ -21,7 +21,6 @@ PROMPT_COMMAND='pwd > ~/.current_dir'
 parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
-[ -f ~/dotfiles/git-completion.bash ] && source ~/dotfiles/git-completion.bash
 
 # Generate ~/.gitconfig
 git config --global color.ui auto
@@ -44,11 +43,8 @@ export LC_ALL=en_US.UTF-8
 export ERL_AFLAGS="-kernel shell_history enabled"
 
 # ASDF
-[ -f $HOME/.asdf/asdf.sh ] && source $HOME/.asdf/asdf.sh
-[ -f $HOME/.asdf/completions/asdf.bash ] && source $HOME/.asdf/completions/asdf.bash
-# via brew
-[ -f /usr/local/opt/asdf/asdf.sh ] && source /usr/local/opt/asdf/asdf.sh
-[ -f /usr/local/opt/asdf/etc/bash_completion.d/asdf.bash ] && source /usr/local/opt/asdf/etc/bash_completion.d/asdf.bash
+[ -f $BREW_PREFIX/opt/asdf/asdf.sh ] && source $BREW_PREFIX/opt/asdf/asdf.sh
+[ -f $BREW_PREFIX/opt/asdf/etc/bash_completion.d/asdf.bash ] && source $BREW_PREFIX/opt/asdf/etc/bash_completion.d/asdf.bash
 
 # z
 if command -v brew >/dev/null 2>&1; then
