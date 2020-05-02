@@ -1,3 +1,8 @@
+# Apply dark snow colorscheme from vim-plug
+[ -f ~/.local/share/nvim/site/autoload/plugged/snow/shell/snow_dark.sh ] && [ -n "$PS1" ] && sh ~/.local/share/nvim/site/autoload/plugged/snow/shell/snow_dark.sh
+
+BREW_PREFIX=$(brew --prefix)
+
 # Fancy prompt
 export PS1="\`if [ \$? != 0 ]; then printf ' \[\033[31m\]\xe2\x9c\x97 '; fi\`\[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
 
@@ -5,15 +10,12 @@ export PS1="\`if [ \$? != 0 ]; then printf ' \[\033[31m\]\xe2\x9c\x97 '; fi\`\[\
 [ -f ~/dotfiles/.aliases ] && source ~/dotfiles/.aliases
 a
 
-# Apply dark snow colorscheme from vim-plug
-[ -f ~/.local/share/nvim/site/autoload/plugged/snow/shell/snow_dark.sh ] && [ -n "$PS1" ] && sh ~/.local/share/nvim/site/autoload/plugged/snow/shell/snow_dark.sh
-
 # cd to last working dir
 PROMPT_COMMAND='pwd > ~/.current_dir'
 [ -f ~/.current_dir ] && cd "$(< ~/.current_dir)"
 
 # Bash completion
-[ -f $(brew --prefix)/etc/bash_completion ] && source $(brew --prefix)/etc/bash_completion
+[ -f $BREW_PREFIX/etc/bash_completion ] && source $BREW_PREFIX/etc/bash_completion
 
 # Git
 parse_git_branch() {
@@ -51,7 +53,7 @@ export ERL_AFLAGS="-kernel shell_history enabled"
 # z
 if command -v brew >/dev/null 2>&1; then
   # Load rupa's z if installed
-  [ -f $(brew --prefix)/etc/profile.d/z.sh ] && source $(brew --prefix)/etc/profile.d/z.sh
+  [ -f $BREW_PREFIX/etc/profile.d/z.sh ] && source $BREW_PREFIX/etc/profile.d/z.sh
 fi
 
 # https://stackoverflow.com/questions/52671926/rails-may-have-been-in-progress-in-another-thread-when-fork-was-called
