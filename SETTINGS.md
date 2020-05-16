@@ -46,6 +46,29 @@ Reduce motion: checked
   - left: `^⌥ ,`
   - right: `^⌥ .`
 
+## Stickies
+
+### Hide from dock
+
+1. Go to applications folder
+1. Right click stickies
+1. Click Choose Package Contents
+1. Open Contents folder
+1. Update Info.plist
+1. Add
+
+   ```
+     <key>LSUIElement</key>
+     <true/>
+   ```
+
+   above
+
+   ```
+   </dict>
+   </plist>
+   ```
+
 ## iTerm2
 
 ### Ignore command R
