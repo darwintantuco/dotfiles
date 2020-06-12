@@ -22,6 +22,7 @@ let g:ale_fix_on_save = 1
 
 let g:ale_fixers = {
 \ 'ruby': ['rubocop'],
+\ 'elixir': [ 'mix_format' ],
 \ }
 
 " Invoke rubocop with bundle
