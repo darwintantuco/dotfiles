@@ -24,7 +24,7 @@ parse_git_branch() {
 
 # Generate ~/.gitconfig
 git config --global color.ui auto
-git config --global user.name "darwin christopher tantuco"
+git config --global user.name "Darwin Tantuco"
 git config --global user.email "dcrtantuco@gmail.com"
 git config --global core.editor nvim
 git config --global core.excludesfile $HOME/dotfiles/.gitignore_global
