@@ -32,3 +32,10 @@ current tools to get things done
    ```
 
    Note: This will take a while and will prompt for password
+
+1. Update `.bashrc` with the correct name and email
+
+   ```shell
+   git config --global user.name "Darwin Tantuco"
+   git config --global user.email "dcrtantuco@gmail.com"
+   ```
