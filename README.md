@@ -2,6 +2,14 @@
 
 current tools to get things done
 
+|   Name   |                  Description                  |
+| :------: | :-------------------------------------------: |
+|  neovim  |                  Code editor                  |
+|   asdf   | Manage ruby, node, elixir and erlang versions |
+| Homebrew |            Package manager for OSX            |
+
+checkout `Brewfile` for complete app list
+
 ## Setup
 
 1. Install Command Line Tools for Xcode
@@ -33,9 +41,11 @@ current tools to get things done
 
    Note: This will take a while and will prompt for password
 
+## Post Setup
+
 1. Update `.bashrc` with the correct name and email
 
    ```shell
-   git config --global user.name "Darwin Tantuco"
-   git config --global user.email "dcrtantuco@gmail.com"
+   git config --global user.name "Your Name"
+   git config --global user.email "Your Email"
    ```
