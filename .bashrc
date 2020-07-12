@@ -1,5 +1,5 @@
 # Apply dark snow colorscheme from vim-plug
-[ -f ~/.local/share/nvim/site/autoload/plugged/snow/shell/snow_dark.sh ] && [ -n "$PS1" ] && sh ~/.local/share/nvim/site/autoload/plugged/snow/shell/snow_dark.sh
+[ -f ~/dotfiles/.vim/plugged/snow/shell/snow_dark.sh ] && [ -n "$PS1" ] && sh ~/dotfiles/.vim/plugged/snow/shell/snow_dark.sh
 
 BREW_PREFIX=$(brew --prefix)
 
