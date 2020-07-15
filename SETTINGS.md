@@ -64,6 +64,10 @@ Show date: checked
 
 Show Bluetooth in menubar: checked
 
+## Users & Groups
+
+Allow guests to log in to this computer: unchecked
+
 ## Magnet
 
 ### Update shortcuts
