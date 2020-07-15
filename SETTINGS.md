@@ -6,7 +6,11 @@ Use dark menu bar and Dock: checked
 
 ## Dock
 
+Size: Large
+
 Magnification: Max
+
+Minimize windows into application icon: checked
 
 Animate opening applications: unchecked
 
@@ -37,6 +41,28 @@ Scroll direction: Natural: unchecked
 ### Display
 
 Reduce motion: checked
+
+## Sound
+
+Show volume in menu bar: checked
+
+## Date & Time
+
+### Timezone
+
+Time Zone: Philippine Standard Time
+
+Closest City: Quezon City
+
+### Clock
+
+Use a 24-hour clock: checked
+
+Show date: checked
+
+## Bluetooth
+
+Show Bluetooth in menubar: checked
 
 ## Magnet
 
