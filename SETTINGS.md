@@ -117,15 +117,6 @@ Allow guests to log in to this computer: unchecked
 1. scroll wheel send arrow keys...
 1. No -> Yes
 
-### Fix key binding issue in tmux
-
-1. preferences
-1. profiles
-1. Default
-1. Keys Tab
-1. Left ⌥ Key
-   1. Normal -> Esc+
-
 ## Poker 3
 
 ### Use capslock for `FN`

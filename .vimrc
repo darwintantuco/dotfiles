@@ -105,9 +105,6 @@ Plug 'mhinz/vim-startify'
 " shows keybindings in popup, same as spacemacs
 Plug 'liuchengxu/vim-which-key'
 
-" navigation between panes and vim
-Plug 'christoomey/vim-tmux-navigator'
-
 " visual selection made easy
 Plug 'terryma/vim-expand-region'
 

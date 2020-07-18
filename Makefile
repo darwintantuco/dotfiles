@@ -21,7 +21,6 @@ update:
 
 link:
 	ln -nfs ~/dotfiles/.bash_profile ~/.bash_profile
-	ln -nfs ~/dotfiles/.tmux.conf ~/.tmux.conf
 	mkdir -p ~/.config/nvim/ && ln -nfs ~/dotfiles/init.vim ~/.config/nvim/init.vim
 	ln -nfs ~/dotfiles/.vim ~/.vim
 	ln -nfs ~/dotfiles/.asdf ~/.asdf
@@ -34,7 +33,6 @@ link:
 
 clean:
 	rm -rf ~/.bash_profile
-	rm -rf ~/.tmux.conf
 	rm -rf ~/.config/nvim/init.vim
 	rm -rf ~/.vim
 	rm -rf ~/.asdf
