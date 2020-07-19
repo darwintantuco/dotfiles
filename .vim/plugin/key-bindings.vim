@@ -43,3 +43,9 @@ noremap <Up> <nop>
 noremap <Down> <nop>
 noremap <Left> <nop>
 noremap <Right> <nop>
+
+" use ctrl-[hjkl] to select/move between window/pane
+nmap <silent> <c-k> :wincmd k<CR>
+nmap <silent> <c-j> :wincmd j<CR>
+nmap <silent> <c-h> :wincmd h<CR>
+nmap <silent> <c-l> :wincmd l<CR>
