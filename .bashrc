@@ -31,6 +31,9 @@ git config --global core.excludesfile $HOME/dotfiles/.gitignore_global
 git config --global diff.tool vimdiff
 git config --global merge.tool vimdiff
 git config --global push.default current
+git config --global pull.rebase false
+git config --global user.signingkey 1AD991AAE601CD85
+git config --global commit.gpgsign true
 
 # Vim
 export EDITOR="nvim"
@@ -60,3 +63,7 @@ export DISABLE_SPRING=true
 
 # Skip java when doing asdf install erlang
 export KERL_CONFIGURE_OPTIONS="--disable-debug --without-javac"
+
+# keybase
+GPG_TTY=$(tty)
+export GPG_TTY

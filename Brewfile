@@ -31,6 +31,7 @@ brew "tig"
 brew "asdf"
 brew "git-standup"
 
+cask "keybase"
 cask "iterm2"
 cask "docker"
 cask "dropbox"
