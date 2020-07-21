@@ -31,7 +31,6 @@ brew "tig"
 brew "asdf"
 brew "git-standup"
 
-cask "keybase"
 cask "iterm2"
 cask "docker"
 cask "dropbox"
@@ -58,3 +57,7 @@ cask "qbittorrent"
 # will prompt for password
 cask "rescuetime"
 cask "zoomus"
+
+# github signed commits
+cask "keybase"
+cask "gpg-suite"
