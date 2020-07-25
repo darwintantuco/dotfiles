@@ -22,3 +22,11 @@ $ sudo curl -L https://raw.githubusercontent.com/docker/compose/1.23.2/contrib/c
 ```
 $ exercism configure --token=$TOKEN`
 ```
+
+## Troubleshooting
+
+1. `pinentry-mac` not prompting for passphrase
+   - restart gpg from terminal:
+     ```
+     gpgconf --kill gpg-agent
+     ```
