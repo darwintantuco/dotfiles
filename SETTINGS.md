@@ -76,47 +76,6 @@ Allow guests to log in to this computer: unchecked
   - left: `^⌥ ,`
   - right: `^⌥ .`
 
-## Stickies
-
-### Hide from dock
-
-1. Go to applications folder
-1. Right click stickies
-1. Click Choose Package Contents
-1. Open Contents folder
-1. Update Info.plist
-1. Add
-
-   ```
-     <key>LSUIElement</key>
-     <true/>
-   ```
-
-   above
-
-   ```
-   </dict>
-   </plist>
-   ```
-
-## iTerm2
-
-### Ignore command R
-
-1. preferences
-1. keys tabs
-1. click + button
-1. enter command + R
-1. action: ignore
-
-### Fix vim trackpad issue
-
-1. preferences
-1. advance
-1. mouse
-1. scroll wheel send arrow keys...
-1. No -> Yes
-
 ## Poker 3
 
 ### Use capslock for `FN`
