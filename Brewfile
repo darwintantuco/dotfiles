@@ -14,6 +14,9 @@ brew "autoconf"
 # neovim
 brew "python3"
 
+# keybase
+brew "pinentry-mac"
+
 brew "git"
 brew "bash-completion"
 brew "exercism"
@@ -60,4 +63,3 @@ cask "zoomus"
 
 # github signed commits
 cask "keybase"
-cask "gpg-suite"
