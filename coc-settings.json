@@ -1,6 +1,4 @@
 {
-  "codeLens.enable": true,
   "coc.preferences.formatOnSaveFiletypes": ["*"],
-  "elixir.pathToElixirLS": "~/dotfiles/.vim/plugged/coc-elixir/els-release/language_server.sh",
-  "elixirLS.mixEnv": "dev"
+  "elixir.pathToElixirLS": "~/dotfiles/.vim/plugged/coc-elixir/els-release/language_server.sh"
 }
