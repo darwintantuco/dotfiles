@@ -3,6 +3,7 @@
 
   "coc.preferences.formatOnSaveFiletypes": [
     "ruby",
+    "elixir",
     "javascript",
     "javascriptreact",
     "typescript",
