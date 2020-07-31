@@ -29,7 +29,6 @@ link:
 	ln -nfs ~/dotfiles/.asdf/.tool-versions ~/.tool-versions
 	ln -nfs ~/dotfiles/.asdf/.default-npm-packages ~/.default-npm-packages
 	ln -nfs ~/dotfiles/.asdf/.default-gems ~/.default-gems
-	ln -nfs ~/dotfiles/.railsrc ~/.railsrc
 	ln -nfs ~/Dropbox/.wakatime.cfg ~/.wakatime.cfg
 
 clean:
@@ -41,7 +40,6 @@ clean:
 	rm -rf ~/.tool-versions
 	rm -rf ~/.default-npm-packages
 	rm -rf ~/.default-gems
-	rm -rf ~/.railsrc
 	rm -rf ~/.wakatime.cfg
 	-asdf plugin remove ruby
 	-asdf plugin remove nodejs

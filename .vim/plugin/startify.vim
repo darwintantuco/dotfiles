@@ -6,15 +6,5 @@ function! s:filter_header(lines) abort
   return centered_lines
 endfunction
 let g:startify_custom_header = s:filter_header(startify#fortune#cowsay())
-
-" custom bookmarks
-let g:startify_bookmarks = [
-      \ {'d': '~/dotfiles'},
-      \ {'v': '~/dotfiles/.vimrc'},
-      \ {'E': '~/Exercism'},
-      \ {'n': '~/Workspace/notes' },
-      \ ]
-
-let g:startify_lists = [
-      \ { 'type': 'bookmarks', 'header': ['   Bookmarks']      }
-      \ ]
+let g:startify_bookmarks = []
+let g:startify_lists = [{'type': 'bookmarks', 'header': ['   Bookmarks']}]
