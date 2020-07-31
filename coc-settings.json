@@ -1,6 +1,5 @@
 {
   "codeLens.enable": true,
-
   "coc.preferences.formatOnSaveFiletypes": [
     "ruby",
     "elixir",
@@ -10,6 +9,8 @@
     "typescriptreact",
     "css",
     "scss",
-    "markdown"
-  ]
+    "markdown",
+    "json"
+  ],
+  "elixir.pathToElixirLS": "~/dotfiles/.vim/plugged/coc-elixir/els-release/language_server.sh"
 }

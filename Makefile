@@ -13,6 +13,7 @@ install:
 	bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
 	asdf install
 	heroku plugins:install heroku-accounts
+	./repair_elixir_ls.sh
 
 update:
 	nvim +PlugClean! +PlugInstall PlugUpdate +qa

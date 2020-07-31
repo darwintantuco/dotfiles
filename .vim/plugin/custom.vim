@@ -19,8 +19,6 @@ set splitright
 set statusline+=%F
 " spell checking on text mode
 set spell spelllang=en_us
-" enable mouse
-set mouse=ia
 
 " colorscheme
 set background=dark
