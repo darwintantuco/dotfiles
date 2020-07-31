@@ -13,10 +13,7 @@ set expandtab
 set shiftwidth=2
 set tabstop=2
 set softtabstop=2
-" highlight current line
-set cursorline
 set timeoutlen=500
-" set relativenumber
 set splitright
 " show current file path
 set statusline+=%F
@@ -31,11 +28,6 @@ colorscheme snow
 
 set colorcolumn=100
 
-" custom cursor shape
-let &t_SI = "\<Esc>[6 q"
-let &t_SR = "\<Esc>[4 q"
-let &t_EI = "\<Esc>[2 q"
-
 " search hit color
 highlight Search ctermfg=black ctermbg=lightyellow
 
@@ -45,11 +37,3 @@ command! -bang WQ wq<bang>
 
 " delete trailing whitespace on :w
 autocmd BufWritePre * %s/\s\+$//e
-
-" retired
-"
-" use old regex engine, improves ruby syntax highlighting performance
-" set re=1
-"
-" show current line number
-" set number

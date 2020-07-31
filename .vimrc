@@ -7,24 +7,6 @@ endif
 
 call plug#begin('~/.vim/plugged')
 
-" experimental
-"
-"
-" netrw on steroids
-" Plug 'tpope/vim-vinegar'
-"
-" sublime text style multiple selection
-" Plug 'terryma/vim-multiple-cursors'
-"
-" easy navigation for rails projects
-" Plug 'tpope/vim-rails'
-"
-" maintain consistent coding styles
-" Plug 'editorconfig/editorconfig-vim'
-"
-" simplify importing JS modules
-" Plug 'Galooshi/vim-import-js'
-
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " colorscheme
@@ -53,18 +35,6 @@ Plug 'tpope/vim-commentary'
 " git wrapper
 Plug 'tpope/vim-fugitive'
 
-" async linter and fixer
-Plug 'dense-analysis/ale'
-
-" async completion framework
-" if has('nvim')
-"   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-" else
-"   Plug 'Shougo/deoplete.nvim'
-"   Plug 'roxma/nvim-yarp'
-"   Plug 'roxma/vim-hug-neovim-rpc'
-" endif
-
 " jump to any location specified by two characters
 Plug 'justinmk/vim-sneak'
 
@@ -74,10 +44,10 @@ Plug 'sheerun/vim-polyglot'
 " language specific
 "
 " write html code faster
-Plug 'rstacruz/sparkup'
+" Plug 'rstacruz/sparkup'
 
 " run rspec inside vim
-Plug 'thoughtbot/vim-rspec'
+" Plug 'thoughtbot/vim-rspec'
 
 " wisely add 'end' in ruby files
 Plug 'tpope/vim-endwise'
@@ -93,9 +63,6 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 " minimalist statusline
 Plug 'itchyny/lightline.vim'
 
-" highlights enclosing tags
-Plug 'Valloric/MatchTagAlways'
-
 " time tracking and metrics
 Plug 'wakatime/vim-wakatime'
 
@@ -108,36 +75,7 @@ Plug 'liuchengxu/vim-which-key'
 " visual selection made easy
 Plug 'terryma/vim-expand-region'
 
-" preview markdown files
-Plug 'JamshedVesuna/vim-markdown-preview'
-
 " helps you stop repeating the basic movement keys
 Plug 'takac/vim-hardtime'
 
 call plug#end()
-
-" retired
-"
-" display the indention levels
-" Plug 'Yggdroot/indentLine',
-" * slow in js files :(
-"
-" " run your favorite search tool in vim
-" Plug 'mileszs/ack.vim',
-" * use Ag instead
-
-" syntax highlighting
-" Plug 'mxw/vim-jsx'
-" Plug 'tpope/vim-haml'
-" Plug 'digitaltoad/vim-pug'
-" Plug 'pangloss/vim-javascript'
-" Plug 'elixir-editors/vim-elixir'
-" * use vim-polyglot instead
-"
-" formats elixir code on save
-" Plug 'mhinz/vim-mix-format'
-" * format on ale instead
-"
-" code formatter
-" Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
-" * format on ale instead
