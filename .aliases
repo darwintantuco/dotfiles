@@ -16,28 +16,6 @@ alias git-conflicts='git diff --name-only --diff-filter=U'
 alias git-ignore='git update-index --assume-unchanged $1'
 alias git-delete-branch='git branch | grep -v "master\|develop" | xargs git branch -D'
 
-# Docker
-alias dr="docker-compose run --rm web"
-alias drs="docker-compose run --rm --service-ports web"
-alias dcu="docker-compose up"
-alias dcd="docker-compose down"
-alias dphx="drs iex -S mix phx.server"
-
-# Search history
-alias hs='history | grep $1'
-
-# Elixir / Phoenix
-alias phx='iex -S mix phx.server'
-alias mcf='mix compile --force'
-alias yy='(cd assets/ && yarn)'
-alias mm='mix test.watch --stale'
-
-# Ruby / Rails
-alias sidekiq='bundle exec sidekiq'
-alias rspec='bundle exec rspec'
-alias rake='bundle exec rake'
-alias guard='bundle exec guard'
-
 # Vim
 alias v='nvim'
 alias vi='nvim'
