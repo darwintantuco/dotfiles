@@ -13,6 +13,8 @@ brew "autoconf"
 brew "python3"
 # keybase
 brew "pinentry-mac"
+# test github actions locally
+brew "act"
 
 brew "asdf"
 brew "git"
