@@ -4,6 +4,7 @@
 1. Login to dropbox and rescuetime
 1. Install magnet and Spark from app store
 1. Install freedom
+1. Sync vscode settings in microsoft account
 
 ## Wakatime
 

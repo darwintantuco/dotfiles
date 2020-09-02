@@ -4,7 +4,8 @@ current tools to get things done
 
 |   Name   |                  Description                  |
 | :------: | :-------------------------------------------: |
-|  neovim  |                  Code editor                  |
+|  neovim  |               Main text editor                |
+|  vscode  |             Secondary text editor             |
 |   asdf   | Manage ruby, node, elixir and erlang versions |
 | Homebrew |            Package manager for OSX            |
 
@@ -43,7 +44,7 @@ checkout `Brewfile` for complete app list
 
 ## Post Setup
 
-1. Update `.bashrc` with the correct name and email
+1. Update `.bashrc` with your name and email
 
    ```shell
    git config --global user.name "Your Name"
