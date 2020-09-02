@@ -5,6 +5,11 @@
 1. Install magnet and Spark from app store
 1. Install freedom
 1. Sync vscode settings in microsoft account
+1. Enable github signed commits
+   - import gpg private key
+     ```
+     $ gpg --import github-private.key
+     ```
 
 ## Wakatime
 
