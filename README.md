@@ -50,3 +50,7 @@ checkout `Brewfile` for complete app list
    git config --global user.name "Your Name"
    git config --global user.email "Your Email"
    ```
+
+1. By default, signed commits are enabled. Update it in `.bashrc`.
+   - You may want to disable it by removing `git config --global commit.gpgsign true`
+   - or update signingkey with your own key `git config --global user.signingkey your-signingkey`
