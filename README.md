@@ -4,10 +4,11 @@ current tools to get things done
 
 |   Name   |                  Description                  |
 | :------: | :-------------------------------------------: |
-|  neovim  |               Main text editor                |
-|  vscode  |             Secondary text editor             |
-|   asdf   | Manage ruby, node, elixir and erlang versions |
-| Homebrew |            Package manager for OSX            |
+|  neovim  |               main text editor                |
+|  vscode  |             secondary text editor             |
+|   bash   |                 default shell                 |
+| homebrew |            package manager for OSX            |
+|   asdf   | manage ruby, node, elixir and erlang versions |
 
 checkout `Brewfile` for complete app list
 
