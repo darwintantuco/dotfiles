@@ -14,6 +14,7 @@ install:
 	asdf install
 	heroku plugins:install heroku-accounts
 	./repair_elixir_ls.sh
+	-createuser -s postgres || true
 
 update:
 	nvim +PlugClean! +PlugInstall PlugUpdate +qa
