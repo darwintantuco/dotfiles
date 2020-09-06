@@ -2,6 +2,8 @@
 
 current tools to get things done
 
+## Overview
+
 |   Name   |                  Description                  |
 | :------: | :-------------------------------------------: |
 |  neovim  |               main text editor                |
@@ -11,6 +13,10 @@ current tools to get things done
 |   asdf   | manage ruby, node, elixir and erlang versions |
 
 checkout `Brewfile` for complete app list
+
+## Requirements
+
+macOS
 
 ## Setup
 
@@ -52,6 +58,6 @@ checkout `Brewfile` for complete app list
    git config --global user.email "Your Email"
    ```
 
-1. By default, signed commits are enabled. Update it in `.bashrc`.
+1. By default, signed commits are enabled. Update it in `.bashrc`
    - You may want to disable it by removing `git config --global commit.gpgsign true`
    - or update signingkey with your own key `git config --global user.signingkey your-signingkey`
