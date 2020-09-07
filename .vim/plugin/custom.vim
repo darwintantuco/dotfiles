@@ -33,5 +33,5 @@ highlight Search ctermfg=black ctermbg=lightyellow
 autocmd InsertEnter * :let @/=""
 command! -bang WQ wq<bang>
 
-" delete trailing whitespace on :w
+" delete trailing whitespace on save
 autocmd BufWritePre * %s/\s\+$//e

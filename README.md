@@ -9,7 +9,7 @@ current tools to get things done
 |  neovim  |               main text editor                |
 |  vscode  |             secondary text editor             |
 |   bash   |                 default shell                 |
-| homebrew |            package manager for OSX            |
+| homebrew |           package manager for macOS           |
 |   asdf   | manage ruby, node, elixir and erlang versions |
 
 checkout `Brewfile` for complete app list
