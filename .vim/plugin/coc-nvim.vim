@@ -1,4 +1,12 @@
 let g:coc_config_home = "$HOME/dotfiles"
+let g:coc_global_extensions = [
+  \ 'coc-json',
+  \ 'coc-elixir',
+  \ 'coc-solargraph',
+  \ 'coc-tsserver',
+  \ 'coc-eslint',
+  \ 'coc-prettier',
+  \ 'coc-stylelint' ]
 
 " TextEdit might fail if hidden is not set.
 set hidden

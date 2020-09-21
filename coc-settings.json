@@ -1,4 +1,3 @@
 {
-  "coc.preferences.formatOnSaveFiletypes": ["*"],
-  "elixir.pathToElixirLS": "~/dotfiles/.vim/plugged/coc-elixir/els-release/language_server.sh"
+  "coc.preferences.formatOnSaveFiletypes": ["*"]
 }
