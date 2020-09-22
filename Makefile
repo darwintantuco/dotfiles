@@ -6,11 +6,11 @@ help:
 	@grep -E '^[a-zA-Z_-].*?: .*?## .*$$' Makefile | sed 's#\\:#:#g' | awk 'BEGIN {FS = ": .*?## "}; {printf "\033[36m  %-20s\033[0m %s\n", $$1, $$2}'
 	@echo
 
-setup: link install ## Runs link and install
+setup: link install ## Run link and install
 
-reset: clean link install ## Runs clean, link and install
+reset: clean link install ## Run clean, link and install
 
-install: ## Installs vim and asdf plugins
+install: ## Install vim and asdf plugins
 	-pip3 install neovim --upgrade
 	nvim +PlugClean! +PlugInstall +qa
 	-asdf plugin add ruby
@@ -23,7 +23,7 @@ install: ## Installs vim and asdf plugins
 	heroku plugins:install heroku-accounts
 	-createuser -s postgres || true
 
-update: ## Updates vim and asdf plugins
+update: ## Update vim and asdf plugins
 	nvim +PlugClean! +PlugInstall PlugUpdate +qa
 	asdf plugin update --all
 	bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
