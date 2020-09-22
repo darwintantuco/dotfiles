@@ -1,8 +1,16 @@
-setup: link install
+default: help
 
-reset: clean link install
+help:
+	@echo
+	@echo "Available commands:"
+	@grep -E '^[a-zA-Z_-].*?: .*?## .*$$' Makefile | sed 's#\\:#:#g' | awk 'BEGIN {FS = ": .*?## "}; {printf "\033[36m  %-20s\033[0m %s\n", $$1, $$2}'
+	@echo
 
-install:
+setup: link install ## Runs link and install
+
+reset: clean link install ## Runs clean, link and install
+
+install: ## Installs vim and asdf plugins
 	-pip3 install neovim --upgrade
 	nvim +PlugClean! +PlugInstall +qa
 	-asdf plugin add ruby
@@ -13,15 +21,14 @@ install:
 	bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
 	asdf install
 	heroku plugins:install heroku-accounts
-	./repair_elixir_ls.sh
 	-createuser -s postgres || true
 
-update:
+update: ## Updates vim and asdf plugins
 	nvim +PlugClean! +PlugInstall PlugUpdate +qa
 	asdf plugin update --all
 	bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
 
-link:
+link: ## Setup symlinks
 	ln -nfs ~/dotfiles/.bash_profile ~/.bash_profile
 	mkdir -p ~/.config/nvim/ && ln -nfs ~/dotfiles/init.vim ~/.config/nvim/init.vim
 	ln -nfs ~/dotfiles/.vim ~/.vim
@@ -32,7 +39,7 @@ link:
 	ln -nfs ~/dotfiles/.asdf/.default-gems ~/.default-gems
 	ln -nfs ~/Dropbox/.wakatime.cfg ~/.wakatime.cfg
 
-clean:
+clean: ## Delete symlinks and uninstall asdf plugins
 	rm -rf ~/.bash_profile
 	rm -rf ~/.config/nvim/init.vim
 	rm -rf ~/.vim
