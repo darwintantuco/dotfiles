@@ -1,3 +1,5 @@
+dip switch 3: on
+
 # OSX Settings
 
 ## General
@@ -10,13 +12,15 @@ Size: Large
 
 Magnification: Max
 
+Minimize widows using: Scale effect
+
 Minimize windows into application icon: checked
 
 Animate opening applications: unchecked
 
 Automatically hide and show the Dock: checked
 
-Minimize widows using: Scale effect
+Show recent applications in Dock: unchecked
 
 ## Keyboard
 
@@ -67,17 +71,3 @@ Show Bluetooth in menubar: checked
 ## Users & Groups
 
 Allow guests to log in to this computer: unchecked
-
-## Magnet
-
-### Update shortcuts
-
-- update preferences
-  - left: `^⌥ ,`
-  - right: `^⌥ .`
-
-## Poker 3
-
-### Use capslock for `FN`
-
-dip switch 3: on

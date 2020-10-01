@@ -11,6 +11,18 @@
      $ gpg --import github-private.key
      ```
 
+## Magnet
+
+### Update shortcuts
+
+- update preferences
+  - left: `^⌥ ,`
+  - right: `^⌥ .`
+
+## Poker 3
+
+### Use capslock for `FN`
+
 ## Wakatime
 
 ```
