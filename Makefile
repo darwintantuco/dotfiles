@@ -31,6 +31,7 @@ update: ## Update vim and asdf plugins
 link: ## Setup symlinks
 	ln -nfs ~/dotfiles/.bash_profile ~/.bash_profile
 	mkdir -p ~/.config/nvim/ && ln -nfs ~/dotfiles/init.vim ~/.config/nvim/init.vim
+	mkdir -p ~/.gnupg/ && ln -nfs ~/dotfiles/gpg-agent.conf ~/.gnupg/gpg-agent.conf
 	ln -nfs ~/dotfiles/.vim ~/.vim
 	ln -nfs ~/dotfiles/.asdf ~/.asdf
 	ln -nfs ~/dotfiles/.asdf/.asdfrc ~/.asdfrc
