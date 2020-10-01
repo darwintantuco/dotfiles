@@ -20,6 +20,8 @@ brew "act"
 
 brew "asdf"
 brew "git"
+brew "tig"
+brew "bash-completion"
 brew "exercism"
 brew "gnupg"
 brew "postgresql", restart_service: true
