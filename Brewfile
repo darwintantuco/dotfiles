@@ -10,7 +10,7 @@ brew "gpg"
 # asdf erlang
 brew "autoconf"
 brew "wxmac"
-brew "openssl"
+brew "openssl@1.1"
 # neovim
 brew "python3"
 # keybase

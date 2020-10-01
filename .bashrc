@@ -60,7 +60,7 @@ export DISABLE_SPRING=true
 
 # Compile/install erlang on macOS Catalina
 export CFLAGS="-O2 -g -fno-stack-check -Wno-error=implicit-function-declaration"
-export KERL_CONFIGURE_OPTIONS="--disable-hipe --without-javac --with-ssl=$BREW_PREFIX"
+export KERL_CONFIGURE_OPTIONS="--disable-hipe --without-javac --with-ssl=$BREW_PREFIX/opt/openssl@1.1"
 
 # keybase
 GPG_TTY=$(tty)
