@@ -12,7 +12,6 @@ reset: clean link install ## Run clean, link and install
 
 install: ## Install vim and asdf plugins
 	-pip3 install neovim --upgrade
-	nvim +PlugClean! +PlugInstall +qa
 	-asdf plugin add ruby
 	-asdf plugin add nodejs
 	-export KERL_CONFIGURE_OPTIONS="--disable-debug --without-javac"
@@ -20,6 +19,7 @@ install: ## Install vim and asdf plugins
 	-asdf plugin add elixir
 	bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
 	asdf install
+	nvim +PlugClean! +PlugInstall +qa
 	heroku plugins:install heroku-accounts
 	-createuser -s postgres || true
 

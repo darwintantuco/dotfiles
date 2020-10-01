@@ -58,9 +58,13 @@ fi
 # https://stackoverflow.com/questions/52671926/rails-may-have-been-in-progress-in-another-thread-when-fork-was-called
 export DISABLE_SPRING=true
 
-# Skip java when doing asdf install erlang
-export KERL_CONFIGURE_OPTIONS="--disable-debug --without-javac"
+# Compile/install erlang on macOS Catalina
+export CFLAGS="-O2 -g -fno-stack-check -Wno-error=implicit-function-declaration"
+export KERL_CONFIGURE_OPTIONS="--disable-hipe --without-javac --with-ssl=$BREW_PREFIX"
 
 # keybase
 GPG_TTY=$(tty)
 export GPG_TTY
+
+# hide ‘default interactive shell is now zsh’
+export BASH_SILENCE_DEPRECATION_WARNING=1

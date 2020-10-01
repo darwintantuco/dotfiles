@@ -9,6 +9,8 @@ brew "coreutils"
 brew "gpg"
 # asdf erlang
 brew "autoconf"
+brew "wxmac"
+brew "openssl"
 # neovim
 brew "python3"
 # keybase
@@ -24,7 +26,6 @@ brew "postgresql", restart_service: true
 brew "redis", restart_service: true
 brew "the_silver_searcher"
 brew "neovim"
-brew "wxmac"
 brew "z"
 brew "heroku/brew/heroku"
 
