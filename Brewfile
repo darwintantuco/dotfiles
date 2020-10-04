@@ -47,6 +47,8 @@ cask "skype"
 cask "visual-studio-code"
 cask "tunnelbear"
 cask "steam"
+cask "viber"
+cask "telegram"
 
 # inconsistent source availability / download speed
 cask "vlc"
