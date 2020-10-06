@@ -49,6 +49,7 @@ cask "tunnelbear"
 cask "steam"
 cask "viber"
 cask "telegram"
+cask "linear-linear"
 
 # inconsistent source availability / download speed
 cask "vlc"
