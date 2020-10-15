@@ -1,12 +1,12 @@
-# Apply dark snow colorscheme from vim-plug
+# apply dark snow colorscheme from vim-plug
 [ -f ~/dotfiles/.vim/plugged/snow/shell/snow_dark.sh ] && [ -n "$PS1" ] && sh ~/dotfiles/.vim/plugged/snow/shell/snow_dark.sh
 
 BREW_PREFIX=$(brew --prefix)
 
-# Fancy prompt
+# fancy prompt
 export PS1="\`if [ \$? != 0 ]; then printf ' \[\033[31m\]\xe2\x9c\x97 '; fi\`\[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
 
-# Aliases
+# aliases
 [ -f ~/dotfiles/.aliases ] && source ~/dotfiles/.aliases
 a
 
@@ -14,15 +14,15 @@ a
 PROMPT_COMMAND='pwd > ~/.current_dir'
 [ -f ~/.current_dir ] && cd "$(< ~/.current_dir)"
 
-# Bash completion
+# bash completion
 [ -f $BREW_PREFIX/etc/bash_completion ] && source $BREW_PREFIX/etc/bash_completion
 
-# Git
+# show git branch on command line
 parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 
-# Generate ~/.gitconfig
+# generate ~/.gitconfig
 git config --global color.ui auto
 git config --global user.name "Darwin Tantuco"
 git config --global user.email "dcrtantuco@gmail.com"
@@ -35,17 +35,17 @@ git config --global pull.rebase false
 git config --global user.signingkey 1AD991AAE601CD85
 git config --global commit.gpgsign true
 
-# Vim
+# vim
 export EDITOR="nvim"
 export USE_EDITOR=$EDITOR
 export VISUAL=$EDITOR
 export LC_ALL=en_US.UTF-8
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
-# Save erlang/IEx history
+# save erlang/IEx history
 export ERL_AFLAGS="-kernel shell_history enabled"
 
-# ASDF
+# asdf
 [ -f $BREW_PREFIX/opt/asdf/asdf.sh ] && source $BREW_PREFIX/opt/asdf/asdf.sh
 [ -f $BREW_PREFIX/opt/asdf/etc/bash_completion.d/asdf.bash ] && source $BREW_PREFIX/opt/asdf/etc/bash_completion.d/asdf.bash
 
@@ -58,7 +58,7 @@ fi
 # https://stackoverflow.com/questions/52671926/rails-may-have-been-in-progress-in-another-thread-when-fork-was-called
 export DISABLE_SPRING=true
 
-# Compile/install erlang on macOS Catalina
+# compile/install erlang on macOS catalina
 export CFLAGS="-O2 -g -fno-stack-check -Wno-error=implicit-function-declaration"
 export KERL_CONFIGURE_OPTIONS="--disable-hipe --without-javac --with-ssl=$BREW_PREFIX/opt/openssl@1.1"
 
@@ -66,5 +66,5 @@ export KERL_CONFIGURE_OPTIONS="--disable-hipe --without-javac --with-ssl=$BREW_P
 GPG_TTY=$(tty)
 export GPG_TTY
 
-# hide ‘default interactive shell is now zsh’
+# hide ‘default interactive shell is now zsh’ on macOS catalina
 export BASH_SILENCE_DEPRECATION_WARNING=1
