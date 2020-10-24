@@ -19,6 +19,8 @@ set splitright
 set statusline+=%F
 " spell checking on text mode
 set spell spelllang=en_us
+" highlight current line
+set cursorline
 
 " colorscheme
 set background=dark
