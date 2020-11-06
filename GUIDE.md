@@ -2,7 +2,10 @@
 
 1. Update OSX Settings
 1. Login to dropbox and rescuetime
-1. Install magnet and Spark from app store
+1. Install from apps store:
+   1. magnet
+   1. spark
+   1. menu world time
 1. Install:
    1. freedom
    1. heyfocus
