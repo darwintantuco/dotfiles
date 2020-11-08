@@ -10,7 +10,7 @@
    1. freedom
    1. heyfocus
    1. CleanMyMac X
-   1. Bartender 3 / vanilla
+   1. vanilla
    1. iStat Menus
 1. Sync vscode settings in microsoft account
 1. Enable github signed commits
@@ -30,6 +30,8 @@
 ## Poker 3
 
 ### Use capslock for `FN`
+
+dip switch 3: on
 
 ## Wakatime
 

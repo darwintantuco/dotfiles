@@ -1,5 +1,3 @@
-dip switch 3: on
-
 # OSX Settings
 
 ## General
