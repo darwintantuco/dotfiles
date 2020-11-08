@@ -22,6 +22,8 @@ Automatically hide and show the Dock: checked
 
 Show recent applications in Dock: unchecked
 
+Show indicators for open applications: checked
+
 ## Keyboard
 
 ### Update modifier keys
