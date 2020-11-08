@@ -13,10 +13,10 @@ alias gcm='git commit --message'
 alias gca='git commit --amend'
 alias gwip='git add -A; git rm $(git ls-files --deleted) 2> /dev/null; git commit --no-verify --no-gpg-sign -m "--wip-- [skip ci]"'
 alias gunwip='git log -n 1 | grep -q -c "\-\-wip\-\-" && git reset HEAD~1'
-alias git-reset-last='git reset --soft HEAD~1'
-alias git-conflicts='git diff --name-only --diff-filter=U'
+alias git-revert-last-commit='git reset --soft HEAD~1'
+alias git-show-conflicts='git diff --name-only --diff-filter=U'
 alias git-ignore='git update-index --assume-unchanged $1'
-alias git-delete-branch='git branch | grep -v "master\|develop" | xargs git branch -D'
+alias git-delete-branches='git branch | grep -v "master\|develop" | xargs git branch -D'
 
 # Vim
 alias v='nvim'
