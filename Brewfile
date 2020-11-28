@@ -31,6 +31,7 @@ brew "neovim"
 brew "z"
 brew "heroku/brew/heroku"
 
+cask "authy"
 cask "iterm2"
 cask "docker"
 cask "dropbox"
