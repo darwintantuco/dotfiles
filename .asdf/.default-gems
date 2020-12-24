@@ -1,6 +1,4 @@
 bundler
-pry
 rails
 sidekiq
-foreman
 solargraph
