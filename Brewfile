@@ -30,6 +30,7 @@ brew "the_silver_searcher"
 brew "neovim"
 brew "z"
 brew "heroku/brew/heroku"
+brew "tmate"
 
 cask "authy"
 cask "iterm2"
