@@ -68,3 +68,6 @@ export GPG_TTY
 
 # hide ‘default interactive shell is now zsh’ on macOS catalina
 export BASH_SILENCE_DEPRECATION_WARNING=1
+
+# add helpful docs in iex on erlang functions
+export KERL_BUILD_DOCS="yes"
