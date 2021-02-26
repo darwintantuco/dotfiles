@@ -4,8 +4,6 @@ nmap <leader><tab> :NERDTreeToggle<cr>
 map <leader>f :Ag<space>
 " fzf
 map <leader>t :FZF<esc>
-" vim-which-key
-nnoremap <silent> <leader> :WhichKey '\'<cr>
 
 " map jj to <esc>
 inoremap jj <esc>
@@ -15,11 +13,6 @@ command! -bang Q q<bang>
 command! -bang W w<bang>
 " allow :Wq
 command! -bang Wq wq<bang>
-" disable arrow keys
-noremap <Up> <nop>
-noremap <Down> <nop>
-noremap <Left> <nop>
-noremap <Right> <nop>
 " use ctrl-[hjkl] to select/move between window/pane
 nmap <silent> <c-k> :wincmd k<CR>
 nmap <silent> <c-j> :wincmd j<CR>
