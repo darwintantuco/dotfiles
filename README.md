@@ -43,8 +43,6 @@ macOS
 
    Note: This will take a while and will prompt for password
 
-## Post Setup
-
 1. Update `.bashrc` with your name and email
 
    ```shell
@@ -52,6 +50,6 @@ macOS
    git config --global user.email "Your Email"
    ```
 
-1. By default, signed commits are enabled. Update it in `.bashrc`
+1. (Optional) By default, signed commits are enabled. Update it in `.bashrc`
    - You may want to disable it by removing `git config --global commit.gpgsign true`
    - or update signingkey with your own key `git config --global user.signingkey your-signingkey`
