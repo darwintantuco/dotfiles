@@ -44,5 +44,7 @@ Plug 'terryma/vim-expand-region'
 Plug 'takac/vim-hardtime'
 " time tracking and metrics
 Plug 'wakatime/vim-wakatime'
+" closes brackets after pressing Enter
+Plug 'rstacruz/vim-closer'
 
 call plug#end()
