@@ -46,5 +46,8 @@ Plug 'takac/vim-hardtime'
 Plug 'wakatime/vim-wakatime'
 " closes brackets after pressing Enter
 Plug 'rstacruz/vim-closer'
+" shows keybindings in popup
+Plug 'liuchengxu/vim-which-key'
+Plug 'vim-test/vim-test'
 
 call plug#end()
