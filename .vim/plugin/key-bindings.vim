@@ -18,8 +18,12 @@ nmap <silent> <c-k> :wincmd k<CR>
 nmap <silent> <c-j> :wincmd j<CR>
 nmap <silent> <c-h> :wincmd h<CR>
 nmap <silent> <c-l> :wincmd l<CR>
+" sort
+map <leader><leader> :sort i<cr>
+
 " vim-which-key
 nnoremap <silent> <leader> :WhichKey '\'<cr>
 " vim-test
 nmap <silent> <leader>tn :TestNearest<CR>
 nmap <silent> <leader>tf :TestFile<CR>
+
