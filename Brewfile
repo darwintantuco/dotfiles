@@ -32,6 +32,8 @@ brew "z"
 brew "heroku/brew/heroku"
 brew "tmate"
 
+brew "imagemagick"
+
 cask "authy"
 cask "iterm2"
 cask "docker"
@@ -55,7 +57,7 @@ cask "linear-linear"
 
 # will prompt for password
 cask "rescuetime"
-cask "zoomus"
+cask "zoom"
 # github signed commits
 cask "keybase"
 
