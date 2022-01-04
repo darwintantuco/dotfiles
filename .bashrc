@@ -71,3 +71,5 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 
 # add helpful docs in iex on erlang functions
 export KERL_BUILD_DOCS="yes"
+
+export NODE_EXTRA_CA_CERTS="$(mkcert -CAROOT)/rootCA.pem"
