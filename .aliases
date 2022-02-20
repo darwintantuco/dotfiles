@@ -19,6 +19,7 @@ alias gunwip='git log -n 1 | grep -q -c "\-\-wip\-\-" && git reset HEAD~1'
 alias git-revert-last-commit='git reset --soft HEAD~1'
 alias git-show-conflicts='git diff --name-only --diff-filter=U'
 alias git-ignore='git update-index --skip-worktree $1'
+alias git-unignore='git update-index --no-skip-worktree $1'
 alias git-delete-branches='git branch | grep -v "master\|develop" | xargs git branch -D'
 
 # Vim
