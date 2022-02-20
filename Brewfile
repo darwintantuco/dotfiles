@@ -50,9 +50,9 @@ cask "anki"
 cask "skype"
 cask "visual-studio-code"
 cask "tunnelbear"
-cask "steam"
-cask "viber"
-cask "telegram"
+# cask "steam"
+# cask "viber"
+# cask "telegram"
 cask "linear-linear"
 
 # will prompt for password
