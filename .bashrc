@@ -34,6 +34,7 @@ git config --global push.default current
 git config --global pull.rebase false
 git config --global user.signingkey 1AD991AAE601CD85
 git config --global commit.gpgsign true
+git config --global checkout.defaultRemote origin
 
 # vim
 export EDITOR="nvim"

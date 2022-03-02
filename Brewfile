@@ -34,6 +34,7 @@ brew "tmate"
 
 brew "imagemagick"
 
+# apps
 cask "authy"
 cask "iterm2"
 cask "docker"
@@ -46,6 +47,7 @@ cask "spotify"
 cask "ngrok"
 cask "licecap"
 cask "caffeine"
+cask "notion"
 cask "anki"
 cask "skype"
 cask "visual-studio-code"
