@@ -3,14 +3,15 @@
 1. Update OSX Settings
 1. Login to dropbox and rescuetime
 1. Install from apps store:
-   1. magnet
-   1. spark
-   1. menu world time
+   1. Magnet
+   1. Be Focused Pro: Pomodoro Timer
+   1. Spark
+   1. MenuWorldTime
+   1. MeetingBar
 1. Install:
-   1. freedom
-   1. heyfocus
+   1. Freedom
+   1. Vanilla
    1. CleanMyMac X
-   1. vanilla
    1. iStat Menus
 1. Sync vscode settings in microsoft account
 1. Enable github signed commits

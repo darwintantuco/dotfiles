@@ -15,8 +15,6 @@ brew "openssl@1.1"
 brew "python3"
 # keybase
 brew "pinentry-mac"
-# test github actions locally
-brew "act"
 
 brew "asdf"
 brew "git"
@@ -52,9 +50,6 @@ cask "anki"
 cask "skype"
 cask "visual-studio-code"
 cask "tunnelbear"
-# cask "steam"
-# cask "viber"
-# cask "telegram"
 cask "linear-linear"
 
 # will prompt for password
