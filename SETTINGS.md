@@ -22,6 +22,14 @@ Show recent applications in Dock: unchecked
 
 Show indicators for open applications: checked
 
+Automatically hide and show the menu bar on desktop: unchecked
+
+## Trackpad
+
+Tracking speed: fast
+
+Scroll direction: Natural: unchecked
+
 ## Keyboard
 
 ### Update modifier keys

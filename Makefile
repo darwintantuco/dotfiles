@@ -11,25 +11,24 @@ setup: link install ## Run link and install
 reset: clean link install ## Run clean, link and install
 
 install: ## Install vim and asdf plugins
-	-pip3 install neovim --upgrade
-	-asdf plugin add ruby
-	-asdf plugin add nodejs
-	-export KERL_CONFIGURE_OPTIONS="--disable-debug --without-javac"
-	-asdf plugin add erlang
-	-asdf plugin add elixir
-	bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
-	asdf install
 	nvim +PlugClean! +PlugInstall +qa
 	heroku plugins:install heroku-accounts
 	-createuser -s postgres || true
+	-pip3 install neovim --upgrade
+	-asdf plugin add ruby https://github.com/asdf-vm/asdf-ruby.git
+	-asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
+	-export KERL_CONFIGURE_OPTIONS="--disable-debug --without-javac"
+	-asdf plugin add erlang https://github.com/asdf-vm/asdf-erlang.git
+	-asdf plugin add elixir https://github.com/asdf-vm/asdf-elixir.git
+	asdf install
 
 update: ## Update vim and asdf plugins
 	nvim +PlugClean! +PlugInstall PlugUpdate +qa
 	asdf plugin update --all
-	bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
 
 link: ## Setup symlinks
 	ln -nfs ~/dotfiles/.bash_profile ~/.bash_profile
+	ln -nfs ~/dotfiles/.bashrc ~/.bashrc
 	mkdir -p ~/.config/nvim/ && ln -nfs ~/dotfiles/init.vim ~/.config/nvim/init.vim
 	mkdir -p ~/.gnupg/ && ln -nfs ~/dotfiles/gpg-agent.conf ~/.gnupg/gpg-agent.conf
 	ln -nfs ~/dotfiles/.vim ~/.vim

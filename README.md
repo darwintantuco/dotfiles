@@ -20,6 +20,11 @@ macOS
 
 ## Setup
 
+1. Use bash
+   ```shell
+   chsh -s /bin/bash
+   ```
+
 1. Install [homebrew](https://brew.sh/)
 1. Configure SSH
 
@@ -38,10 +43,19 @@ macOS
    ```shell
    $ cd
    $ cd dotfiles
-   $ caffeinate -i brew bundle; make setup
+   $ caffeinate -i brew bundle
    ```
 
    Note: This will take a while and will prompt for password
+
+
+1. Login on Dropbox app
+
+1. Execute
+
+   ```shell
+   $ make setup
+   ```
 
 1. Update `.bashrc` with your name and email
 

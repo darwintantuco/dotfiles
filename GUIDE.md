@@ -9,16 +9,29 @@
    1. MenuWorldTime
    1. MeetingBar
 1. Install:
+   1. iStat Menus
+   1. TablePlus
+   1. CleanMyMac X
    1. Freedom
    1. Vanilla
-   1. CleanMyMac X
-   1. iStat Menus
 1. Sync vscode settings in microsoft account
 1. Enable github signed commits
    - import gpg private key
      ```
      $ gpg --import github-private.key
      ```
+
+## Spotlight
+
+Prevent Spotlight from searching these locations:
+
+- Add `Workspace` folder
+
+## Docker
+
+CPUs: 4
+
+Memory: 8.00 GB
 
 ## Magnet
 

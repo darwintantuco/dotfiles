@@ -57,9 +57,9 @@ if command -v brew >/dev/null 2>&1; then
 fi
 
 # https://stackoverflow.com/questions/52671926/rails-may-have-been-in-progress-in-another-thread-when-fork-was-called
-export DISABLE_SPRING=true
+# export DISABLE_SPRING=true
 
-# compile/install erlang on macOS catalina
+# compile asdf erlang without error
 export CFLAGS="-O2 -g -fno-stack-check -Wno-error=implicit-function-declaration"
 export KERL_CONFIGURE_OPTIONS="--disable-hipe --without-javac --with-ssl=$BREW_PREFIX/opt/openssl@1.1"
 
@@ -67,10 +67,11 @@ export KERL_CONFIGURE_OPTIONS="--disable-hipe --without-javac --with-ssl=$BREW_P
 GPG_TTY=$(tty)
 export GPG_TTY
 
-# hide ‘default interactive shell is now zsh’ on macOS catalina
+# hide ‘default interactive shell is now zsh’
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
 # add helpful docs in iex on erlang functions
 export KERL_BUILD_DOCS="yes"
 
+# work
 export NODE_EXTRA_CA_CERTS="$(mkcert -CAROOT)/rootCA.pem"

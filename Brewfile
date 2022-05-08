@@ -9,8 +9,10 @@ brew "coreutils"
 brew "gpg"
 # asdf erlang
 brew "autoconf"
-brew "wxmac"
+brew "wxwidgets"
 brew "openssl@1.1"
+brew "libxslt"
+brew "fop"
 # neovim
 brew "python3"
 # keybase
@@ -32,32 +34,38 @@ brew "tmate"
 
 brew "imagemagick"
 
-# apps
+# work
+brew "nginx"
+brew "nss"
+brew "mkcert"
+brew "dnsmasq"
+
+# work apps
 cask "authy"
 cask "iterm2"
 cask "docker"
+cask "ngrok"
+cask "licecap"
+cask "visual-studio-code"
+cask "linear-linear"
+# github signed commits
+cask "keybase"
+
+# personal apps
 cask "dropbox"
 cask "google-chrome"
 cask "firefox"
 cask "slack"
 cask "discord"
 cask "spotify"
-cask "ngrok"
-cask "licecap"
 cask "caffeine"
 cask "notion"
 cask "anki"
 cask "skype"
-cask "visual-studio-code"
 cask "tunnelbear"
-cask "linear-linear"
-
 # will prompt for password
 cask "rescuetime"
 cask "zoom"
-# github signed commits
-cask "keybase"
-
 # inconsistent source availability / download speed
 cask "vlc"
 cask "qbittorrent"
