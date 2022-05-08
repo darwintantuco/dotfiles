@@ -63,8 +63,8 @@ cask "notion"
 cask "anki"
 cask "skype"
 cask "tunnelbear"
+cask "notion"
 # will prompt for password
-cask "rescuetime"
 cask "zoom"
 # inconsistent source availability / download speed
 cask "vlc"

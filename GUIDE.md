@@ -14,6 +14,7 @@
    1. CleanMyMac X
    1. Freedom
    1. Vanilla
+   1. Rescuetime Classic - `https://www.rescuetime.com/get_rescuetime`
 1. Sync vscode settings in microsoft account
 1. Enable github signed commits
    - import gpg private key
