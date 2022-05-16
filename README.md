@@ -43,7 +43,7 @@ macOS
    ```shell
    $ cd
    $ cd dotfiles
-   $ caffeinate -i brew bundle
+   $ caffeinate -i brew bundle --verbose
    ```
 
    Note: This will take a while and will prompt for password

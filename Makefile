@@ -11,16 +11,16 @@ setup: link install ## Run link and install
 reset: clean link install ## Run clean, link and install
 
 install: ## Install vim and asdf plugins
-	nvim +PlugClean! +PlugInstall +qa
-	heroku plugins:install heroku-accounts
-	-createuser -s postgres || true
-	-pip3 install neovim --upgrade
 	-asdf plugin add ruby https://github.com/asdf-vm/asdf-ruby.git
 	-asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
 	-export KERL_CONFIGURE_OPTIONS="--disable-debug --without-javac"
 	-asdf plugin add erlang https://github.com/asdf-vm/asdf-erlang.git
 	-asdf plugin add elixir https://github.com/asdf-vm/asdf-elixir.git
 	asdf install
+	nvim +PlugClean! +PlugInstall +qa
+	heroku plugins:install heroku-accounts
+	-createuser -s postgres || true
+	-pip3 install neovim --upgrade
 
 update: ## Update vim and asdf plugins
 	nvim +PlugClean! +PlugInstall PlugUpdate +qa
