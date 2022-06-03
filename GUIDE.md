@@ -48,6 +48,21 @@ Memory: 8.00 GB
 
 dip switch 3: on
 
+## Ducky One 3 SF DayBreak
+
+### Use capslock for `FN`
+
+- press Fn + Alt + k for 5 seconds
+- press capslock
+- press escape
+
+### Map arrow keys to `IJKL`
+
+- switch to profile 2
+  - Press Fn + Alt + 2
+- start macro recording
+  - Fn + Alt + Tab for 3 seconds
+
 ## Wakatime
 
 ```
