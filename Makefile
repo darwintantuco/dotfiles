@@ -30,7 +30,7 @@ link: ## Setup symlinks
 	ln -nfs ~/dotfiles/.bash_profile ~/.bash_profile
 	ln -nfs ~/dotfiles/.bashrc ~/.bashrc
 	mkdir -p ~/.config/nvim/ && ln -nfs ~/dotfiles/init.vim ~/.config/nvim/init.vim
-	mkdir -p ~/.gnupg/ && ln -nfs ~/dotfiles/gpg-agent.conf ~/.gnupg/gpg-agent.conf
+	mkdir -p ~/.gnupg/ && echo "pinentry-program $(brew --prefix)/bin/pinentry-mac" > ~/.gnupg/gpg-agent.conf
 	ln -nfs ~/dotfiles/.vim ~/.vim
 	ln -nfs ~/dotfiles/.asdf ~/.asdf
 	ln -nfs ~/dotfiles/.asdf/.asdfrc ~/.asdfrc
