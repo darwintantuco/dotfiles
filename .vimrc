@@ -49,5 +49,7 @@ Plug 'rstacruz/vim-closer'
 " shows keybindings in popup
 Plug 'liuchengxu/vim-which-key'
 Plug 'vim-test/vim-test'
+" AI code suggestion
+Plug 'github/copilot.vim'
 
 call plug#end()
