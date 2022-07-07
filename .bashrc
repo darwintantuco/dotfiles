@@ -1,6 +1,10 @@
 # apply dark snow colorscheme from vim-plug
 [ -f ~/dotfiles/.vim/plugged/snow/shell/snow_dark.sh ] && [ -n "$PS1" ] && sh ~/dotfiles/.vim/plugged/snow/shell/snow_dark.sh
 
+if [[ $(uname -m) == 'arm64' ]]; then
+  export PATH=/opt/homebrew/bin:$PATH
+fi
+
 BREW_PREFIX=$(brew --prefix)
 
 # fancy prompt
@@ -63,9 +67,8 @@ fi
 export CFLAGS="-O2 -g -fno-stack-check -Wno-error=implicit-function-declaration"
 export KERL_CONFIGURE_OPTIONS="--disable-hipe --without-javac --with-ssl=$BREW_PREFIX/opt/openssl@1.1"
 
-# keybase
-GPG_TTY=$(tty)
-export GPG_TTY
+# keybase / signed commits
+export GPG_TTY=$(tty)
 
 # hide ‘default interactive shell is now zsh’
 export BASH_SILENCE_DEPRECATION_WARNING=1

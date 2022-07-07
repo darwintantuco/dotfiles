@@ -26,8 +26,8 @@ Automatically hide and show the menu bar on desktop: unchecked
 
 ## Trackpad
 
+Tap to click: checked
 Tracking speed: fast
-
 Scroll direction: Natural: unchecked
 
 ## Keyboard

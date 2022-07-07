@@ -12,8 +12,6 @@ cask "ngrok"
 cask "licecap"
 cask "visual-studio-code"
 cask "linear-linear"
-# github signed commits
-cask "keybase"
 
 # personal
 cask "dropbox"
@@ -29,12 +27,17 @@ cask "skype"
 cask "tunnelbear"
 cask "notion"
 
+# signed-commits
+# cask "keybase"
+brew "gpg2"
+brew "gnupg"
+brew "pinentry-mac"
+
 brew "asdf"
 brew "git"
 brew "tig"
 brew "bash-completion"
 brew "exercism"
-brew "gnupg"
 brew "postgresql", restart_service: true
 brew "redis", restart_service: true
 brew "the_silver_searcher"
@@ -46,10 +49,10 @@ brew "imagemagick"
 
 # asdf nodejs
 brew "coreutils"
-brew "gpg"
+
 # asdf erlang
 brew "autoconf"
-brew "wxwidgets"
+# brew "wxwidgets"
 brew "openssl@1.1"
 brew "libxslt"
 brew "fop"
@@ -60,8 +63,6 @@ brew "nginx"
 brew "nss"
 brew "mkcert"
 brew "dnsmasq"
-# keybase
-brew "pinentry-mac"
 
 # other apps
 

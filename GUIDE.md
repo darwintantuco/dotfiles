@@ -30,8 +30,14 @@ Prevent Spotlight from searching these locations:
 
 ## Docker
 
-CPUs: 4
+### General
 
+Start Docker Desktop when you login: checked
+Open Docker Dashboard at startup: unchecked
+
+### Resources
+
+CPUs: 4
 Memory: 8.00 GB
 
 ## Magnet
