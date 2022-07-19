@@ -21,6 +21,7 @@ install: ## Install vim and asdf plugins
 	heroku plugins:install heroku-accounts
 	-createuser -s postgres || true
 	-pip3 install neovim --upgrade
+	mkdir -m 700 -p ~/.gnupg/ && echo "pinentry-program $(brew --prefix)/bin/pinentry-mac" > ~/.gnupg/gpg-agent.conf && echo 'use-agent' > ~/.gnupg/gpg.conf
 
 update: ## Update vim and asdf plugins
 	nvim +PlugClean! +PlugInstall PlugUpdate +qa
@@ -30,7 +31,6 @@ link: ## Setup symlinks
 	ln -nfs ~/dotfiles/.bash_profile ~/.bash_profile
 	ln -nfs ~/dotfiles/.bashrc ~/.bashrc
 	mkdir -p ~/.config/nvim/ && ln -nfs ~/dotfiles/init.vim ~/.config/nvim/init.vim
-	mkdir -p ~/.gnupg/ && echo "pinentry-program $(brew --prefix)/bin/pinentry-mac" > ~/.gnupg/gpg-agent.conf
 	ln -nfs ~/dotfiles/.vim ~/.vim
 	ln -nfs ~/dotfiles/.asdf ~/.asdf
 	ln -nfs ~/dotfiles/.asdf/.asdfrc ~/.asdfrc
