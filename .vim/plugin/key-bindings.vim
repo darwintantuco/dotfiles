@@ -1,5 +1,8 @@
 " toggle NERDTree
 nmap <leader><tab> :NERDTreeToggle<cr>
+" open current file on NERDTree
+map <leader>o :NERDTreeFind<cr>
+
 " find
 map <leader>f :Ag<space>
 " fzf
