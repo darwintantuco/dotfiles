@@ -26,3 +26,6 @@ alias git-delete-branches='git branch | grep -v "master\|develop\|main" | xargs 
 alias v='nvim'
 alias vi='nvim'
 alias vim='nvim'
+
+# Sed
+alias sed='gsed'

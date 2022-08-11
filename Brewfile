@@ -46,6 +46,7 @@ brew "z"
 brew "heroku/brew/heroku"
 brew "tmate"
 brew "imagemagick"
+brew "gnu-sed"
 
 # asdf nodejs
 brew "coreutils"
