@@ -41,7 +41,7 @@ brew "git"
 brew "tig"
 brew "bash-completion"
 brew "exercism"
-brew "postgresql", restart_service: true
+brew "postgresql@14", restart_service: true
 brew "redis", restart_service: true
 brew "the_silver_searcher"
 brew "neovim"

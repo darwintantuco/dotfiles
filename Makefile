@@ -16,6 +16,7 @@ install: ## Install vim and asdf plugins
 	-export KERL_CONFIGURE_OPTIONS="--disable-debug --without-javac"
 	-asdf plugin add erlang https://github.com/asdf-vm/asdf-erlang.git
 	-asdf plugin add elixir https://github.com/asdf-vm/asdf-elixir.git
+	-asdf plugin-add rust https://github.com/asdf-community/asdf-rust.git
 	asdf install
 	nvim +PlugClean! +PlugInstall +qa
 	heroku plugins:install heroku-accounts
