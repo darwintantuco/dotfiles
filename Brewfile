@@ -26,6 +26,9 @@ cask "anki"
 cask "skype"
 cask "tunnelbear"
 cask "notion"
+cask "steam"
+cask "viber"
+cask "telegram"
 
 # signed-commits
 # cask "keybase"
