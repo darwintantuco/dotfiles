@@ -3,6 +3,5 @@
   "solargraph.diagnostics": true,
   "solargraph.autoformat": true,
   "solargraph.formatting": true,
-  "solargraph.hover": true,
-  "eslint.autoFixOnSave": true
+  "solargraph.hover": true
 }
