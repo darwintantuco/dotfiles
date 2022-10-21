@@ -29,6 +29,7 @@ cask "notion"
 cask "steam"
 cask "viber"
 cask "telegram"
+cask "whatsapp"
 
 # signed-commits
 # cask "keybase"
