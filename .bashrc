@@ -60,6 +60,8 @@ if command -v brew >/dev/null 2>&1; then
   [ -f $BREW_PREFIX/etc/profile.d/z.sh ] && source $BREW_PREFIX/etc/profile.d/z.sh
 fi
 
+export HOMEBREW_NO_AUTO_UPDATE=1
+
 # https://stackoverflow.com/questions/52671926/rails-may-have-been-in-progress-in-another-thread-when-fork-was-called
 # export DISABLE_SPRING=true
 
