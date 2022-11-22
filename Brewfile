@@ -57,7 +57,7 @@ brew "coreutils"
 
 # asdf erlang
 brew "autoconf"
-# brew "wxwidgets"
+# brew "wxwidgets" # causes erlang compilation to fail, don't install for now
 brew "openssl@1.1"
 brew "libxslt"
 brew "fop"
