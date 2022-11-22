@@ -51,7 +51,10 @@ export LC_ALL=en_US.UTF-8
 export ERL_AFLAGS="-kernel shell_history enabled"
 
 # asdf
+# old
 [ -f $BREW_PREFIX/opt/asdf/asdf.sh ] && source $BREW_PREFIX/opt/asdf/asdf.sh
+# new
+[ -f $BREW_PREFIX/opt/asdf/libexec/asdf.sh ] && source $BREW_PREFIX/opt/asdf/libexec/asdf.sh
 [ -f $BREW_PREFIX/opt/asdf/etc/bash_completion.d/asdf.bash ] && source $BREW_PREFIX/opt/asdf/etc/bash_completion.d/asdf.bash
 
 # z
