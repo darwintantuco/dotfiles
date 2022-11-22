@@ -7,7 +7,7 @@ endif
 
 call plug#begin('~/.vim/plugged')
 " colorscheme
-Plug 'nightsense/snow'
+Plug 'darwintantuco/snow'
 " coc.nvim
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " fuzzy file finder

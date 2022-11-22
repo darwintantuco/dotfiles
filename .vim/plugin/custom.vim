@@ -21,8 +21,9 @@ set spell spelllang=en_us
 set cursorline
 
 " colorscheme
-set background=dark
+set termguicolors
 colorscheme snow
+set background=dark
 
 set colorcolumn=100
 
