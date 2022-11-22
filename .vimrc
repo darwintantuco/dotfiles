@@ -9,7 +9,7 @@ call plug#begin('~/.vim/plugged')
 " colorscheme
 Plug 'darwintantuco/snow'
 " coc.nvim
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'tag': 'v0.0.81'}
 " fuzzy file finder
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 " fzf vim wrapper
