@@ -50,6 +50,6 @@ Plug 'rstacruz/vim-closer'
 Plug 'liuchengxu/vim-which-key'
 Plug 'vim-test/vim-test'
 " AI code suggestion
-" Plug 'github/copilot.vim'
+Plug 'github/copilot.vim'
 
 call plug#end()
