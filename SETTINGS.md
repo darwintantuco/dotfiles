@@ -27,7 +27,9 @@ Automatically hide and show the menu bar on desktop: unchecked
 ## Trackpad
 
 Tap to click: checked
+
 Tracking speed: fast
+
 Scroll direction: Natural: unchecked
 
 ## Keyboard
@@ -58,6 +60,8 @@ Reduce motion: checked
 
 Show volume in menu bar: checked
 
+Show Sound in menu bar: always
+
 ## Date & Time
 
 ### Timezone
@@ -79,3 +83,7 @@ Show Bluetooth in menubar: checked
 ## Users & Groups
 
 Allow guests to log in to this computer: unchecked
+
+## Language & Region
+
+Remove Filipino on Preferred languages

@@ -22,6 +22,10 @@
      $ gpg --import github-private.key
      ```
 
+## Spotify
+
+Start a private session to listen anonymously: turn on
+
 ## Spotlight
 
 Prevent Spotlight from searching these locations:
@@ -33,6 +37,7 @@ Prevent Spotlight from searching these locations:
 ### General
 
 Start Docker Desktop when you login: checked
+
 Open Docker Dashboard at startup: unchecked
 
 ### Resources
