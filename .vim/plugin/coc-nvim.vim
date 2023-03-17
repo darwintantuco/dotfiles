@@ -3,7 +3,7 @@ let g:coc_global_extensions = [
   \ 'coc-json',
   \ 'coc-elixir',
   \ 'coc-solargraph',
-  \ 'coc-tsserver',
+  \ 'coc-tsserver@1.10.4',
   \ 'coc-eslint',
   \ 'coc-prettier',
   \ 'coc-stylelint',
