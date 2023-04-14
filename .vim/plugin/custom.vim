@@ -25,7 +25,7 @@ set termguicolors
 colorscheme snow
 set background=dark
 
-set colorcolumn=100
+set colorcolumn=120
 
 " search hit color
 highlight Search ctermfg=black ctermbg=lightyellow
