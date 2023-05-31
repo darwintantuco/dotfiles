@@ -2,3 +2,4 @@ bundler
 rails
 sidekiq
 solargraph
+rubocop-performance

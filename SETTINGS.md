@@ -4,6 +4,8 @@
 
 Use dark menu bar and Dock: checked
 
+Allow Handoff between this Mac and your iCloud devices: unchecked
+
 ## Dock
 
 Size: Large
