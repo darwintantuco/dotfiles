@@ -83,3 +83,4 @@ export KERL_BUILD_DOCS="yes"
 
 # work
 export NODE_EXTRA_CA_CERTS="$(mkcert -CAROOT)/rootCA.pem"
+source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.bash.inc"

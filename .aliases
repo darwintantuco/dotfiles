@@ -26,3 +26,13 @@ alias vim='nvim'
 
 # Sed
 alias sed='gsed'
+
+# Work
+alias gpom="git push origin master"
+alias gpf='git push --force-with-lease'
+alias gfi='git fetch origin (__git.current_branch):master && gpom'
+alias 'gfi!'='git fetch origin (__git.current_branch):master && gpom && git checkout master'
+alias gfim='git fetch origin (__git.current_branch):main && git push origin main'
+alias 'gfim!'='git fetch origin (__git.current_branch):main && git push origin main && git checkout main'
+alias glol="git log --graph --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'"
+alias glola="git log --graph --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --all"
