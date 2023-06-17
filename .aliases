@@ -1,10 +1,6 @@
-#!/bin/sh
 alias a='alias'
 alias c='clear'
 alias ..='cd ..'
-
-# Repeat a command n times (e.g. $ repeat 25 mix test)
-repeat() { local i n; n=$1; shift; for ((i=1; i<=n; i++)); do "$@"; done; }
 
 # Git
 alias gs='git status'

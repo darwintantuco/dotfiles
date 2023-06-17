@@ -5,6 +5,9 @@ if [[ $(uname -m) == 'arm64' ]]; then
   export PATH=/opt/homebrew/bin:$PATH
 fi
 
+# Repeat a command n times (e.g. $ repeat 25 mix test)
+repeat() { local i n; n=$1; shift; for ((i=1; i<=n; i++)); do "$@"; done; }
+
 BREW_PREFIX=$(brew --prefix)
 
 # fancy prompt
@@ -12,7 +15,6 @@ export PS1="\`if [ \$? != 0 ]; then printf ' \[\033[31m\]\xe2\x9c\x97 '; fi\`\[\
 
 # aliases
 [ -f ~/dotfiles/.aliases ] && source ~/dotfiles/.aliases
-a
 
 # cd to last working dir
 PROMPT_COMMAND='pwd > ~/.current_dir'

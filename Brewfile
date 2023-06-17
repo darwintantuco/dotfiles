@@ -37,6 +37,8 @@ brew "gpg2"
 brew "gnupg"
 brew "pinentry-mac"
 
+brew "fish"
+# brew "starship"
 brew "asdf"
 brew "git"
 brew "tig"
