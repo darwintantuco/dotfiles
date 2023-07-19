@@ -1,3 +1,5 @@
+set -x BREW_PREFIX $(brew --prefix)
+
 # aliases
 [ -f ~/dotfiles/.aliases ] && source ~/dotfiles/.aliases
 
@@ -25,3 +27,9 @@ set -x HOMEBREW_NO_AUTO_UPDATE 1
 
 # keybase / signed commits
 set -x GPG_TTY $(tty)
+
+# asdf
+source /opt/homebrew/opt/asdf/libexec/asdf.fish
+
+# google cloud
+source /opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.fish.inc

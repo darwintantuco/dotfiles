@@ -89,4 +89,10 @@ macOS
    curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
    ```
 
-   More info here: [fisher](https://github.com/jorgebucaran/fisher)
+   For more info check: [fisher](https://github.com/jorgebucaran/fisher)
+
+1. Add brew binaries in fish path
+
+   ```shell
+   fish_add_path /opt/homebrew/bin
+   ```
