@@ -14,7 +14,7 @@ BREW_PREFIX=$(brew --prefix)
 export PS1="\`if [ \$? != 0 ]; then printf ' \[\033[31m\]\xe2\x9c\x97 '; fi\`\[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
 
 # aliases
-[ -f ~/dotfiles/.aliases ] && source ~/dotfiles/.aliases
+# [ -f ~/dotfiles/.aliases ] && source ~/dotfiles/.aliases
 
 # cd to last working dir
 PROMPT_COMMAND='pwd > ~/.current_dir'
