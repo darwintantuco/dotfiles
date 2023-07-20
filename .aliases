@@ -2,15 +2,15 @@ alias a='alias'
 alias c='clear'
 alias ..='cd ..'
 
-# Vim
+# vim
 alias v='nvim'
 alias vi='nvim'
 alias vim='nvim'
 
-# Sed
+# sed
 alias sed='gsed'
 
-# Work
+# work
 alias gpom="git push origin master"
 alias gpf='git push --force-with-lease'
 alias gfi='git fetch origin (__git.current_branch):master && gpom'
@@ -19,3 +19,16 @@ alias gfim='git fetch origin (__git.current_branch):main && git push origin main
 alias 'gfim!'='git fetch origin (__git.current_branch):main && git push origin main && git checkout main'
 alias glol="git log --graph --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'"
 alias glola="git log --graph --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --all"
+
+# kill bad habits
+function gs
+  echo "Use gst instead!"
+end
+
+function gca
+  echo "Use gcma instead!"
+end
+
+function gdc
+  echo "Use gdca instead!"
+end

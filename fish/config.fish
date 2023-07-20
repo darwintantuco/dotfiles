@@ -1,7 +1,16 @@
 set -x BREW_PREFIX $(brew --prefix)
 
+# apply snow dark colorscheme on terminal
+if status --is-interactive
+  sh ~/.vim/plugged/snow/shell/snow_dark.sh
+end
+
 # aliases
 [ -f ~/dotfiles/.aliases ] && source ~/dotfiles/.aliases
+
+# cd to last working dir
+# set PROMPT_COMMAND 'pwd > ~/.current_dir'
+# [ -f ~/.current_dir ] && cd "$(< ~/.current_dir)"
 
 # generate ~/.gitconfig
 git config --global color.ui auto
