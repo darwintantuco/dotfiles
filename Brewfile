@@ -12,6 +12,7 @@ cask "ngrok"
 cask "licecap"
 cask "visual-studio-code"
 cask "linear-linear"
+cask "google-cloud-sdk"
 
 # personal
 cask "dropbox"

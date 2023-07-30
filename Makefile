@@ -29,8 +29,6 @@ update: ## Update vim and asdf plugins
 	asdf plugin update --all
 
 link: ## Setup symlinks
-	ln -nfs ~/dotfiles/.bash_profile ~/.bash_profile
-	ln -nfs ~/dotfiles/.bashrc ~/.bashrc
 	ln -nfs ~/dotfiles/fish/config.fish ~/.config/fish/config.fish
 	ln -nfs ~/dotfiles/fish/fish_plugins ~/.config/fish/fish_plugins
 	mkdir -p ~/.config/nvim/ && ln -nfs ~/dotfiles/init.vim ~/.config/nvim/init.vim
@@ -43,7 +41,6 @@ link: ## Setup symlinks
 	ln -nfs ~/Dropbox/.wakatime.cfg ~/.wakatime.cfg
 
 clean: ## Delete symlinks and uninstall asdf plugins
-	rm -rf ~/.bash_profile
 	rm -rf ~/.config/nvim/init.vim
 	rm -rf ~/.vim
 	rm -rf ~/.asdf

@@ -7,11 +7,10 @@ current tools to get things done
 |   Name   |                  Description                  |
 | :------: | :-------------------------------------------: |
 |  neovim  |               main text editor                |
-|  vscode  |             secondary text editor             |
-|   bash   |                 default shell                 |
-|   fish   |                secondary shell                |
+|   fish   |                 default shell                 |
 | homebrew |           package manager for macOS           |
 |   asdf   | manage ruby, node, elixir and erlang versions |
+|  vscode  |             secondary text editor             |
 
 checkout `Brewfile` for complete app list
 
@@ -21,11 +20,39 @@ macOS
 
 ## Setup
 
-1. Use bash
+1. Use fish
 
-   ```shell
-   chsh -s /bin/bash
-   ```
+   1. Add fish to the list of acceptable shells
+
+      ```shell
+      sudo sh -c 'echo /opt/homebrew/bin/fish >> /etc/shells'
+      ```
+
+   1. Use fish as default shell
+
+      ```shell
+      chsh -s /opt/homebrew/bin/fish
+      ```
+
+   1. Install fisher
+
+      ```shell
+      curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
+      ```
+
+      For more info check: [fisher](https://github.com/jorgebucaran/fisher)
+
+   1. Add brew binaries in fish path
+
+      ```shell
+      fish_add_path /opt/homebrew/bin
+      ```
+
+   1. Install plugins from fish_plugins
+
+      ```
+      fish update
+      ```
 
 1. Install [homebrew](https://brew.sh/)
 1. Configure SSH
@@ -68,31 +95,3 @@ macOS
 1. (Optional) By default, signed commits are enabled. Update it in `.bashrc`
    - You may want to disable it by removing `git config --global commit.gpgsign true`
    - or update signingkey with your own key `git config --global user.signingkey your-signingkey`
-
-### Switching to fish shell
-
-1. Add fish to the list of acceptable shells
-
-   ```shell
-   sudo sh -c 'echo /opt/homebrew/bin/fish >> /etc/shells'
-   ```
-
-1. Use fish as default shell
-
-   ```shell
-   chsh -s /opt/homebrew/bin/fish
-   ```
-
-1. Install fisher
-
-   ```shell
-   curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
-   ```
-
-   For more info check: [fisher](https://github.com/jorgebucaran/fisher)
-
-1. Add brew binaries in fish path
-
-   ```shell
-   fish_add_path /opt/homebrew/bin
-   ```
