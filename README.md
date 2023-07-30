@@ -42,12 +42,6 @@ macOS
 
       For more info check: [fisher](https://github.com/jorgebucaran/fisher)
 
-   1. Add brew binaries in fish path
-
-      ```shell
-      fish_add_path /opt/homebrew/bin
-      ```
-
    1. Install plugins from fish_plugins
 
       ```
