@@ -11,11 +11,10 @@ end
 [ -f ~/dotfiles/.aliases ] && source ~/dotfiles/.aliases
 
 # cd to last directory
-# function __write_current_dir --on-variable PWD --description 'cd to last directory'
-#   status --is-command-substitution; and return
-#   pwd > ~/.current_dir
-# end
-# [ -f ~/.current_dir ] && cd (cat ~/.current_dir)
+function __write_current_dir --on-variable PWD
+  pwd > ~/.current_dir
+end
+[ -f ~/.current_dir ] && cd (cat ~/.current_dir)
 
 # generate ~/.gitconfig
 git config --global color.ui auto
