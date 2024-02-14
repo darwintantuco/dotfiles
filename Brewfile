@@ -5,7 +5,6 @@ tap "homebrew/core"
 tap "homebrew/services"
 
 # work
-cask "authy"
 cask "iterm2"
 cask "docker"
 cask "ngrok"
