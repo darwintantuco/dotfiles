@@ -22,6 +22,15 @@
      $ gpg --import github-private.key
      ```
 
+## iTerm2
+
+Reuse previous session's directory
+
+- Preferences
+- Profiles
+- Working Directory
+  - Advance Configuration
+
 ## Spotify
 
 Start a private session to listen anonymously: turn on
