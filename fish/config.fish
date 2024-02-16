@@ -41,8 +41,7 @@ source /opt/homebrew/opt/asdf/libexec/asdf.fish
 # google cloud
 source /opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.fish.inc
 
-
-# Custom prompt
+# custom prompt
 function fish_prompt --description 'Write out the prompt'
   set -l last_pipestatus $pipestatus
   set -lx __fish_last_status $status # Export for __fish_print_pipestatus.
