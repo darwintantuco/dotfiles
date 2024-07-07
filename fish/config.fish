@@ -1,6 +1,6 @@
 fish_add_path /opt/homebrew/bin
 
-set -x BREW_PREFIX $(brew --prefix)
+set -x HOMEBREW_PREFIX $(brew --prefix)
 
 # apply snow dark colorscheme on terminal
 if status --is-interactive

@@ -27,9 +27,6 @@ cask "skype"
 cask "tunnelbear"
 cask "notion"
 cask "steam"
-cask "viber"
-cask "telegram"
-cask "whatsapp"
 
 # signed-commits
 # cask "keybase"
@@ -38,7 +35,6 @@ brew "gnupg"
 brew "pinentry-mac"
 
 brew "fish"
-# brew "starship"
 brew "asdf"
 brew "git"
 brew "tig"
