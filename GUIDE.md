@@ -6,8 +6,6 @@
    1. Magnet
    1. Be Focused Pro: Pomodoro Timer
    1. Spark
-   1. MenuWorldTime
-   1. MeetingBar
 1. Install:
    1. iStat Menus
    1. TablePlus
