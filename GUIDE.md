@@ -1,7 +1,7 @@
 # Guide
 
 1. Update OSX Settings
-1. Login to dropbox and rescuetime
+1. Login to dropbox
 1. Install from apps store:
    1. Magnet
    1. Be Focused Pro: Pomodoro Timer
@@ -14,7 +14,6 @@
    1. CleanMyMac X
    1. Freedom
    1. Vanilla
-   1. Rescuetime Classic - `https://www.rescuetime.com/get_rescuetime`
 1. Sync vscode settings in microsoft account
 1. Enable github signed commits
    - import gpg private key
