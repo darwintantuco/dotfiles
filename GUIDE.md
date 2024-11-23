@@ -92,6 +92,16 @@ dip switch 3: on
 $ exercism configure --token=$TOKEN`
 ```
 
+## UTM
+
+### Fix network issue / no internet
+
+Network -> Network Mode -> Emulated VLAN
+
+### Preferences
+
+Invert Scrolling: checked
+
 ## Troubleshooting
 
 1. `pinentry-mac` not prompting for passphrase

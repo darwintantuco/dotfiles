@@ -27,6 +27,7 @@ cask "skype"
 cask "tunnelbear"
 cask "notion"
 cask "steam"
+cask "utm"
 
 # signed-commits
 # cask "keybase"
