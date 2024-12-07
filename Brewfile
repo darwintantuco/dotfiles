@@ -28,6 +28,7 @@ cask "tunnelbear"
 cask "notion"
 cask "steam"
 cask "utm"
+cask "viber"
 
 # signed-commits
 # cask "keybase"
