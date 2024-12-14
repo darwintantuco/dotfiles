@@ -109,3 +109,13 @@ Invert Scrolling: checked
      ```
      gpgconf --kill gpg-agent
      ```
+
+## eBIRForms
+
+### Backup tax returns
+
+- open eBIRForms folder
+- backup
+  - IAF_RDO_Copy
+  - profile
+  - savefile
