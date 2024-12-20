@@ -6,8 +6,7 @@ let g:coc_global_extensions = [
   \ 'coc-tsserver@1.10.4',
   \ 'coc-eslint',
   \ 'coc-prettier',
-  \ 'coc-stylelint',
-  \ 'coc-tailwindcss' ]
+  \ 'coc-stylelint' ]
 
 " Use tab for trigger completion with characters ahead and navigate.
 " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
