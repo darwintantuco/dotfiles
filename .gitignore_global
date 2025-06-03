@@ -13,3 +13,6 @@ Thumbs.db
 
 # node
 node_modules
+
+# Local configuration files
+*.local.*
