@@ -2,6 +2,9 @@ fish_add_path /opt/homebrew/bin
 
 set -x HOMEBREW_PREFIX $(brew --prefix)
 
+# mise
+mise activate fish | source
+
 # apply snow dark colorscheme on terminal
 if status --is-interactive
   sh ~/.vim/plugged/snow/shell/snow_dark.sh
@@ -34,9 +37,6 @@ set -x HOMEBREW_NO_AUTO_UPDATE 1
 
 # keybase / signed commits
 set -x GPG_TTY $(tty)
-
-# asdf
-source /opt/homebrew/opt/asdf/libexec/asdf.fish
 
 # google cloud
 source /opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.fish.inc

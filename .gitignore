@@ -7,11 +7,7 @@ tmux-client-*.log
 .gitconfig
 Brewfile.lock.json
 
-.asdf/installs/
-.asdf/plugins/
-.asdf/shims/
-.asdf/repository/
-.asdf/tmp/
-.asdf/downloads/
+# mise cache (if needed)
+.mise/cache/
 
 .vim/autoload/plug.vim

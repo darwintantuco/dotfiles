@@ -36,7 +36,7 @@ brew "gnupg"
 brew "pinentry-mac"
 
 brew "fish"
-brew "asdf"
+brew "mise"
 brew "git"
 brew "tig"
 brew "bash-completion"
@@ -50,17 +50,21 @@ brew "heroku/brew/heroku"
 brew "tmate"
 brew "imagemagick"
 brew "gnu-sed"
+brew "gh"
 
-# asdf nodejs
+# mise nodejs
 brew "coreutils"
 
-# asdf erlang
+# mise erlang
 brew "autoconf"
 # brew "wxwidgets" # causes erlang compilation to fail, don't install for now
 brew "openssl@1.1"
 brew "libxslt"
 brew "fop"
 brew "python3"
+
+# mise ruby
+brew "ruby-build"
 
 # work
 brew "nginx"
