@@ -11,22 +11,3 @@ idiomatic_version_file_enable_tools = []
 # Legacy version file support to read .tool-versions files
 legacy_version_file = true
 
-[tasks.ruby-defaults]
-description = "Install default Ruby gems"
-run = """
-gem install bundler
-gem install rails
-gem install sidekiq
-gem install solargraph
-gem install rubocop-performance
-"""
-depends = []
-
-[tasks.node-defaults]
-description = "Install default Node packages"
-run = "npm install -g yarn"
-depends = []
-
-[tasks.install-defaults]
-description = "Install all default packages"
-depends = ["ruby-defaults", "node-defaults"]

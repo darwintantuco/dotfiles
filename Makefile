@@ -13,7 +13,6 @@ reset: clean link install ## Run clean, link and install
 install: ## Install vim plugins and mise tools
 	mise trust ~/dotfiles/mise.toml
 	export KERL_CONFIGURE_OPTIONS="--disable-debug --without-javac" && mise install
-	mise run install-defaults
 	nvim +PlugClean! +PlugInstall +qa
 	heroku plugins:install heroku-accounts
 	-createuser -s postgres || true
@@ -31,9 +30,13 @@ link: ## Setup symlinks
 	mkdir -p ~/.config/nvim/ && ln -nfs ~/dotfiles/init.vim ~/.config/nvim/init.vim
 	ln -nfs ~/dotfiles/.vim ~/.vim
 	mkdir -p ~/.config/mise/ && ln -nfs ~/dotfiles/mise.toml ~/.config/mise/config.toml
+	ln -nfs ~/dotfiles/.default-gems ~/.default-gems
+	ln -nfs ~/dotfiles/.default-npm-packages ~/.default-npm-packages
 
 clean: ## Delete symlinks
 	rm -rf ~/.config/nvim/init.vim
 	rm -rf ~/.vim
 	rm -rf ~/.config/mise/config.toml
+	rm -rf ~/.default-gems
+	rm -rf ~/.default-npm-packages
 	-heroku plugins:uninstall heroku-accounts
