@@ -26,6 +26,8 @@ git config --global pull.rebase false
 git config --global user.signingkey 1AD991AAE601CD85
 git config --global commit.gpgsign true
 git config --global checkout.defaultRemote origin
+git config --global alias.ignore "update-index --skip-worktree"
+git config --global alias.unignore "update-index --no-skip-worktree"
 
 # vim
 set -x EDITOR "nvim"
