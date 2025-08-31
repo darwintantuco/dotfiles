@@ -28,6 +28,10 @@ Reuse previous session's directory
 - Working Directory
   - Advance Configuration
 
+Able to select text inside vim (without holding `Option` key)
+
+- Profiles → Terminal → Mouse Reporting → Uncheck
+
 ## Spotify
 
 Start a private session to listen anonymously: turn on
