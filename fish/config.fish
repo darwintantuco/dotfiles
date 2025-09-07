@@ -42,6 +42,7 @@ set -x GPG_TTY $(tty)
 
 # google cloud
 source /opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.fish.inc
+set -x CLOUDSDK_PYTHON "/opt/homebrew/bin/python3.11"
 
 set -x OBJC_DISABLE_INITIALIZE_FORK_SAFETY YES
 
