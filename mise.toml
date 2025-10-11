@@ -7,7 +7,7 @@ rust = "1.56.0"
 helm = "3.7.1"
 
 [settings]
-idiomatic_version_file_enable_tools = []
+idiomatic_version_file_enable_tools = ["node"]
 # Legacy version file support to read .tool-versions files
 legacy_version_file = true
 
