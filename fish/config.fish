@@ -108,3 +108,4 @@ function fish_prompt --description 'Write out the prompt'
 
   echo -n "$suffix "
 end
+export PATH="$HOME/.local/bin:$PATH"
