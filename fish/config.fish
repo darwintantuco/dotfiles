@@ -10,6 +10,13 @@ if status --is-interactive
   sh ~/.vim/plugged/snow/shell/snow_dark.sh
 end
 
+# don't save failed commands to history
+function __remove_failed_from_history --on-event fish_postexec
+    if test $status -ne 0
+        builtin history delete --exact --case-sensitive -- $argv[1]
+    end
+end
+
 # aliases
 [ -f ~/dotfiles/.aliases ] && source ~/dotfiles/.aliases
 
