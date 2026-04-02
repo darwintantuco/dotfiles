@@ -32,6 +32,10 @@ Able to select text inside vim (without holding `Option` key)
 
 - Profiles → Terminal → Mouse Reporting → Uncheck
 
+Prevent accidental close on command + W
+
+- Profiles -> Session -> Prompt before closing -> If there are jobs besides:
+
 ## Spotify
 
 Start a private session to listen anonymously: turn on
